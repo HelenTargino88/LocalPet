@@ -52,7 +52,7 @@ namespace LocalPet
             var cmd = Banco.Abrir();
             cmd.CommandText = "insert enderecos (cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo) " +
                 "values (" + ongs_id + ",'" + CEP + "', '" + Logradouro + "', '" + Numero + "', '" + Complemento + "', " +
-                "'" + Bairro + "', '" + Cidade + "', '" + Estado + "', '" + UF + "', '" + Tipo + "')";
+                "'" + Bairro + "', '" + Cidade + "', '" + Estado + "', '" + UF + "', '" + Tipo + "') ";
             cmd.ExecuteNonQuery();
         }
         public static List<EnderecoOng> ListarPorCliente(int ong_id)
