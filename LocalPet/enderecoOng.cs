@@ -55,11 +55,11 @@ namespace LocalPet
                 "'" + Bairro + "', '" + Cidade + "', '" + Estado + "', '" + UF + "', '" + Tipo + "')";
             cmd.ExecuteNonQuery();
         }
-        public static List<EnderecoOng> ListarPorCliente(int cliente_id)
+        public static List<EnderecoOng> ListarPorCliente(int ong_id)
         {
             List<EnderecoOng> listaEnd = new List<EnderecoOng>();
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select  cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo, id from enderecos where cliente_id = " +ong_id;
+            cmd.CommandText = "select  cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo, id from enderecos where ongs_id = " +ong_id;
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
