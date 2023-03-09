@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 
@@ -77,7 +78,41 @@ namespace LocalPet
             }
             return usuario;
         }
-        public 
+        public bool Excluir(int _id)
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "delete from usuarios where id = " + _id;
+            bool result = cmd.ExecuteNonQuery() == 1 ? true : false;
+            return result;
+        }
+        public static void Atualizar(Usuarios usuario)
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "update usuarios set " +
+                "nome = '" + usuario.Nome + "'," +
+                "email = '" + usuario.Email + "'," +
+                "nivel = '" + usuario.Nivel + "'," +
+                "senha = '" + usuario.Senha + "'," +
+                "data = '" + usuario.Data_registro + "' " +
+                "where id = " + usuario.Id;
+            cmd.ExecuteReader();
+        }
+        public static List<Usuarios> BuscarPorNome(string _parte)
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "select * from usuarios where nome like '%"+_parte+"%'order by nome;";
+            var dr = cmd.ExecuteReader();
+            List<Usuarios> lista = new List<Usuarios>();
+            while (dr.Read())
+            {
+                lista.Add(new Usuarios(
+                        dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetInt32(5)
+                    )
+                );
+            }
+            return lista;
+
+        }
 
     }
 }
