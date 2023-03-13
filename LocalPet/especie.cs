@@ -29,7 +29,7 @@ namespace LocalPet
         public void Inserir()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "insert usuarios(nome) values('" + Nome + "')";
+            cmd.CommandText = "insert especies (nome) values('" + Nome + "')";
             cmd.ExecuteNonQuery();
             cmd.CommandText = "select @@ identity";
             Id = Convert.ToInt32(cmd.ExecuteScalar());

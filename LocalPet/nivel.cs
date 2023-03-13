@@ -70,7 +70,7 @@ namespace LocalPet
         public static void Atualizar(Nivel nivel)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update niveis set nome = '" +
+            cmd.CommandText = "update nivel set nome = '" +
                 nivel.Nome + "', sigla = '" + nivel.Sigla +
                 "' where id = " + nivel.Id;
             cmd.ExecuteReader();
@@ -86,7 +86,7 @@ namespace LocalPet
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from niveis where nome like '%" + _parte + "%' order by nome;";
+            cmd.CommandText = "select * from nivel where nome like '%" + _parte + "%' order by nome;";
             var dr = cmd.ExecuteReader();
             List<Nivel> lista = new List<Nivel>();
             while (dr.Read())

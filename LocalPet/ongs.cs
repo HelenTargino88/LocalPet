@@ -37,7 +37,7 @@ namespace LocalPet
         public void Inserir()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "insert usuarios(nome, cnpj, cpf) values('" + Nome + "','" + Cnpj + "','" + Cpf + "')";
+            cmd.CommandText = "insert ongs(nome, cnpj, cpf) values('" + Nome + "','" + Cnpj + "','" + Cpf + "')";
             cmd.ExecuteNonQuery();
             cmd.CommandText = "select @@ identity";
             Id = Convert.ToInt32(cmd.ExecuteScalar());

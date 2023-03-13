@@ -105,7 +105,7 @@ namespace LocalPet
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from especies where nome like '%" + _parte + "%' order by nome;";
+            cmd.CommandText = "select * from raca where nome like '%" + _parte + "%' order by nome;";
             var dr = cmd.ExecuteReader();
             List<Raca> lista = new List<Raca>();
             while (dr.Read())

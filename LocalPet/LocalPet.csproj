@@ -87,6 +87,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animais.cs" />
     <Compile Include="animaisCLi.cs" />
     <Compile Include="animaisOng.cs" />
     <Compile Include="Banco.cs" />
