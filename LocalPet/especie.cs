@@ -8,23 +8,24 @@ using System.Threading.Tasks;
 
 namespace LocalPet
 {
-    public class Especie
+    public class Especies
     {
 
 
         public int Id { get; set; }
         public string Nome { get; set; }
 
-        public Especie(int id, string nome)
+        public Especies(int id, string nome)
         {
             Id = id;
             Nome = nome;
         }
 
-        public Especie(string nome)
+        public Especies(string nome)
         {
             Nome = nome;
         }
+        public Especies() { }
         public void Inserir()
         {
             var cmd = Banco.Abrir();
@@ -33,23 +34,23 @@ namespace LocalPet
             cmd.CommandText = "select @@ identity";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
         }
-        public static List<Especie> Listar()
+        public static List<Especies> Listar()
         {
-            List<Especie> lista = new List<Especie>();
+            List<Especies> lista = new List<Especies>();
             var cmd = Banco.Abrir();
             cmd.CommandText = "select * from especies order by nome asc";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                lista.Add(new Especie(
+                lista.Add(new Especies(
                     dr.GetString(1)
                     ));
             }
             return lista;
         }
-        public static Especie ObterPorId(int id)
+        public static Especies ObterPorId(int id)
         {
-            Especie especie = new Especie();
+            Especies especie = new Especies();
             var cmd = Banco.Abrir();
             cmd.CommandText = "select * from especies where id = " + id;
             var dr = cmd.ExecuteReader();
@@ -82,7 +83,7 @@ namespace LocalPet
             return cmd.ExecuteNonQuery() == 1 ? true : false;
 
         }
-        public static void Atualizar(Especie especie)
+        public static void Atualizar(Especies especie)
         {
             var cmd = Banco.Abrir();
             cmd.CommandText = "update especies set" +
@@ -94,21 +95,21 @@ namespace LocalPet
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete especies ongs where id = " + _id;
+            cmd.CommandText = "delete from  especies  where id = " + _id;
             bool result = cmd.ExecuteNonQuery() == 1 ? true : false;
             return result;
 
         }
-        public static List<Especie> BuscarPorNome(string _parte)
+        public static List<Especies> BuscarPorNome(string _parte)
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select * from especies where nome like '%" + _parte + "%' order by nome;";
             var dr = cmd.ExecuteReader();
-            List<Especie> lista = new List<Especie>();
+            List<Especies> lista = new List<Especies>();
             while (dr.Read())
             {
-                lista.Add(new Especie(
+                lista.Add(new Especies(
                     dr.GetInt32(0), dr.GetString(1)
                     ));
             }
