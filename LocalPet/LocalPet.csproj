@@ -90,7 +90,7 @@
     <Compile Include="animaisCLi.cs" />
     <Compile Include="animaisOng.cs" />
     <Compile Include="Banco.cs" />
-    <Compile Include="clientes.cs" />
+    <Compile Include="Clientes.cs" />
     <Compile Include="enderecoOng.cs" />
     <Compile Include="EnderecoCli.cs" />
     <Compile Include="especie.cs" />
