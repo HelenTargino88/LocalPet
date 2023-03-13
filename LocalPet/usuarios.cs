@@ -56,7 +56,7 @@ namespace LocalPet
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                lista.Add(new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetInt32(5)));
+                lista.Add(new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5)));
             }
             return lista;
         }
@@ -74,7 +74,7 @@ namespace LocalPet
                 usuario.Email = dr.GetString(2);
                 usuario.Nivel = Nivel.ObterPorId(dr.GetInt32(4));
                 usuario.Senha = dr.GetString(3);
-                usuario.Data_registro = dr.GetInt32(5);
+                usuario.Data_registro = dr.GetDateTime(5);
             }
             return usuario;
         }
@@ -106,7 +106,7 @@ namespace LocalPet
             while (dr.Read())
             {
                 lista.Add(new Usuarios(
-                        dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetInt32(5)
+                        dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5)
                     )
                 );
             }

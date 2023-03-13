@@ -62,7 +62,7 @@ namespace LocalPet
                  dr.GetString(1),
                  dr.GetString(2),
                  dr.GetDateTime(3),
-                 dr.String(4)));
+                 dr.GetString(4)));
             }
             return lista;
         }
