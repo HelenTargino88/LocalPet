@@ -16,6 +16,13 @@ namespace LocalPet
         public string Nome { get; set; }
         public string Sexo { get; set; }
         public string Descricao { get; set; }
+        public string Idade { get; set; }
+        public string Porte { get; set; }
+        public string Enfermidades { get; set; }
+        public string Medicamentos { get; set; }
+        public string Vacinas { get; set; }
+        public string Comportamento { get; set; }
+        public string Imagem_animal { get; set; }
         public bool Ativo { get; set; }
 
         public Animais(int id, string nome, string sexo, string descricao, bool ativo)
