@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPet", "LocalPet\LocalPet.csproj", "{1F341329-CEED-4794-ACE0-F4AE3B0FBA8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPetadocoes", "LocalPetadocoes\LocalPetadocoes.csproj", "{B6AE65C5-259D-46BB-8AF7-0C714B0DFFB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1F341329-CEED-4794-ACE0-F4AE3B0FBA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F341329-CEED-4794-ACE0-F4AE3B0FBA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F341329-CEED-4794-ACE0-F4AE3B0FBA8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6AE65C5-259D-46BB-8AF7-0C714B0DFFB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6AE65C5-259D-46BB-8AF7-0C714B0DFFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6AE65C5-259D-46BB-8AF7-0C714B0DFFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6AE65C5-259D-46BB-8AF7-0C714B0DFFB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
