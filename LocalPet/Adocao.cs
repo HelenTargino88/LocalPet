@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LocalPet
 {
-    public class animaisOng
+    internal class Adocao
     {
     }
 }
