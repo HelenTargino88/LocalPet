@@ -100,7 +100,7 @@ namespace LocalPet
         public static List<Usuarios> BuscarPorNome(string _parte)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select * from usuarios where nome like '%"+_parte+"%'order by nome;";
+            cmd.CommandText = "select * from usuarios where nome like '%"+_parte+"%'order by nome;" ;
             var dr = cmd.ExecuteReader();
             List<Usuarios> lista = new List<Usuarios>();
             while (dr.Read())
