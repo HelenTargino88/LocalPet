@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace LocalPetadocoes
 {
-    public partial class FormPrincipal : Form
+    public partial class FormLogin : Form
     {
-        public FormPrincipal()
+        public FormLogin()
         {
             InitializeComponent();
         }
 
-        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
-
+            FormRelatorio frmRelatorio = new FormRelatorio();
+            frmRelatorio.Show();
+            this.Hide();
         }
 
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
 
         }
