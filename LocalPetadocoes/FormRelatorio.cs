@@ -7,34 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin.Controls;
 
 namespace LocalPetadocoes
 {
-    public partial class FormRelatorio : Form
+    public partial class FormRelatorio : MaterialForm
     {
         public FormRelatorio()
         {
             InitializeComponent();
         }
 
-        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormRelatorio_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void FormRelatorio_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+        private void gerenciarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormOngs formOngs = new FormOngs();
+            formOngs.Show();
         }
     }
 }

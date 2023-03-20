@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin.Controls;
 
 namespace LocalPetadocoes
 {
-    public partial class FormOngs : Form
+    public partial class FormOngs : MaterialForm
     {
         public FormOngs()
         {

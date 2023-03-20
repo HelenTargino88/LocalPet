@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRelatorio));
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,20 +49,13 @@
             this.mOvimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cachorrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.menuStrip1.SuspendLayout();
+            this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
+            this.toolStripContainer1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem,
-            this.operaçãoToolStripMenuItem,
-            this.mOvimentoToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1068, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // cadastroToolStripMenuItem
             // 
@@ -71,8 +64,7 @@
             this.produtosToolStripMenuItem,
             this.usuáriosToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.cadastroToolStripMenuItem.Text = "&Relatorios";
+            resources.ApplyResources(this.cadastroToolStripMenuItem, "cadastroToolStripMenuItem");
             // 
             // clientesToolStripMenuItem
             // 
@@ -80,20 +72,17 @@
             this.consultaToolStripMenuItem,
             this.listarToolStripMenuItem3});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "C&lientes";
+            resources.ApplyResources(this.clientesToolStripMenuItem, "clientesToolStripMenuItem");
             // 
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.consultaToolStripMenuItem.Text = "&Consulta";
+            resources.ApplyResources(this.consultaToolStripMenuItem, "consultaToolStripMenuItem");
             // 
             // listarToolStripMenuItem3
             // 
             this.listarToolStripMenuItem3.Name = "listarToolStripMenuItem3";
-            this.listarToolStripMenuItem3.Size = new System.Drawing.Size(121, 22);
-            this.listarToolStripMenuItem3.Text = "&Listar";
+            resources.ApplyResources(this.listarToolStripMenuItem3, "listarToolStripMenuItem3");
             // 
             // produtosToolStripMenuItem
             // 
@@ -101,21 +90,18 @@
             this.listarToolStripMenuItem,
             this.gerenciarToolStripMenuItem});
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.produtosToolStripMenuItem.Text = "&Ongs";
-            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
+            resources.ApplyResources(this.produtosToolStripMenuItem, "produtosToolStripMenuItem");
             // 
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.listarToolStripMenuItem.Text = "&Listar";
+            resources.ApplyResources(this.listarToolStripMenuItem, "listarToolStripMenuItem");
             // 
             // gerenciarToolStripMenuItem
             // 
             this.gerenciarToolStripMenuItem.Name = "gerenciarToolStripMenuItem";
-            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.gerenciarToolStripMenuItem.Text = "&Gerenciar";
+            resources.ApplyResources(this.gerenciarToolStripMenuItem, "gerenciarToolStripMenuItem");
+            this.gerenciarToolStripMenuItem.Click += new System.EventHandler(this.gerenciarToolStripMenuItem_Click);
             // 
             // usuáriosToolStripMenuItem
             // 
@@ -123,20 +109,17 @@
             this.consultaToolStripMenuItem1,
             this.listarToolStripMenuItem4});
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.usuáriosToolStripMenuItem.Text = "&Animais";
+            resources.ApplyResources(this.usuáriosToolStripMenuItem, "usuáriosToolStripMenuItem");
             // 
             // consultaToolStripMenuItem1
             // 
             this.consultaToolStripMenuItem1.Name = "consultaToolStripMenuItem1";
-            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
-            this.consultaToolStripMenuItem1.Text = "&Consulta";
+            resources.ApplyResources(this.consultaToolStripMenuItem1, "consultaToolStripMenuItem1");
             // 
             // listarToolStripMenuItem4
             // 
             this.listarToolStripMenuItem4.Name = "listarToolStripMenuItem4";
-            this.listarToolStripMenuItem4.Size = new System.Drawing.Size(121, 22);
-            this.listarToolStripMenuItem4.Text = "&Listar";
+            resources.ApplyResources(this.listarToolStripMenuItem4, "listarToolStripMenuItem4");
             // 
             // operaçãoToolStripMenuItem
             // 
@@ -144,8 +127,7 @@
             this.gatoToolStripMenuItem,
             this.cachorroToolStripMenuItem});
             this.operaçãoToolStripMenuItem.Name = "operaçãoToolStripMenuItem";
-            this.operaçãoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.operaçãoToolStripMenuItem.Text = "&Adoção";
+            resources.ApplyResources(this.operaçãoToolStripMenuItem, "operaçãoToolStripMenuItem");
             // 
             // gatoToolStripMenuItem
             // 
@@ -153,20 +135,17 @@
             this.gerenciarToolStripMenuItem1,
             this.listarToolStripMenuItem1});
             this.gatoToolStripMenuItem.Name = "gatoToolStripMenuItem";
-            this.gatoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.gatoToolStripMenuItem.Text = "&Gatos";
+            resources.ApplyResources(this.gatoToolStripMenuItem, "gatoToolStripMenuItem");
             // 
             // gerenciarToolStripMenuItem1
             // 
             this.gerenciarToolStripMenuItem1.Name = "gerenciarToolStripMenuItem1";
-            this.gerenciarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
-            this.gerenciarToolStripMenuItem1.Text = "&Gerenciar";
+            resources.ApplyResources(this.gerenciarToolStripMenuItem1, "gerenciarToolStripMenuItem1");
             // 
             // listarToolStripMenuItem1
             // 
             this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
-            this.listarToolStripMenuItem1.Text = "&Listar";
+            resources.ApplyResources(this.listarToolStripMenuItem1, "listarToolStripMenuItem1");
             // 
             // cachorroToolStripMenuItem
             // 
@@ -174,20 +153,17 @@
             this.gerenciarToolStripMenuItem2,
             this.lIstarToolStripMenuItem2});
             this.cachorroToolStripMenuItem.Name = "cachorroToolStripMenuItem";
-            this.cachorroToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.cachorroToolStripMenuItem.Text = "&Cachorros";
+            resources.ApplyResources(this.cachorroToolStripMenuItem, "cachorroToolStripMenuItem");
             // 
             // gerenciarToolStripMenuItem2
             // 
             this.gerenciarToolStripMenuItem2.Name = "gerenciarToolStripMenuItem2";
-            this.gerenciarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
-            this.gerenciarToolStripMenuItem2.Text = "&Gerenciar";
+            resources.ApplyResources(this.gerenciarToolStripMenuItem2, "gerenciarToolStripMenuItem2");
             // 
             // lIstarToolStripMenuItem2
             // 
             this.lIstarToolStripMenuItem2.Name = "lIstarToolStripMenuItem2";
-            this.lIstarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
-            this.lIstarToolStripMenuItem2.Text = "&LIstar";
+            resources.ApplyResources(this.lIstarToolStripMenuItem2, "lIstarToolStripMenuItem2");
             // 
             // mOvimentoToolStripMenuItem
             // 
@@ -196,35 +172,68 @@
             this.toolStripMenuItem2,
             this.cachorrosToolStripMenuItem});
             this.mOvimentoToolStripMenuItem.Name = "mOvimentoToolStripMenuItem";
-            this.mOvimentoToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.mOvimentoToolStripMenuItem.Text = "Perdidos";
+            resources.ApplyResources(this.mOvimentoToolStripMenuItem, "mOvimentoToolStripMenuItem");
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem2.Text = "&Gatos";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             // 
             // cachorrosToolStripMenuItem
             // 
             this.cachorrosToolStripMenuItem.Name = "cachorrosToolStripMenuItem";
-            this.cachorrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cachorrosToolStripMenuItem.Text = "&Cachorros";
+            resources.ApplyResources(this.cachorrosToolStripMenuItem, "cachorrosToolStripMenuItem");
+            // 
+            // menuStrip1
+            // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroToolStripMenuItem,
+            this.operaçãoToolStripMenuItem,
+            this.mOvimentoToolStripMenuItem});
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            // 
+            // toolStripContainer1
+            // 
+            // 
+            // toolStripContainer1.BottomToolStripPanel
+            // 
+            this.toolStripContainer1.BottomToolStripPanel.Controls.Add(this.menuStrip1);
+            // 
+            // toolStripContainer1.ContentPanel
+            // 
+            resources.ApplyResources(this.toolStripContainer1.ContentPanel, "toolStripContainer1.ContentPanel");
+            this.toolStripContainer1.LeftToolStripPanelVisible = false;
+            resources.ApplyResources(this.toolStripContainer1, "toolStripContainer1");
+            this.toolStripContainer1.Name = "toolStripContainer1";
+            this.toolStripContainer1.RightToolStripPanelVisible = false;
+            this.toolStripContainer1.TopToolStripPanelVisible = false;
+            // 
+            // materialLabel1
+            // 
+            resources.ApplyResources(this.materialLabel1, "materialLabel1");
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
             // 
             // FormRelatorio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1068, 450);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.toolStripContainer1);
+            this.KeyPreview = true;
             this.Name = "FormRelatorio";
-            this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRelatorio_FormClosed);
-            this.Load += new System.EventHandler(this.FormRelatorio_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.toolStripContainer1.BottomToolStripPanel.ResumeLayout(false);
+            this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
+            this.toolStripContainer1.ResumeLayout(false);
+            this.toolStripContainer1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,27 +241,29 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gerenciarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem operaçãoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mOvimentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem operaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gatoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gerenciarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cachorroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gerenciarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem lIstarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem mOvimentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cachorrosToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
 
