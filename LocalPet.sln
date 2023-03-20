@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPet", "LocalPet\LocalPet.csproj", "{1F341329-CEED-4794-ACE0-F4AE3B0FBA8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPetClass", "LocalPet\LocalPetClass.csproj", "{1F341329-CEED-4794-ACE0-F4AE3B0FBA8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPetadocoes", "LocalPetadocoes\LocalPetadocoes.csproj", "{B6AE65C5-259D-46BB-8AF7-0C714B0DFFB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPetForm", "LocalPetadocoes\LocalPetForm.csproj", "{B6AE65C5-259D-46BB-8AF7-0C714B0DFFB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
