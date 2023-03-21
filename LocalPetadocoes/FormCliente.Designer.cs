@@ -49,12 +49,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.pnlTelefone = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -118,7 +113,6 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlEndereco.SuspendLayout();
-            this.pnlTelefone.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEndereco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTelefone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).BeginInit();
@@ -128,10 +122,12 @@
             // pnlEndereco
             // 
             this.pnlEndereco.Controls.Add(this.button3);
+            this.pnlEndereco.Controls.Add(this.textBox2);
             this.pnlEndereco.Controls.Add(this.comboBox2);
             this.pnlEndereco.Controls.Add(this.button4);
             this.pnlEndereco.Controls.Add(this.textBox10);
             this.pnlEndereco.Controls.Add(this.label19);
+            this.pnlEndereco.Controls.Add(this.label18);
             this.pnlEndereco.Controls.Add(this.label27);
             this.pnlEndereco.Controls.Add(this.textBox3);
             this.pnlEndereco.Controls.Add(this.textBox9);
@@ -147,10 +143,12 @@
             this.pnlEndereco.Controls.Add(this.label26);
             this.pnlEndereco.Controls.Add(this.textBox7);
             this.pnlEndereco.Controls.Add(this.label24);
-            this.pnlEndereco.Location = new System.Drawing.Point(1006, 391);
+            this.pnlEndereco.Location = new System.Drawing.Point(1028, 379);
             this.pnlEndereco.Name = "pnlEndereco";
             this.pnlEndereco.Size = new System.Drawing.Size(456, 227);
             this.pnlEndereco.TabIndex = 15;
+            this.pnlEndereco.TabStop = true;
+            this.pnlEndereco.Visible = false;
             // 
             // button3
             // 
@@ -162,6 +160,7 @@
             this.button3.TabIndex = 28;
             this.button3.Text = "CANCELAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboBox2
             // 
@@ -218,7 +217,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(285, 101);
+            this.textBox3.Location = new System.Drawing.Point(272, 136);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(40, 20);
@@ -236,7 +235,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(253, 105);
+            this.label20.Location = new System.Drawing.Point(240, 140);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(23, 13);
@@ -349,77 +348,19 @@
             this.label24.TabIndex = 33;
             this.label24.Text = "BAIRRO";
             // 
-            // pnlTelefone
-            // 
-            this.pnlTelefone.Controls.Add(this.button1);
-            this.pnlTelefone.Controls.Add(this.textBox2);
-            this.pnlTelefone.Controls.Add(this.button2);
-            this.pnlTelefone.Controls.Add(this.comboBox1);
-            this.pnlTelefone.Controls.Add(this.label17);
-            this.pnlTelefone.Controls.Add(this.label18);
-            this.pnlTelefone.Location = new System.Drawing.Point(1138, 169);
-            this.pnlTelefone.Name = "pnlTelefone";
-            this.pnlTelefone.Size = new System.Drawing.Size(269, 192);
-            this.pnlTelefone.TabIndex = 14;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(145, 141);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 23);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "CANCELAR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(120, 27);
+            this.textBox2.Location = new System.Drawing.Point(320, 104);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(116, 20);
             this.textBox2.TabIndex = 23;
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(11, 141);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 23);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "ADICIONAR";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Residencial",
-            "Celular"});
-            this.comboBox1.Location = new System.Drawing.Point(89, 64);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(115, 21);
-            this.comboBox1.TabIndex = 24;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(45, 67);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 13);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "TIPO";
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(41, 30);
+            this.label18.Location = new System.Drawing.Point(241, 110);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(71, 13);
@@ -428,7 +369,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(83, 273);
+            this.txtBuscar.Location = new System.Drawing.Point(87, 353);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(919, 20);
@@ -438,7 +379,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(15, 276);
+            this.label16.Location = new System.Drawing.Point(19, 356);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(57, 13);
@@ -460,7 +401,7 @@
             this.clnCidade,
             this.clnUf,
             this.clnTipoEnd});
-            this.dtgEndereco.Location = new System.Drawing.Point(19, 468);
+            this.dtgEndereco.Location = new System.Drawing.Point(23, 548);
             this.dtgEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtgEndereco.Name = "dtgEndereco";
             this.dtgEndereco.ReadOnly = true;
@@ -546,7 +487,7 @@
             this.dtgTelefone.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clnNumeroTel,
             this.clnTipoTel});
-            this.dtgTelefone.Location = new System.Drawing.Point(20, 299);
+            this.dtgTelefone.Location = new System.Drawing.Point(24, 379);
             this.dtgTelefone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtgTelefone.Name = "dtgTelefone";
             this.dtgTelefone.ReadOnly = true;
@@ -583,7 +524,7 @@
             this.clnEmail,
             this.clnData,
             this.clnAtivo});
-            this.dtgCliente.Location = new System.Drawing.Point(279, 299);
+            this.dtgCliente.Location = new System.Drawing.Point(283, 379);
             this.dtgCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtgCliente.Name = "dtgCliente";
             this.dtgCliente.ReadOnly = true;
@@ -679,7 +620,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(6, -4);
+            this.groupBox1.Location = new System.Drawing.Point(10, 76);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -761,6 +702,7 @@
             this.btnAcrescentar.TabIndex = 24;
             this.btnAcrescentar.Text = "ACRESCENTAR";
             this.btnAcrescentar.UseVisualStyleBackColor = true;
+            this.btnAcrescentar.Click += new System.EventHandler(this.btnAcrescentar_Click);
             // 
             // txtTelefone
             // 
@@ -1074,7 +1016,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1509, 718);
             this.Controls.Add(this.pnlEndereco);
-            this.Controls.Add(this.pnlTelefone);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.dtgEndereco);
@@ -1086,8 +1027,6 @@
             this.Load += new System.EventHandler(this.FormCliente_Load);
             this.pnlEndereco.ResumeLayout(false);
             this.pnlEndereco.PerformLayout();
-            this.pnlTelefone.ResumeLayout(false);
-            this.pnlTelefone.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEndereco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTelefone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).EndInit();
@@ -1121,12 +1060,7 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Panel pnlTelefone;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label16;

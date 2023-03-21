@@ -519,6 +519,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Name = "FormOngs";
             this.Text = "Ong\'s";
+            this.Load += new System.EventHandler(this.FormOngs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
