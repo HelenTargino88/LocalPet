@@ -27,7 +27,7 @@ namespace LocalPetadocoes
                 Primary.Orange500, Accent.LightBlue200,
                 TextShade.BLACK);
         }
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             FormRelatorio frmRelatorio = new FormRelatorio();
             frmRelatorio.Show();
@@ -55,6 +55,6 @@ namespace LocalPetadocoes
 
         }
 
-     
+       
     }
 }

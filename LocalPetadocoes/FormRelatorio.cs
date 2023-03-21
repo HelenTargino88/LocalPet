@@ -27,5 +27,10 @@ namespace LocalPetadocoes
             FormOngs formOngs = new FormOngs();
             formOngs.Show();
         }
+
+        private void FormRelatorio_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
