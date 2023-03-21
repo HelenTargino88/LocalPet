@@ -92,13 +92,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adocao.cs" />
+    <Compile Include="Adocoes.cs" />
     <Compile Include="Animais.cs" />
     <Compile Include="Banco.cs" />
     <Compile Include="Clientes.cs" />
     <Compile Include="EnderecoOng.cs" />
     <Compile Include="EnderecoCli.cs" />
-    <Compile Include="Especie.cs" />
     <Compile Include="Nivel.cs" />
     <Compile Include="Ongs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

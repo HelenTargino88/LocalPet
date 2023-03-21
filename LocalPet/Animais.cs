@@ -10,8 +10,7 @@ using System.Threading.Tasks;
 namespace LocalPet
 {
     public class Animais
-    {
-       
+    {      
         public int Id {  get; set; }
         public string Nome { get; set; }
         public Raca Raca { get; set; }
