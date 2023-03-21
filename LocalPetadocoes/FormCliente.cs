@@ -24,14 +24,26 @@ namespace LocalPetadocoes
 
         }
 
-        private void btnAcrescentar_Click(object sender, EventArgs e)
-        {
-            pnlEndereco.Visible = true;
-        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
             pnlEndereco.Visible=false;
+        }
+
+        private void materialLabel14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialSingleLineTextField14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
+        {
+            pnlEndereco.Visible = true;
         }
     }
 }
