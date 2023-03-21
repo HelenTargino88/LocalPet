@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtSenha = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -51,41 +51,41 @@
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "Bem - Vindo(a)";
             // 
-            // materialSingleLineTextField1
+            // txtUsuario
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(171, 293);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(212, 23);
-            this.materialSingleLineTextField1.TabIndex = 1;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.Text = "Usuario";
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.txtUsuario.Depth = 0;
+            this.txtUsuario.Hint = "";
+            this.txtUsuario.Location = new System.Drawing.Point(171, 293);
+            this.txtUsuario.MaxLength = 32767;
+            this.txtUsuario.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.PasswordChar = '\0';
+            this.txtUsuario.SelectedText = "";
+            this.txtUsuario.SelectionLength = 0;
+            this.txtUsuario.SelectionStart = 0;
+            this.txtUsuario.Size = new System.Drawing.Size(212, 23);
+            this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.TabStop = false;
+            this.txtUsuario.Text = "Usuario";
+            this.txtUsuario.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField2
+            // txtSenha
             // 
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(171, 353);
-            this.materialSingleLineTextField2.MaxLength = 32767;
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '\0';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(212, 23);
-            this.materialSingleLineTextField2.TabIndex = 2;
-            this.materialSingleLineTextField2.TabStop = false;
-            this.materialSingleLineTextField2.Text = "Senha";
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.txtSenha.Depth = 0;
+            this.txtSenha.Hint = "";
+            this.txtSenha.Location = new System.Drawing.Point(171, 353);
+            this.txtSenha.MaxLength = 32767;
+            this.txtSenha.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '\0';
+            this.txtSenha.SelectedText = "";
+            this.txtSenha.SelectionLength = 0;
+            this.txtSenha.SelectionStart = 0;
+            this.txtSenha.Size = new System.Drawing.Size(212, 23);
+            this.txtSenha.TabIndex = 2;
+            this.txtSenha.TabStop = false;
+            this.txtSenha.Text = "Senha";
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
@@ -134,8 +134,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.materialSingleLineTextField2);
-            this.Controls.Add(this.materialSingleLineTextField1);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.materialLabel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -154,10 +154,10 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtUsuario;
         private MaterialSkin.Controls.MaterialRaisedButton btnLogin;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtSenha;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
