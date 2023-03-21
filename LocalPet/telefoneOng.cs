@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace ti92class
 {
-    public class telefoneOng
+    public class TelefoneOng
     {
         public int Id { get; set; }
         public string Numero { get; set; }
         public string Tipo { get; set; }
 
-        public telefoneOng(int id, string numero, string tipo)
+        public TelefoneOng(int id, string numero, string tipo)
         {
             Id = id;
             Numero = numero;
             Tipo = tipo;
         }
 
-        public telefoneOng(string numero, string tipo)
+        public TelefoneOng(string numero, string tipo)
         {
             Numero = numero;
             Tipo = tipo;
@@ -33,15 +33,15 @@ namespace ti92class
                 "values (" + ong_id + ",'" + Numero + "', '" + Tipo + "')";
             cmd.ExecuteNonQuery();
         }
-        public static List<telefonecli> ListarPorCliente(int ong_id)
+        public static List<TelefoneOng> ListarPorOng(int ong_id)
         {
-            List<telefonecli> listaTel = new List<telefonecli>();
+            List<TelefoneOng> listaTel = new List<TelefoneOng>();
             var cmd = Banco.Abrir();
             cmd.CommandText = "select  numero, tipo, id from telefones where cliente_id = " + ong_id;
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                listaTel.Add(new telefonecli(
+                listaTel.Add(new TelefoneOng(
                             dr.GetInt32(2),
                             dr.GetString(0),
                             dr.GetString(1)
