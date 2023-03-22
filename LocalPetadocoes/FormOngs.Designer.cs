@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOngs));
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -517,6 +518,7 @@
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.materialLabel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOngs";
             this.Text = "Ong\'s";
             this.Load += new System.EventHandler(this.FormOngs_Load);

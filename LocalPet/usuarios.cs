@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Data;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
+using System.Windows.Forms;
 
 namespace LocalPet
 {
     public class Usuarios
     {
-
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
@@ -112,6 +112,24 @@ namespace LocalPet
             }
             return lista;
 
+        }
+        public void efetuarLogin(string nome, string senha)
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "select * from usuarios where nome = @nome and senha = @senha";
+            cmd.Parameters.AddWithValue("@nome", nome);
+            cmd.Parameters.AddWithValue("@senha", senha);
+            try
+            {
+                cmd.Connection 
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro: " + erro);
+
+            }
         }
 
     }

@@ -10,8 +10,6 @@ namespace LocalPet
 {
     public class Raca
     {
-
-
         public int Id { get; set; }
         public string Raça { get; set; }
 

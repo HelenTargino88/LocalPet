@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,7 +51,7 @@ namespace LocalPet
       public void Inserir(int cliente_id)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "insert enderecos (cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo) " +
+            cmd.CommandText = "insert endereco_cli (cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo) " +
                 "values (" + cliente_id + ",'" + CEP + "', '" + Logradouro + "', '" + Numero + "', '" + Complemento + "', " +
                 "'" + Bairro + "', '" + Cidade + "', '" + Estado + "', '" + UF + "', '" + Tipo + "')";
             cmd.ExecuteNonQuery();
@@ -78,6 +79,33 @@ namespace LocalPet
                     );
             }
             return listaEnd;
+        }
+        public void Editar()
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "update endereco_cli set cep = '" + CEP + "'," +
+                "logradouro = '" + Logradouro + "', numero = '" + Numero + "', complemento = " + Complemento + "" +
+                "bairro = '" + Bairro + "', cidade = '" + Cidade + "', estado = " + Estado + "" +
+                "uf = '" + UF + "', tipo = " + Tipo + "" +
+                "where id = " + Id;
+            cmd.ExecuteNonQuery();
+        }
+        public static void Atualizar(EnderecoOng endereco_cli)
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "update endereco_cli set " + "cep = '" + endereco_cli.CEP + "'," + "logradouro = '" + endereco_cli.Logradouro + "'," +
+                "numero = '" + endereco_cli.Numero + "'," + "complemento = '" + endereco_cli.Complemento + "'," + "bairro = '" + endereco_cli.Bairro + "'," +
+                "cidade = '" + endereco_cli.Cidade + "'," + "estado = '" + endereco_cli.Estado + "'," + "uf = '" + endereco_cli.UF + "'," +
+                "tipo = '" + endereco_cli.Tipo + "'," + "where id = '" + endereco_cli.Id; ;
+            cmd.ExecuteNonQuery();
+        }
+        public bool Excluir(int _id)
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "delete from endereco_cli where id = " + _id;
+            bool result = cmd.ExecuteNonQuery() == 1 ? true : false;
+            return result;
         }
 
     }
