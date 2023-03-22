@@ -20,35 +20,14 @@ namespace LocalPetadocoes
             InitializeComponent();
            
         }
-        private void btnLogin_Click_1(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             FormRelatorio frmRelatorio = new FormRelatorio();
             frmRelatorio.Show();
             this.Hide();
         }
+        
       
-        public void efetuarLogin(string nome, string senha)
-        {
-            try
-            {
-                
-                string sql = "select * from usuarios where nome = @nome and senha = @senha";
-
-
-
-            }
-            catch (Exception erro)
-            {
-               MessageBox.Show("Erro: " + erro);
-
-            }
-        }
-
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
+        
     }
 }

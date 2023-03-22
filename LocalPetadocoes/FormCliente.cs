@@ -19,7 +19,7 @@ namespace LocalPetadocoes
             InitializeComponent();
         }
 
-        private void FormCliente_Load(object sender, EventArgs e)
+        private void dtgTelefone_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
