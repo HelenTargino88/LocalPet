@@ -11,7 +11,7 @@ using MaterialSkin.Controls;
 
 namespace LocalPetadocoes
 {
-    public partial class FormRelatorio : MaterialForm
+    public partial class FormRelatorio : Form
     {
         public FormRelatorio()
         {
@@ -42,6 +42,11 @@ namespace LocalPetadocoes
         {
             FormCliente formCliente = new FormCliente();
             formCliente.ShowDialog();
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

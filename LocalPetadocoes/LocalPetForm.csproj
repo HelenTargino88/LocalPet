@@ -111,5 +111,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LocalPet\LocalPetClass.csproj">
+      <Project>{1f341329-ceed-4794-ace0-f4ae3b0fba8c}</Project>
+      <Name>LocalPetClass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

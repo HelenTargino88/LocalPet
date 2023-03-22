@@ -150,13 +150,13 @@
     <value>1</value>
   </data>
   <data name="consultaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="consultaToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Consulta</value>
   </data>
   <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
     <value>&amp;Listar</value>
@@ -210,37 +210,37 @@
     <value>&amp;Relatorios</value>
   </data>
   <data name="gerenciarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="gerenciarToolStripMenuItem1.Text" xml:space="preserve">
     <value>&amp;Gerenciar</value>
   </data>
   <data name="listarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="listarToolStripMenuItem1.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="gatoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>128, 22</value>
   </data>
   <data name="gatoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Gatos</value>
   </data>
   <data name="gerenciarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="gerenciarToolStripMenuItem2.Text" xml:space="preserve">
     <value>&amp;Gerenciar</value>
   </data>
   <data name="lIstarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="lIstarToolStripMenuItem2.Text" xml:space="preserve">
     <value>&amp;LIstar</value>
   </data>
   <data name="cachorroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>128, 22</value>
   </data>
   <data name="cachorroToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Cachorros</value>
@@ -252,13 +252,13 @@
     <value>&amp;Adoção</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>128, 22</value>
   </data>
   <data name="toolStripMenuItem2.Text" xml:space="preserve">
     <value>&amp;Gatos</value>
   </data>
   <data name="cachorrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>128, 22</value>
   </data>
   <data name="cachorrosToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Cachorros</value>
@@ -283,7 +283,7 @@
     <value>None</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 63</value>
+    <value>9, 8</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1089, 24</value>
@@ -794,6 +794,6 @@
     <value>FormRelatorio</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialForm, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

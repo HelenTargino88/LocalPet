@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace LocalPetadocoes
 {
-    public partial class FormCliente : MaterialForm
+    public partial class FormCliente : Form
     {
         public FormCliente()
         {

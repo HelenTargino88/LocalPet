@@ -31,6 +31,7 @@ namespace LocalPetadocoes
         {
             try
             {
+                
                 string sql = "select * from usuarios where nome = @nome and senha = @senha";
 
 

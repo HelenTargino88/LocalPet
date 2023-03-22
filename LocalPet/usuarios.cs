@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Windows.Forms;
@@ -117,11 +118,13 @@ namespace LocalPet
         {
             var cmd = Banco.Abrir();
             cmd.CommandText = "select * from usuarios where nome = @nome and senha = @senha";
-            cmd.Parameters.AddWithValue("@nome", nome);
-            cmd.Parameters.AddWithValue("@senha", senha);
+            
             try
             {
-                cmd.Connection 
+                cmd.Parameters.AddWithValue("@nome", nome);
+                cmd.Parameters.AddWithValue("@senha", senha);
+                
+
 
 
             }

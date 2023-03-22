@@ -101,6 +101,7 @@
             this.produtosToolStripMenuItem.Image = global::LocalPetadocoes.Properties.Resources.icons8_copas_64;
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             resources.ApplyResources(this.produtosToolStripMenuItem, "produtosToolStripMenuItem");
+            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem
             // 
