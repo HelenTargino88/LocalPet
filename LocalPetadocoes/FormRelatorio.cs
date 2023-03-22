@@ -37,5 +37,10 @@ namespace LocalPetadocoes
         {
 
         }
+
+        private void FormRelatorio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,8 +26,29 @@ namespace LocalPetadocoes
             frmRelatorio.Show();
             this.Hide();
         }
-        
       
-        
+        public void efetuarLogin(string nome, string senha)
+        {
+            try
+            {
+                
+                string sql = "select * from usuarios where nome = @nome and senha = @senha";
+
+
+
+            }
+            catch (Exception erro)
+            {
+               MessageBox.Show("Erro: " + erro);
+
+            }
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
