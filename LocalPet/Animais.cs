@@ -111,15 +111,15 @@ namespace LocalPet
                 animais.Comportamento = dr.GetString(11);
                 animais.Imagem_animal = dr.GetString(12);
                 animais.Ativo = dr.GetBoolean(13);
-
             }
             return animais;
         }
         public void Editar()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update animais set nome = '" + Nome + "','" + Raca + "','" + Especie + "','" + Sexo + "','" + Porte + "'," +
-                "'" + Idade + "','" + Descricao + "','" + Enfermidades + "','" + Medicamentos + "','" + Vacinas + "','" + Comportamento + "','" + Imagem_animal + "','" + Ativo+"'where id ="+ Id;
+            cmd.CommandText = "update animais set nome = '" + Nome + "', raca = '" + Raca + "', especie = '" + Especie + "', sexo = '" + Sexo + "', porte = '" + Porte + "', " +
+                "idade = '" + Idade + "', descricao = '" + Descricao + "', enfermidades = '" + Enfermidades + "', medicamentos = '" + Medicamentos + "', " +
+                "vacinas = '" + Vacinas + "', comportamento = '" + Comportamento + "', imagem_animal = '" + Imagem_animal + "', ativo = '" + Ativo+"'where id = " + Id;
             cmd.ExecuteReader();
         }
         public static bool Arquivar(int id) // Arquivando

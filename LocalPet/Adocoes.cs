@@ -51,7 +51,7 @@ namespace LocalPet
         public void Editar()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update animais set nome = '" + Nome + "','" + Ativo + "'where id =" + Id;
+            cmd.CommandText = "update adocoes set clientes = '" + Clientes + "', animais = '" + Animais + "'where id =" + Id;
             cmd.ExecuteReader();
         }        
         public static void Atualizar(Adocoes adocoes)
