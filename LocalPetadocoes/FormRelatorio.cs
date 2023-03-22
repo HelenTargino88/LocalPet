@@ -27,24 +27,13 @@ namespace LocalPetadocoes
             FormOngs formOngs = new FormOngs();
             formOngs.ShowDialog();
         }
-
-        private void FormRelatorio_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormCliente formCliente = new FormCliente();
             formCliente.ShowDialog();
         }
 
-        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void listarToolStripMenuItem3_Click(object sender, EventArgs e)
         {
 
         }

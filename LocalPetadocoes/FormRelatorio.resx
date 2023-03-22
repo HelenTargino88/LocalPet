@@ -117,46 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="materialLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="materialLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 11pt</value>
-  </data>
-  <data name="materialLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>144, 32</value>
-  </data>
-  <data name="materialLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 19</value>
-  </data>
-  <data name="materialLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="materialLabel1.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
-    <value>materialLabel1</value>
-  </data>
-  <data name="&gt;&gt;materialLabel1.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;materialLabel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="consultaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="consultaToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Consulta</value>
   </data>
   <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
     <value>&amp;Listar</value>
@@ -168,13 +137,13 @@
     <value>C&amp;lientes</value>
   </data>
   <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="listarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="gerenciarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="gerenciarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Gerenciar</value>
@@ -204,7 +173,7 @@
     <value>&amp;Animais</value>
   </data>
   <data name="cadastroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 20</value>
+    <value>87, 23</value>
   </data>
   <data name="cadastroToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Relatorios</value>
@@ -246,7 +215,7 @@
     <value>&amp;Cachorros</value>
   </data>
   <data name="operaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>76, 23</value>
   </data>
   <data name="operaçãoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Adoção</value>
@@ -264,7 +233,7 @@
     <value>&amp;Cachorros</value>
   </data>
   <data name="mOvimentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 20</value>
+    <value>81, 23</value>
   </data>
   <data name="mOvimentoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Perdidos</value>
@@ -276,6 +245,7 @@
   <data name="menuStrip1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -283,10 +253,10 @@
     <value>None</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 8</value>
+    <value>0, 1</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1089, 24</value>
+    <value>1130, 27</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -316,7 +286,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1087, 1000</value>
+    <value>1128, 429</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

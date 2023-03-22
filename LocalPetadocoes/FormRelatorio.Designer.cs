@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRelatorio));
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,14 +53,6 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // materialLabel1
-            // 
-            resources.ApplyResources(this.materialLabel1, "materialLabel1");
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            // 
             // cadastroToolStripMenuItem
             // 
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -71,7 +62,6 @@
             this.cadastroToolStripMenuItem.Image = global::LocalPetadocoes.Properties.Resources.icons8_relatório_de_sistema_64;
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             resources.ApplyResources(this.cadastroToolStripMenuItem, "cadastroToolStripMenuItem");
-            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -92,6 +82,7 @@
             // 
             this.listarToolStripMenuItem3.Name = "listarToolStripMenuItem3";
             resources.ApplyResources(this.listarToolStripMenuItem3, "listarToolStripMenuItem3");
+            this.listarToolStripMenuItem3.Click += new System.EventHandler(this.listarToolStripMenuItem3_Click);
             // 
             // produtosToolStripMenuItem
             // 
@@ -101,7 +92,6 @@
             this.produtosToolStripMenuItem.Image = global::LocalPetadocoes.Properties.Resources.icons8_copas_64;
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             resources.ApplyResources(this.produtosToolStripMenuItem, "produtosToolStripMenuItem");
-            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem
             // 
@@ -219,20 +209,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.materialLabel1);
             this.KeyPreview = true;
             this.Name = "FormRelatorio";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRelatorio_FormClosed);
-            this.Load += new System.EventHandler(this.FormRelatorio_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
