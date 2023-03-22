@@ -63,6 +63,36 @@ namespace LocalPetadocoes.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_animal_folder_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-animal-folder-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_animal_folder_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-animal-folder-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_animal_folder_80 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-animal-folder-80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_animal_shelter_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-animal-shelter-64", resourceCulture);
@@ -93,9 +123,39 @@ namespace LocalPetadocoes.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_gerenciador_de_dispositivos_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-gerenciador-de-dispositivos-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_gerenciador_de_dispositivos_641 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-gerenciador-de-dispositivos-641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_kitty_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-kitty-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mais_zoom_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-mais-zoom-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,6 +1,6 @@
 ﻿namespace LocalPetadocoes
 {
-    partial class FormOngs
+    partial class Listar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOngs));
-            this.SuspendLayout();
-            // 
-            // FormOngs
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(1391, 687);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormOngs";
-            this.Text = "Ong\'s";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Listar";
         }
+
+        #endregion
     }
 }
