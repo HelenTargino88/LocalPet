@@ -17,5 +17,10 @@ namespace LocalPetadocoes
         {
             InitializeComponent();
         }
+
+        private void FormOngs_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

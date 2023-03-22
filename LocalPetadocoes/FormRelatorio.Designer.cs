@@ -71,6 +71,7 @@
             this.cadastroToolStripMenuItem.Image = global::LocalPetadocoes.Properties.Resources.icons8_relatório_de_sistema_64;
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             resources.ApplyResources(this.cadastroToolStripMenuItem, "cadastroToolStripMenuItem");
+            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -85,6 +86,7 @@
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             resources.ApplyResources(this.consultaToolStripMenuItem, "consultaToolStripMenuItem");
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem3
             // 

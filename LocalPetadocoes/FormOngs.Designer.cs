@@ -521,6 +521,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOngs";
             this.Text = "Ong\'s";
+            this.Load += new System.EventHandler(this.FormOngs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

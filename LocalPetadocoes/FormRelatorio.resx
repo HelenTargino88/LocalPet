@@ -168,13 +168,13 @@
     <value>C&amp;lientes</value>
   </data>
   <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="listarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="gerenciarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="gerenciarToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Gerenciar</value>
