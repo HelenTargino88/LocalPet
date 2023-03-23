@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MaterialSkin.Controls;
 
 namespace LocalPetadocoes
 {
@@ -39,6 +38,11 @@ namespace LocalPetadocoes
         }
 
         private void FormRelatorio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void operaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

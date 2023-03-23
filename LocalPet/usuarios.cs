@@ -16,20 +16,22 @@ namespace LocalPet
         public Nivel Nivel { get; set; }
         public string Senha { get; set; }
         public DateTime Data_registro { get; set; }
+        public bool Ativo { get; set; }
 
         // Métodos construtores
 
         public Usuarios() { }
-        public Usuarios(string _nome, string _email, Nivel _nivel, string _senha, DateTime _data)
+        public Usuarios(string _nome, string _email, Nivel _nivel, string _senha, DateTime _data, bool _ativo)
         {
             Nome = _nome;
             Email = _email;
             Nivel = _nivel;
             Senha = _senha;
             Data_registro = _data;
+            Ativo = _ativo;
         }
 
-        public Usuarios(int _id, string _nome, string _email, Nivel _nivel, string _senha, DateTime _data)
+        public Usuarios(int _id, string _nome, string _email, Nivel _nivel, string _senha, DateTime _data, bool _ativo)
         {
             Id = _id;
             Nome = _nome;
@@ -37,12 +39,13 @@ namespace LocalPet
             Nivel = _nivel;
             Senha = _senha;
             Data_registro = _data;
+            Ativo = _ativo;
         }
 
         public void Inserir()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "insert usuarios (nome, email, nivel, senha, data) values('" + Nome + "','" + Email + "','" + Nivel + "','" + Senha + "','" + Data_registro + "')";
+            cmd.CommandText = "insert usuarios (nome, email, nivel, senha, data, ativo) values('" + Nome + "','" + Email + "','" + Nivel + "','" + Senha + "','" + Data_registro + "', '" + Ativo + "')";
             cmd.ExecuteNonQuery();
             cmd.CommandText = "select @@identity";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
@@ -57,7 +60,7 @@ namespace LocalPet
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                lista.Add(new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5)));
+                lista.Add(new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5), dr.GetBoolean(6)));
             }
             return lista;
         }
@@ -76,6 +79,7 @@ namespace LocalPet
                 usuario.Nivel = Nivel.ObterPorId(dr.GetInt32(4));
                 usuario.Senha = dr.GetString(3);
                 usuario.Data_registro = dr.GetDateTime(5);
+                usuario.Ativo = dr.GetBoolean(6);
             }
             return usuario;
         }
@@ -94,7 +98,8 @@ namespace LocalPet
                 "email = '" + usuario.Email + "'," +
                 "nivel = '" + usuario.Nivel + "'," +
                 "senha = '" + usuario.Senha + "'," +
-                "data = '" + usuario.Data_registro + "' " +
+                "data = '" + usuario.Data_registro + "'," +
+                "ativo = '" + usuario.Ativo + "' " +
                 "where id = " + usuario.Id;
             cmd.ExecuteReader();
         }
@@ -107,32 +112,34 @@ namespace LocalPet
             while (dr.Read())
             {
                 lista.Add(new Usuarios(
-                        dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5)
+                        dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5), dr.GetBoolean(6)
                     )
                 );
             }
             return lista;
 
-        }
-        public void efetuarLogin(string nome, string senha)
+        }        
+        public static Usuarios Logar(string nome, string _senha)
         {
+            Usuarios user = null;
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select * from usuarios where nome = @nome and senha = @senha";
-            
-            try
+            cmd.CommandText = "select * from usuarios where nome = @nome and senha=md5(@senha)";
+            cmd.Parameters.AddWithValue("@nome", nome);
+            cmd.Parameters.AddWithValue("@senha", _senha);
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
             {
-                cmd.Parameters.AddWithValue("@nome", nome);
-                cmd.Parameters.AddWithValue("@senha", senha);
-                
-
-
-
+                user = new Usuarios(
+                       dr.GetInt32(0),
+                       dr.GetString(1),
+                       dr.GetString(2),
+                       Nivel.ObterPorId(dr.GetInt32(4)),
+                       dr.GetString(3),
+                       dr.GetDateTime(5),
+                       dr.GetBoolean(6)
+                   );
             }
-            catch (Exception erro)
-            {
-                MessageBox.Show("Erro: " + erro);
-
-            }
+            return user;
         }
 
     }

@@ -14,7 +14,7 @@ namespace LocalPet
             MySqlCommand cmd = new MySqlCommand();
             try // tentar abrir
             {
-                string strCon = @"server=127.0.0.1;database=LocalPet;user id=root;password=";
+                string strCon = @"server=127.0.0.1;database=db_localpet;user id=root;password=";
                 MySqlConnection cn = new MySqlConnection(strCon);
                 // cn.ConnectionString = strCon;
                 cn.Open();

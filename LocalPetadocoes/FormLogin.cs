@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin.Controls;
+using LocalPet;
 
 
 namespace LocalPetadocoes
@@ -20,43 +21,27 @@ namespace LocalPetadocoes
             InitializeComponent();
            
         }
-        private void btnLogin_Click_1(object sender, EventArgs e)
-        {
-            FormRelatorio frmRelatorio = new FormRelatorio();
-            frmRelatorio.Show();
-            this.Hide();
-        }
-      
-        public void efetuarLogin(string nome, string senha)
-        {
-            try
-            {
-                
-                string sql = "select * from usuarios where nome = @nome and senha = @senha";
+            
 
-
-
-            }
-            catch (Exception erro)
-            {
-               MessageBox.Show("Erro: " + erro);
-
-            }
-        }
-
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            if (txtUsuario.Text != "" && txtSenha.Text != "")
+            {
+                Usuarios user = Usuarios.Logar(txtUsuario.Text, txtSenha.Text);
+                MessageBox.Show("Login efetuado com sucesso");
+                FormRelatorio frmRelatorio = new FormRelatorio();
+                frmRelatorio.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuário e senha invalidos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtUsuario.Clear();
+                txtSenha.Clear();
+                txtUsuario.Focus();
+            }
         }
     }
 }

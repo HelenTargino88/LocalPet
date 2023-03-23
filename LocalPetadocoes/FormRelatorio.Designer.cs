@@ -159,6 +159,7 @@
             resources.ApplyResources(this.operaçãoToolStripMenuItem, "operaçãoToolStripMenuItem");
             this.operaçãoToolStripMenuItem.Image = global::LocalPetadocoes.Properties.Resources.icons8_animal_shelter_64;
             this.operaçãoToolStripMenuItem.Name = "operaçãoToolStripMenuItem";
+            this.operaçãoToolStripMenuItem.Click += new System.EventHandler(this.operaçãoToolStripMenuItem_Click);
             // 
             // gatoToolStripMenuItem
             // 

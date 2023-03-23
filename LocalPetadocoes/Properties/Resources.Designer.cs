@@ -103,6 +103,16 @@ namespace LocalPetadocoes.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_arquivo_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-arquivo-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cachorro_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cachorro-64", resourceCulture);
@@ -153,6 +163,66 @@ namespace LocalPetadocoes.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_lápis_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-lápis-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_lápis_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-lápis-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mais_2_matemática_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-mais-2-matemática-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mais_2_matemática_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-mais-2-matemática-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mais_2_matemática_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-mais-2-matemática-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mais_2_matemática_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-mais-2-matemática-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_mais_zoom_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-mais-zoom-64", resourceCulture);
@@ -166,6 +236,16 @@ namespace LocalPetadocoes.Properties {
         internal static System.Drawing.Bitmap icons8_paw_prints_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-paw-prints-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pesquisar_mais_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-pesquisar-mais-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

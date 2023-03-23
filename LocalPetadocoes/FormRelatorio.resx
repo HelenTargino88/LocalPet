@@ -132,6 +132,63 @@
     <value>None</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="consultaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="consultaToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Consulta</value>
+  </data>
+  <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
+    <value>&amp;Listar</value>
+  </data>
+  <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
+    <value>C&amp;lientes</value>
+  </data>
+  <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="listarToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Listar</value>
+  </data>
+  <data name="gerenciarToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="gerenciarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="gerenciarToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Gerenciar</value>
+  </data>
+  <data name="ongsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="ongsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ongs</value>
+  </data>
+  <data name="consultaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="consultaToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Consulta</value>
+  </data>
+  <data name="listarToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="listarToolStripMenuItem4.Text" xml:space="preserve">
+    <value>&amp;Listar</value>
+  </data>
+  <data name="animaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="animaisToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Animais</value>
+  </data>
   <data name="cadastroToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
@@ -141,6 +198,42 @@
   <data name="cadastroToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Relatórios</value>
   </data>
+  <data name="gerenciarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="gerenciarToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Gerenciar</value>
+  </data>
+  <data name="listarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="listarToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Listar</value>
+  </data>
+  <data name="gatoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="gatoToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Gatos</value>
+  </data>
+  <data name="gerenciarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="gerenciarToolStripMenuItem2.Text" xml:space="preserve">
+    <value>&amp;Gerenciar</value>
+  </data>
+  <data name="lIstarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="lIstarToolStripMenuItem2.Text" xml:space="preserve">
+    <value>&amp;Listar</value>
+  </data>
+  <data name="cachorroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="cachorroToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Cachorros</value>
+  </data>
   <data name="operaçãoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
@@ -149,6 +242,18 @@
   </data>
   <data name="operaçãoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Adoção</value>
+  </data>
+  <data name="gatoStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="gatoStripMenuItem2.Text" xml:space="preserve">
+    <value>&amp;Gatos</value>
+  </data>
+  <data name="cachorrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="cachorrosToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Cachorros</value>
   </data>
   <data name="mOvimentoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
@@ -182,111 +287,6 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
-    <value>C&amp;lientes</value>
-  </data>
-  <data name="consultaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="consultaToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Consulta</value>
-  </data>
-  <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
-    <value>&amp;Listar</value>
-  </data>
-  <data name="ongsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="ongsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Ongs</value>
-  </data>
-  <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="listarToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Listar</value>
-  </data>
-  <data name="gerenciarToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="gerenciarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="gerenciarToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Gerenciar</value>
-  </data>
-  <data name="animaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="animaisToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Animais</value>
-  </data>
-  <data name="consultaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="consultaToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;Consulta</value>
-  </data>
-  <data name="listarToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="listarToolStripMenuItem4.Text" xml:space="preserve">
-    <value>&amp;Listar</value>
-  </data>
-  <data name="gatoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="gatoToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Gatos</value>
-  </data>
-  <data name="gerenciarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="gerenciarToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;Gerenciar</value>
-  </data>
-  <data name="listarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="listarToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;Listar</value>
-  </data>
-  <data name="cachorroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="cachorroToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Cachorros</value>
-  </data>
-  <data name="gerenciarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="gerenciarToolStripMenuItem2.Text" xml:space="preserve">
-    <value>&amp;Gerenciar</value>
-  </data>
-  <data name="lIstarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="lIstarToolStripMenuItem2.Text" xml:space="preserve">
-    <value>&amp;Listar</value>
-  </data>
-  <data name="gatoStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="gatoStripMenuItem2.Text" xml:space="preserve">
-    <value>&amp;Gatos</value>
-  </data>
-  <data name="cachorrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="cachorrosToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Cachorros</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

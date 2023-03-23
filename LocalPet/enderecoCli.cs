@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LocalPet
 {
-    public class EnderecoCLi
+    public class EnderecoCli
     {
         
         public int Id { get; set; }
@@ -22,7 +22,7 @@ namespace LocalPet
         public string Tipo { get; set; }
 
         // Métodos construtores
-        public EnderecoCLi(int id, string cep, string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string uF, string tipo)
+        public EnderecoCli(int id, string cep, string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string uF, string tipo)
         {
             Id = id;
             CEP = cep;
@@ -36,7 +36,7 @@ namespace LocalPet
             Tipo = tipo;
         }
 
-        public EnderecoCLi(string cep, string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string uF, string tipo)
+        public EnderecoCli(string cep, string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string uF, string tipo)
         {
             CEP = cep;
             Logradouro = logradouro;
@@ -56,15 +56,15 @@ namespace LocalPet
                 "'" + Bairro + "', '" + Cidade + "', '" + Estado + "', '" + UF + "', '" + Tipo + "')";
             cmd.ExecuteNonQuery();
         }
-        public static List<EnderecoCLi> ListarPorCliente(int cliente_id)
+        public static List<EnderecoCli> ListarPorCliente(int cliente_id)
         {
-            List<EnderecoCLi> listaEnd = new List<EnderecoCLi>();
+            List<EnderecoCli> listaEnd = new List<EnderecoCli>();
             var cmd = Banco.Abrir();
             cmd.CommandText = "select  cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo, id from enderecos where cliente_id = " + cliente_id;
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                listaEnd.Add(new EnderecoCLi(
+                listaEnd.Add(new EnderecoCli(
                             dr.GetInt32(9),
                             dr.GetString(0),
                             dr.GetString(1),
@@ -90,7 +90,7 @@ namespace LocalPet
                 "where id = " + Id;
             cmd.ExecuteNonQuery();
         }
-        public static void Atualizar(EnderecoOng endereco_cli)
+        public static void Atualizar(EnderecoCli endereco_cli)
         {
             var cmd = Banco.Abrir();
             cmd.CommandText = "update endereco_cli set " + "cep = '" + endereco_cli.CEP + "'," + "logradouro = '" + endereco_cli.Logradouro + "'," +
