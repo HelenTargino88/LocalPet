@@ -7,7 +7,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ti92class
+namespace LocalPet
 {
     public class TelefoneOng
     {
