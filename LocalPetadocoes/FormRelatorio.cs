@@ -21,30 +21,45 @@ namespace LocalPetadocoes
         {
             Application.Exit();
         }
-        private void gerenciarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormOngs formOngs = new FormOngs();
-            formOngs.ShowDialog();
-        }
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCliente formCliente = new FormCliente();
-            formCliente.ShowDialog();
+            FormClienteConsulta formCliente = new FormClienteConsulta();
+            formCliente.MdiParent = this;
+            formCliente.Show();
+        }
+        private void consultaOngs_Click(object sender, EventArgs e)
+        {
+            FormOngsConsulta formOngs = new FormOngsConsulta();
+            formOngs.MdiParent = this;
+            formOngs.Show();
         }
 
-        private void listarToolStripMenuItem3_Click(object sender, EventArgs e)
+        private void consultaAnimais_Click(object sender, EventArgs e)
         {
-
+            FormAnimaisConsulta formAnimais = new FormAnimaisConsulta();
+            formAnimais.MdiParent = this;
+            formAnimais.Show();
         }
 
-        private void FormRelatorio_Load(object sender, EventArgs e)
+        private void listarClientes_Click(object sender, EventArgs e)
         {
-
+            FormListClientes formListClientes = new FormListClientes();
+            formListClientes.MdiParent = this;
+            formListClientes.Show();
         }
 
-        private void operaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void listarOngs_Click(object sender, EventArgs e)
         {
+            FormListOngs formListOngs = new FormListOngs();
+            formListOngs.MdiParent = this;
+            formListOngs.Show();
+        }
 
+        private void listarAnimais_Click(object sender, EventArgs e)
+        {
+            FormListAnimais formListAnimais = new FormListAnimais();
+            formListAnimais.MdiParent = this;
+            formListAnimais.Show();
         }
     }
 }

@@ -49,6 +49,7 @@
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_2);
             // 
             // label1
             // 
@@ -83,7 +84,7 @@
             this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(211)))), ((int)(((byte)(170)))));
             this.txtSenha.Location = new System.Drawing.Point(174, 297);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.ReadOnly = true;
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(178, 20);
             this.txtSenha.TabIndex = 12;
             // 
@@ -93,7 +94,7 @@
             this.pictureBox1.Image = global::LocalPetadocoes.Properties.Resources.localpeticon21;
             this.pictureBox1.Location = new System.Drawing.Point(189, 31);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(145, 166);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 

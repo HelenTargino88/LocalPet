@@ -1,6 +1,6 @@
 ﻿namespace LocalPetadocoes
 {
-    partial class FormOngs
+    partial class FormAdocaoGatos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,24 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOngs));
             this.SuspendLayout();
             // 
-            // FormOngs
+            // FormAdocaoGatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(1391, 687);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormOngs";
-            this.Text = "Ong\'s";
+            this.ClientSize = new System.Drawing.Size(1301, 645);
+            this.Name = "FormAdocaoGatos";
+            this.Text = "FormAdocaoGatos";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
     }
 }
-#endregion

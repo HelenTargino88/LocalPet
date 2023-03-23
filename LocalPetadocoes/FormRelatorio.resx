@@ -132,59 +132,59 @@
     <value>None</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="consultaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="consultaClientes.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 22</value>
   </data>
-  <data name="consultaToolStripMenuItem.Text" xml:space="preserve">
+  <data name="consultaClientes.Text" xml:space="preserve">
     <value>&amp;Consulta</value>
   </data>
-  <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="listarClientes.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 22</value>
   </data>
-  <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
+  <data name="listarClientes.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
     <value>C&amp;lientes</value>
   </data>
-  <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="listarOngs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="listarToolStripMenuItem.Text" xml:space="preserve">
+  <data name="listarOngs.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
-  <data name="gerenciarToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="consultaOngs.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
-  <data name="gerenciarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="consultaOngs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="gerenciarToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Gerenciar</value>
+  <data name="consultaOngs.Text" xml:space="preserve">
+    <value>&amp;Consultar</value>
   </data>
   <data name="ongsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="ongsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Ongs</value>
   </data>
-  <data name="consultaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+  <data name="consultaAnimais.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="consultaToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="consultaAnimais.Text" xml:space="preserve">
     <value>&amp;Consulta</value>
   </data>
-  <data name="listarToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+  <data name="listarAnimais.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="listarToolStripMenuItem4.Text" xml:space="preserve">
+  <data name="listarAnimais.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="animaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="animaisToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Animais</value>
@@ -198,38 +198,38 @@
   <data name="cadastroToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Relatórios</value>
   </data>
-  <data name="gerenciarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="consultarGatos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
   </data>
-  <data name="gerenciarToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;Gerenciar</value>
+  <data name="consultarGatos.Text" xml:space="preserve">
+    <value>&amp;Consultar</value>
   </data>
-  <data name="listarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="listarGatos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
   </data>
-  <data name="listarToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="listarGatos.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="gatoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="gatoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Gatos</value>
   </data>
-  <data name="gerenciarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="consultarCachorros.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
   </data>
-  <data name="gerenciarToolStripMenuItem2.Text" xml:space="preserve">
-    <value>&amp;Gerenciar</value>
+  <data name="consultarCachorros.Text" xml:space="preserve">
+    <value>&amp;Consultar</value>
   </data>
-  <data name="lIstarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="listarCachorros.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
   </data>
-  <data name="lIstarToolStripMenuItem2.Text" xml:space="preserve">
+  <data name="listarCachorros.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="cachorroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="cachorroToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Cachorros</value>
@@ -664,16 +664,16 @@
   <data name="&gt;&gt;clientesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;consultaToolStripMenuItem.Name" xml:space="preserve">
-    <value>consultaToolStripMenuItem</value>
+  <data name="&gt;&gt;consultaClientes.Name" xml:space="preserve">
+    <value>consultaClientes</value>
   </data>
-  <data name="&gt;&gt;consultaToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;consultaClientes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem3.Name" xml:space="preserve">
-    <value>listarToolStripMenuItem3</value>
+  <data name="&gt;&gt;listarClientes.Name" xml:space="preserve">
+    <value>listarClientes</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem3.Type" xml:space="preserve">
+  <data name="&gt;&gt;listarClientes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ongsToolStripMenuItem.Name" xml:space="preserve">
@@ -682,16 +682,16 @@
   <data name="&gt;&gt;ongsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem.Name" xml:space="preserve">
-    <value>listarToolStripMenuItem</value>
+  <data name="&gt;&gt;listarOngs.Name" xml:space="preserve">
+    <value>listarOngs</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;listarOngs.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gerenciarToolStripMenuItem.Name" xml:space="preserve">
-    <value>gerenciarToolStripMenuItem</value>
+  <data name="&gt;&gt;consultaOngs.Name" xml:space="preserve">
+    <value>consultaOngs</value>
   </data>
-  <data name="&gt;&gt;gerenciarToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;consultaOngs.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;animaisToolStripMenuItem.Name" xml:space="preserve">
@@ -700,16 +700,16 @@
   <data name="&gt;&gt;animaisToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;consultaToolStripMenuItem1.Name" xml:space="preserve">
-    <value>consultaToolStripMenuItem1</value>
+  <data name="&gt;&gt;consultaAnimais.Name" xml:space="preserve">
+    <value>consultaAnimais</value>
   </data>
-  <data name="&gt;&gt;consultaToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;consultaAnimais.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem4.Name" xml:space="preserve">
-    <value>listarToolStripMenuItem4</value>
+  <data name="&gt;&gt;listarAnimais.Name" xml:space="preserve">
+    <value>listarAnimais</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem4.Type" xml:space="preserve">
+  <data name="&gt;&gt;listarAnimais.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;operaçãoToolStripMenuItem.Name" xml:space="preserve">
@@ -724,16 +724,16 @@
   <data name="&gt;&gt;gatoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gerenciarToolStripMenuItem1.Name" xml:space="preserve">
-    <value>gerenciarToolStripMenuItem1</value>
+  <data name="&gt;&gt;consultarGatos.Name" xml:space="preserve">
+    <value>consultarGatos</value>
   </data>
-  <data name="&gt;&gt;gerenciarToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;consultarGatos.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem1.Name" xml:space="preserve">
-    <value>listarToolStripMenuItem1</value>
+  <data name="&gt;&gt;listarGatos.Name" xml:space="preserve">
+    <value>listarGatos</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;listarGatos.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cachorroToolStripMenuItem.Name" xml:space="preserve">
@@ -742,16 +742,16 @@
   <data name="&gt;&gt;cachorroToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gerenciarToolStripMenuItem2.Name" xml:space="preserve">
-    <value>gerenciarToolStripMenuItem2</value>
+  <data name="&gt;&gt;consultarCachorros.Name" xml:space="preserve">
+    <value>consultarCachorros</value>
   </data>
-  <data name="&gt;&gt;gerenciarToolStripMenuItem2.Type" xml:space="preserve">
+  <data name="&gt;&gt;consultarCachorros.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lIstarToolStripMenuItem2.Name" xml:space="preserve">
-    <value>lIstarToolStripMenuItem2</value>
+  <data name="&gt;&gt;listarCachorros.Name" xml:space="preserve">
+    <value>listarCachorros</value>
   </data>
-  <data name="&gt;&gt;lIstarToolStripMenuItem2.Type" xml:space="preserve">
+  <data name="&gt;&gt;listarCachorros.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;mOvimentoToolStripMenuItem.Name" xml:space="preserve">

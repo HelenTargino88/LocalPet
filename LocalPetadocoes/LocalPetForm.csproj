@@ -50,11 +50,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormCliente.cs">
+    <Compile Include="FormAdocaoCachorros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCliente.Designer.cs">
-      <DependentUpon>FormCliente.cs</DependentUpon>
+    <Compile Include="FormAdocaoCachorros.Designer.cs">
+      <DependentUpon>FormAdocaoCachorros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdocaoGatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdocaoGatos.Designer.cs">
+      <DependentUpon>FormAdocaoGatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnimaisConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnimaisConsulta.Designer.cs">
+      <DependentUpon>FormAnimaisConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClienteConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClienteConsulta.Designer.cs">
+      <DependentUpon>FormClienteConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListAnimais.Designer.cs">
+      <DependentUpon>FormListAnimais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListClientes.Designer.cs">
+      <DependentUpon>FormListClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListOngs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListOngs.Designer.cs">
+      <DependentUpon>FormListOngs.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -62,11 +98,11 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormOngs.cs">
+    <Compile Include="FormOngsConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormOngs.Designer.cs">
-      <DependentUpon>FormOngs.cs</DependentUpon>
+    <Compile Include="FormOngsConsulta.Designer.cs">
+      <DependentUpon>FormOngsConsulta.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRelatorio.cs">
       <SubType>Form</SubType>
@@ -76,15 +112,33 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormCliente.resx">
-      <DependentUpon>FormCliente.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdocaoCachorros.resx">
+      <DependentUpon>FormAdocaoCachorros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdocaoGatos.resx">
+      <DependentUpon>FormAdocaoGatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnimaisConsulta.resx">
+      <DependentUpon>FormAnimaisConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClienteConsulta.resx">
+      <DependentUpon>FormClienteConsulta.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListAnimais.resx">
+      <DependentUpon>FormListAnimais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListClientes.resx">
+      <DependentUpon>FormListClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListOngs.resx">
+      <DependentUpon>FormListOngs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormOngs.resx">
-      <DependentUpon>FormOngs.cs</DependentUpon>
+    <EmbeddedResource Include="FormOngsConsulta.resx">
+      <DependentUpon>FormOngsConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRelatorio.resx">
       <DependentUpon>FormRelatorio.cs</DependentUpon>
