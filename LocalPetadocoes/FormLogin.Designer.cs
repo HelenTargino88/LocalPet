@@ -48,8 +48,7 @@
             this.btnLogin.Size = new System.Drawing.Size(75, 30);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // label1
             // 

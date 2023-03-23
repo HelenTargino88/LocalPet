@@ -43,6 +43,9 @@
             this.ResumeLayout(false);
 
         }
+
+        #endregion
+        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
     }
 }
 #endregion

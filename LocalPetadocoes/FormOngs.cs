@@ -26,7 +26,7 @@ namespace LocalPetadocoes
 
         private void btnAdiconar_Click(object sender, EventArgs e)
         {
-            //Ongs ongs = new Ongs(txtNome.Text, txtCnpj.Text, txtCpf.Text); ;
+            Ongs ongs = new Ongs(txtNome.Text, txtCnpj.Text, txtCpf.Text); ;
 
         }
     }

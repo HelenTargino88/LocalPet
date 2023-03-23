@@ -118,26 +118,26 @@ namespace LocalPet
             }
             return lista;
 
-        }        
-        public static Usuarios Logar(string nome, string _senha)
+        }
+        public void efetuarLogin(string nome, string senha)
         {
             Usuarios user = null;
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select * from usuarios where nome = @nome and senha=md5(@senha)";
-            cmd.Parameters.AddWithValue("@nome", nome);
-            cmd.Parameters.AddWithValue("@senha", _senha);
-            var dr = cmd.ExecuteReader();
-            while (dr.Read())
+            cmd.CommandText = "select * from usuarios where nome = @nome and senha = @senha";
+            
+            try
             {
-                user = new Usuarios(
-                       dr.GetInt32(0),
-                       dr.GetString(1),
-                       dr.GetString(2),
-                       Nivel.ObterPorId(dr.GetInt32(4)),
-                       dr.GetString(3),
-                       dr.GetDateTime(5),
-                       dr.GetBoolean(6)
-                   );
+                cmd.Parameters.AddWithValue("@nome", nome);
+                cmd.Parameters.AddWithValue("@senha", senha);
+                
+
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro: " + erro);
+
             }
             return user;
         }
