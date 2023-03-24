@@ -24,7 +24,7 @@ namespace LocalPetadocoes
             if (txtUsuario.Text != string.Empty && txtSenha.Text != string.Empty)
             {
                 Usuarios user = Usuarios.Logar(txtUsuario.Text, txtSenha.Text);
-                MessageBox.Show("Login efetuado com sucesso!");
+                MessageBox.Show("Login efetuado com sucesso","", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FormRelatorio frmRelatorio = new FormRelatorio();
                 frmRelatorio.Show();
                 this.Hide();

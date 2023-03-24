@@ -32,7 +32,7 @@ namespace LocalPetadocoes
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            //Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCpf.Text, txtCep.Text, txtDescricao.Text, /**/,/**/);
+            //Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCnpj.Text, txtCpf.Text, txtEmail.Text, txtDescricao.Text);
             //ongs.Editar();
             //MessageBox.Show("Ong atualizada com sucesso!");
         }

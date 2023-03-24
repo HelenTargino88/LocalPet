@@ -64,12 +64,16 @@ namespace LocalPetadocoes
 
         private void GerenciarGatos_Click(object sender, EventArgs e)
         {
-
+            FormAdocaoGatos formAdocaoGatos = new FormAdocaoGatos();
+            formAdocaoGatos.MdiParent = this;
+            formAdocaoGatos.Show();
         }
 
         private void GerAdocaoCachorros_Click(object sender, EventArgs e)
         {
-
+            FormAdocaoCachorros formAdocaoCachorros = new FormAdocaoCachorros();
+            formAdocaoCachorros.MdiParent = this;
+            formAdocaoCachorros.Show();
         }
     }
 }
