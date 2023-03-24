@@ -198,38 +198,38 @@
   <data name="cadastroToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Relatórios</value>
   </data>
-  <data name="consultarGatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
+  <data name="GerenciarGatos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="consultarGatos.Text" xml:space="preserve">
+  <data name="GerenciarGatos.Text" xml:space="preserve">
     <value>&amp;Consultar</value>
   </data>
   <data name="listarGatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="listarGatos.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="gatoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="gatoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Gatos</value>
   </data>
   <data name="consultarCachorros.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="consultarCachorros.Text" xml:space="preserve">
     <value>&amp;Consultar</value>
   </data>
   <data name="listarCachorros.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="listarCachorros.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="cachorroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="cachorroToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Cachorros</value>
@@ -244,13 +244,13 @@
     <value>&amp;Adoção</value>
   </data>
   <data name="gatoStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="gatoStripMenuItem2.Text" xml:space="preserve">
     <value>&amp;Gatos</value>
   </data>
   <data name="cachorrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="cachorrosToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Cachorros</value>
@@ -724,10 +724,10 @@
   <data name="&gt;&gt;gatoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;consultarGatos.Name" xml:space="preserve">
-    <value>consultarGatos</value>
+  <data name="&gt;&gt;GerenciarGatos.Name" xml:space="preserve">
+    <value>GerenciarGatos</value>
   </data>
-  <data name="&gt;&gt;consultarGatos.Type" xml:space="preserve">
+  <data name="&gt;&gt;GerenciarGatos.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;listarGatos.Name" xml:space="preserve">

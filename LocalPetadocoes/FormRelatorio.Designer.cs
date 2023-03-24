@@ -42,7 +42,7 @@
             this.listarAnimais = new System.Windows.Forms.ToolStripMenuItem();
             this.operaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarGatos = new System.Windows.Forms.ToolStripMenuItem();
+            this.GerenciarGatos = new System.Windows.Forms.ToolStripMenuItem();
             this.listarGatos = new System.Windows.Forms.ToolStripMenuItem();
             this.cachorroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarCachorros = new System.Windows.Forms.ToolStripMenuItem();
@@ -167,18 +167,19 @@
             // 
             this.gatoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
             this.gatoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultarGatos,
+            this.GerenciarGatos,
             this.listarGatos});
             this.gatoToolStripMenuItem.Image = global::LocalPetadocoes.Properties.Resources.icons8_kitty_64;
             this.gatoToolStripMenuItem.Name = "gatoToolStripMenuItem";
             resources.ApplyResources(this.gatoToolStripMenuItem, "gatoToolStripMenuItem");
             // 
-            // consultarGatos
+            // GerenciarGatos
             // 
-            this.consultarGatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
-            this.consultarGatos.Image = global::LocalPetadocoes.Properties.Resources.icons8_gerenciador_de_dispositivos_641;
-            this.consultarGatos.Name = "consultarGatos";
-            resources.ApplyResources(this.consultarGatos, "consultarGatos");
+            this.GerenciarGatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
+            this.GerenciarGatos.Image = global::LocalPetadocoes.Properties.Resources.icons8_gerenciador_de_dispositivos_641;
+            this.GerenciarGatos.Name = "GerenciarGatos";
+            resources.ApplyResources(this.GerenciarGatos, "GerenciarGatos");
+            this.GerenciarGatos.Click += new System.EventHandler(this.GerenciarGatos_Click);
             // 
             // listarGatos
             // 
@@ -266,7 +267,7 @@
         private System.Windows.Forms.ToolStripMenuItem listarAnimais;
         private System.Windows.Forms.ToolStripMenuItem operaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gatoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarGatos;
+        private System.Windows.Forms.ToolStripMenuItem GerenciarGatos;
         private System.Windows.Forms.ToolStripMenuItem listarGatos;
         private System.Windows.Forms.ToolStripMenuItem cachorroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarCachorros;
