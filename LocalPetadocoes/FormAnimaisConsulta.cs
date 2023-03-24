@@ -59,5 +59,10 @@ namespace LocalPetadocoes
         {
 
         }
+
+        private void dtgListaCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgAnimais = new System.Windows.Forms.DataGridView();
             this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnRaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnEspecie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnPorte = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnIdade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnDescricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnEnfermidades = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnMedicamentos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnVacinas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnComportamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnIdade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgAnimais)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgAnimais
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgAnimais.AllowUserToAddRows = false;
+            this.dtgAnimais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgAnimais.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clnId,
             this.clnNome,
             this.clnRaca,
             this.clnEspecie,
             this.clnSexo,
             this.clnPorte,
-            this.clnIdade,
             this.clnDescricao,
             this.clnEnfermidades,
             this.clnMedicamentos,
             this.clnVacinas,
             this.clnComportamento,
+            this.clnIdade,
             this.clnAtivo});
-            this.dataGridView1.Location = new System.Drawing.Point(30, 103);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1263, 355);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgAnimais.Location = new System.Drawing.Point(23, 77);
+            this.dtgAnimais.Name = "dtgAnimais";
+            this.dtgAnimais.ReadOnly = true;
+            this.dtgAnimais.Size = new System.Drawing.Size(1304, 355);
+            this.dtgAnimais.TabIndex = 26;
             // 
             // clnId
             // 
@@ -87,7 +87,7 @@
             // 
             // clnRaca
             // 
-            this.clnRaca.HeaderText = "Raça";
+            this.clnRaca.HeaderText = "RAÇA";
             this.clnRaca.Name = "clnRaca";
             this.clnRaca.ReadOnly = true;
             this.clnRaca.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -110,13 +110,6 @@
             this.clnPorte.HeaderText = "PORTE";
             this.clnPorte.Name = "clnPorte";
             this.clnPorte.ReadOnly = true;
-            // 
-            // clnIdade
-            // 
-            this.clnIdade.HeaderText = "IDADE";
-            this.clnIdade.Name = "clnIdade";
-            this.clnIdade.ReadOnly = true;
-            this.clnIdade.Width = 80;
             // 
             // clnDescricao
             // 
@@ -148,7 +141,14 @@
             this.clnComportamento.HeaderText = "COMPORTAMENTO";
             this.clnComportamento.Name = "clnComportamento";
             this.clnComportamento.ReadOnly = true;
-            this.clnComportamento.Width = 70;
+            this.clnComportamento.Width = 110;
+            // 
+            // clnIdade
+            // 
+            this.clnIdade.HeaderText = "IDADE";
+            this.clnIdade.Name = "clnIdade";
+            this.clnIdade.ReadOnly = true;
+            this.clnIdade.Width = 80;
             // 
             // clnAtivo
             // 
@@ -163,29 +163,29 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(1349, 657);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgAnimais);
             this.Name = "FormListAnimais";
             this.Text = "FormListAnimais";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgAnimais)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgAnimais;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnRaca;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnEspecie;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSexo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnPorte;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnIdade;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDescricao;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnEnfermidades;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnMedicamentos;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnVacinas;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnComportamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnIdade;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clnAtivo;
     }
 }

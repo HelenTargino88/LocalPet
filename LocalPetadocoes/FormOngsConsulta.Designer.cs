@@ -183,6 +183,34 @@
             // cmbEstado
             // 
             this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "Alagoas\t           ",
+            "Acre\t            ",
+            "Amapá\t            ",
+            "Amazonas\t        ",
+            "Bahia\t            ",
+            "Ceará\t            ",
+            "Distrito Federal*\t",
+            "Espírito Santo\t    ",
+            "Goiás\t            ",
+            "Maranhão\t        ",
+            "Mato Grosso\t       ",
+            "Mato Grosso do Sul\t",
+            "Minas Gerais\t    ",
+            "Pará\t            ",
+            "Paraíba\t           ",
+            "Paraná\t            ",
+            "Pernambuco\t        ",
+            "Piauí\t            ",
+            "Rio de Janeiro\t    ",
+            "Rio Grande do Norte",
+            "Rondônia\t        ",
+            "Rio Grande do Sul\t",
+            "Roraima\t           ",
+            "Santa Catarina\t    ",
+            "São Paulo\t        ",
+            "Sergipe\t           ",
+            "Tocantins\t        "});
             this.cmbEstado.Location = new System.Drawing.Point(122, 244);
             this.cmbEstado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbEstado.Name = "cmbEstado";
@@ -424,6 +452,34 @@
             // cmbUf
             // 
             this.cmbUf.FormattingEnabled = true;
+            this.cmbUf.Items.AddRange(new object[] {
+            "AL",
+            "AC",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RO",
+            "RS",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
             this.cmbUf.Location = new System.Drawing.Point(17, 244);
             this.cmbUf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbUf.Name = "cmbUf";
