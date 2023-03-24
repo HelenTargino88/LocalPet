@@ -47,10 +47,10 @@
             this.clnCnpj,
             this.clnCpf,
             this.clnDescricao});
-            this.dataGridView1.Location = new System.Drawing.Point(49, 258);
+            this.dataGridView1.Location = new System.Drawing.Point(21, 35);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(663, 345);
+            this.dataGridView1.Size = new System.Drawing.Size(664, 345);
             this.dataGridView1.TabIndex = 0;
             // 
             // clnId

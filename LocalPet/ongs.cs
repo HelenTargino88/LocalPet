@@ -33,9 +33,8 @@ namespace LocalPet
             User = user;
         }
 
-        public Ongs(string nome, string cnpj, string cpf, string descricao, string imagem_ong)
+        public Ongs(string nome, string cnpj, string cpfResponsavel, string descricao, string imagem_ong)
         {
-            Id = id;
             Nome = nome;
             Cnpj = cnpj;
             CpfResponsavel = cpfResponsavel;

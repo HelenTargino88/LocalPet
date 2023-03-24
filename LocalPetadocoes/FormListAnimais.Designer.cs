@@ -63,10 +63,10 @@
             this.clnVacinas,
             this.clnComportamento,
             this.clnAtivo});
-            this.dataGridView1.Location = new System.Drawing.Point(53, 237);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1248, 359);
+            this.dataGridView1.Size = new System.Drawing.Size(1263, 355);
             this.dataGridView1.TabIndex = 0;
             // 
             // clnId

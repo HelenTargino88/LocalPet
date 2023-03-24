@@ -24,9 +24,10 @@ namespace LocalPetadocoes
             ongs.Inserir();
             txtId.Text = ongs.Id.ToString();
 
-            EnderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text, 
+            EnderecoOng enderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text, 
                 txtNumeroEnd.Text, txtComplemento.Text,txtBairro.Text, 
                 txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
+            txtId.Text = enderecoOng.Id.ToString();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

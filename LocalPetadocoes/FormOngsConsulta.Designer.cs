@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOngsConsulta));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.TextBox();
@@ -72,8 +74,6 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.dtgListaCliente = new System.Windows.Forms.DataGridView();
-            this.txtCpf = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -141,7 +141,24 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ong\'s";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(469, 20);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(128, 13);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "CPF DO RESPONSÁVEL";
+            // 
+            // txtCpf
+            // 
+            this.txtCpf.Location = new System.Drawing.Point(472, 33);
+            this.txtCpf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(114, 20);
+            this.txtCpf.TabIndex = 53;
             // 
             // pictureBox1
             // 
@@ -223,7 +240,7 @@
             this.btnAdiconar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnAdiconar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdiconar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdiconar.Location = new System.Drawing.Point(86, 271);
+            this.btnAdiconar.Location = new System.Drawing.Point(236, 271);
             this.btnAdiconar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAdiconar.Name = "btnAdiconar";
             this.btnAdiconar.Size = new System.Drawing.Size(102, 37);
@@ -246,6 +263,10 @@
             // cmbTipoTelefone
             // 
             this.cmbTipoTelefone.FormattingEnabled = true;
+            this.cmbTipoTelefone.Items.AddRange(new object[] {
+            "Telefone",
+            "Celular",
+            "Comercial"});
             this.cmbTipoTelefone.Location = new System.Drawing.Point(1006, 233);
             this.cmbTipoTelefone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbTipoTelefone.Name = "cmbTipoTelefone";
@@ -397,6 +418,9 @@
             // cbTipoEndereco
             // 
             this.cbTipoEndereco.FormattingEnabled = true;
+            this.cbTipoEndereco.Items.AddRange(new object[] {
+            "Resindencial",
+            "Comercial"});
             this.cbTipoEndereco.Location = new System.Drawing.Point(370, 231);
             this.cbTipoEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbTipoEndereco.Name = "cbTipoEndereco";
@@ -559,24 +583,6 @@
             this.dtgListaCliente.RowHeadersVisible = false;
             this.dtgListaCliente.Size = new System.Drawing.Size(826, 239);
             this.dtgListaCliente.TabIndex = 21;
-            // 
-            // txtCpf
-            // 
-            this.txtCpf.Location = new System.Drawing.Point(472, 33);
-            this.txtCpf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(114, 20);
-            this.txtCpf.TabIndex = 53;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(469, 20);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(128, 13);
-            this.label18.TabIndex = 54;
-            this.label18.Text = "CPF DO RESPONSÁVEL";
             // 
             // clnId
             // 
