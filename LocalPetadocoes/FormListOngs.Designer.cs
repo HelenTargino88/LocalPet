@@ -40,6 +40,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clnId,
@@ -47,7 +48,7 @@
             this.clnCnpj,
             this.clnCpf,
             this.clnDescricao});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 35);
+            this.dataGridView1.Location = new System.Drawing.Point(-2, -2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(664, 345);
@@ -95,7 +96,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(1214, 676);
+            this.ClientSize = new System.Drawing.Size(660, 341);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormListOngs";
             this.Text = "FormListOngs";
