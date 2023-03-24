@@ -24,14 +24,14 @@ namespace LocalPetadocoes
             ongs.Inserir();
             txtId.Text = ongs.Id.ToString();
 
-            EnderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text, 
-                txtNumeroEnd.Text, txtComplemento.Text,txtBairro.Text, 
-                txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
+            //EnderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text, 
+            //    txtNumeroEnd.Text, txtComplemento.Text,txtBairro.Text, 
+            //    txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            //Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCpf.Text, txtCep.Text, txtDescricao.Text, /**/,/**/);
+            //Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCnpj.Text, txtCpf.Text, txtEmail.Text, txtDescricao.Text);
             //ongs.Editar();
             //MessageBox.Show("Ong atualizada com sucesso!");
         }
