@@ -35,12 +35,12 @@
             this.clnEspecie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnPorte = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnIdade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnDescricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnEnfermidades = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnMedicamentos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnVacinas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnComportamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnIdade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListAnimais)).BeginInit();
             this.SuspendLayout();
@@ -57,12 +57,12 @@
             this.clnEspecie,
             this.clnSexo,
             this.clnPorte,
-            this.clnIdade,
             this.clnDescricao,
             this.clnEnfermidades,
             this.clnMedicamentos,
             this.clnVacinas,
             this.clnComportamento,
+            this.clnIdade,
             this.clnAtivo});
             this.dtgListAnimais.Location = new System.Drawing.Point(-1, -3);
             this.dtgListAnimais.Name = "dtgListAnimais";
@@ -89,7 +89,7 @@
             // 
             // clnRaca
             // 
-            this.clnRaca.HeaderText = "Raça";
+            this.clnRaca.HeaderText = "RAÇA";
             this.clnRaca.Name = "clnRaca";
             this.clnRaca.ReadOnly = true;
             this.clnRaca.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -112,13 +112,6 @@
             this.clnPorte.HeaderText = "PORTE";
             this.clnPorte.Name = "clnPorte";
             this.clnPorte.ReadOnly = true;
-            // 
-            // clnIdade
-            // 
-            this.clnIdade.HeaderText = "IDADE";
-            this.clnIdade.Name = "clnIdade";
-            this.clnIdade.ReadOnly = true;
-            this.clnIdade.Width = 80;
             // 
             // clnDescricao
             // 
@@ -150,7 +143,14 @@
             this.clnComportamento.HeaderText = "COMPORTAMENTO";
             this.clnComportamento.Name = "clnComportamento";
             this.clnComportamento.ReadOnly = true;
-            this.clnComportamento.Width = 70;
+            this.clnComportamento.Width = 110;
+            // 
+            // clnIdade
+            // 
+            this.clnIdade.HeaderText = "IDADE";
+            this.clnIdade.Name = "clnIdade";
+            this.clnIdade.ReadOnly = true;
+            this.clnIdade.Width = 80;
             // 
             // clnAtivo
             // 
@@ -182,12 +182,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnEspecie;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSexo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnPorte;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnIdade;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDescricao;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnEnfermidades;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnMedicamentos;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnVacinas;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnComportamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnIdade;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clnAtivo;
     }
 }
