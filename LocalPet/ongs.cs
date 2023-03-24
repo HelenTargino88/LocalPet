@@ -19,7 +19,7 @@ namespace LocalPet
         public string CpfResponsavel { get; set; }
         public string Descricao { get; set; }
         public string Imagem_ong { get; set; }
-        public Usuarios User { get; set; }
+        public Usuarios User { get; set; }      
         public Ongs() { }
 
         public Ongs(int id, string nome, string cnpj, string cpfResponsavel, string descricao, string imagem_ong, Usuarios user)
@@ -33,16 +33,7 @@ namespace LocalPet
             User = user;
         }
 
-        public Ongs(string nome, string cnpj, string cpfResponsavel, string descricao, string imagem_ong)
-        {
-            Nome = nome;
-            Cnpj = cnpj;
-            CpfResponsavel = cpfResponsavel;
-            Descricao = descricao;
-            Imagem_ong = imagem_ong;
-        }
-
-        public Ongs(int id, string nome, string cnpj, string cpfResponsavel, string descricao, string imagem_ong)
+        public Ongs(string nome, string cnpj, string cpf, string descricao, string imagem_ong)
         {
             Id = id;
             Nome = nome;
