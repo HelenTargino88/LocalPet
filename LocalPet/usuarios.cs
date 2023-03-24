@@ -31,7 +31,7 @@ namespace LocalPet
             Ativo = _ativo;
         }
 
-        public Usuarios(int _id, string _nome, string _email, Nivel _nivel, string _senha, DateTime _data, bool _ativo)
+        public Usuarios(int _id, string _nome, DateTime _data ,string _email,  string _senha,  Nivel _nivel,bool _ativo)
         {
             Id = _id;
             Nome = _nome;
@@ -60,7 +60,7 @@ namespace LocalPet
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                lista.Add(new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5), dr.GetBoolean(6)));
+               lista.Add(new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetDateTime(2), dr.GetString(3), dr.GetString(4), Nivel.ObterPorId(dr.GetInt32(5)), dr.GetBoolean(6)));
             }
             return lista;
         }
@@ -111,25 +111,22 @@ namespace LocalPet
             List<Usuarios> lista = new List<Usuarios>();
             while (dr.Read())
             {
-                lista.Add(new Usuarios(
-                        dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5), dr.GetBoolean(6)
-                    )
-                );
+                lista.Add(new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetDateTime(2), dr.GetString(3), dr.GetString(4), Nivel.ObterPorId(dr.GetInt32(5)), dr.GetBoolean(6)));
             }
             return lista;
 
         }
-        public static Usuarios Logar(string nome, string _senha)
+        public static Usuarios Logar(string nome, string senha)
         {
             Usuarios user = null;
             var cmd = Banco.Abrir();
             cmd.CommandText = "select * from usuarios where nome = @nome and senha=md5(@senha)";
             cmd.Parameters.AddWithValue("@nome", nome);
-            cmd.Parameters.AddWithValue("@senha", _senha);
+            cmd.Parameters.AddWithValue("@senha", senha);
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                user = new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), Nivel.ObterPorId(dr.GetInt32(3)), dr.GetString(4), dr.GetDateTime(5), dr.GetBoolean(6));
+                user = new Usuarios(dr.GetInt32(0), dr.GetString(1), dr.GetDateTime(2), dr.GetString(3), dr.GetString(4), Nivel.ObterPorId(dr.GetInt32(5)),dr.GetBoolean(6));
             }
             return user;
         }
