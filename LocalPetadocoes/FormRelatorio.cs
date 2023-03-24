@@ -66,5 +66,10 @@ namespace LocalPetadocoes
         {
 
         }
+
+        private void GerAdocaoCachorros_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

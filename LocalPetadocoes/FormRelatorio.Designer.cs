@@ -42,11 +42,9 @@
             this.listarAnimais = new System.Windows.Forms.ToolStripMenuItem();
             this.operaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.GerenciarGatos = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarGatos = new System.Windows.Forms.ToolStripMenuItem();
+            this.GerAdocaoGatos = new System.Windows.Forms.ToolStripMenuItem();
             this.cachorroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarCachorros = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarCachorros = new System.Windows.Forms.ToolStripMenuItem();
+            this.GerAdocaoCachorros = new System.Windows.Forms.ToolStripMenuItem();
             this.mOvimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gatoStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cachorrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -167,50 +165,35 @@
             // 
             this.gatoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
             this.gatoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.GerenciarGatos,
-            this.listarGatos});
+            this.GerAdocaoGatos});
             this.gatoToolStripMenuItem.Image = global::LocalPetadocoes.Properties.Resources.icons8_kitty_64;
             this.gatoToolStripMenuItem.Name = "gatoToolStripMenuItem";
             resources.ApplyResources(this.gatoToolStripMenuItem, "gatoToolStripMenuItem");
             // 
-            // GerenciarGatos
+            // GerAdocaoGatos
             // 
-            this.GerenciarGatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
-            this.GerenciarGatos.Image = global::LocalPetadocoes.Properties.Resources.icons8_gerenciador_de_dispositivos_641;
-            this.GerenciarGatos.Name = "GerenciarGatos";
-            resources.ApplyResources(this.GerenciarGatos, "GerenciarGatos");
-            this.GerenciarGatos.Click += new System.EventHandler(this.GerenciarGatos_Click);
-            // 
-            // listarGatos
-            // 
-            this.listarGatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
-            this.listarGatos.Image = global::LocalPetadocoes.Properties.Resources.icons8_animal_folder_100;
-            this.listarGatos.Name = "listarGatos";
-            resources.ApplyResources(this.listarGatos, "listarGatos");
+            this.GerAdocaoGatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
+            this.GerAdocaoGatos.Image = global::LocalPetadocoes.Properties.Resources.icons8_gerenciador_de_dispositivos_641;
+            this.GerAdocaoGatos.Name = "GerAdocaoGatos";
+            resources.ApplyResources(this.GerAdocaoGatos, "GerAdocaoGatos");
+            this.GerAdocaoGatos.Click += new System.EventHandler(this.GerenciarGatos_Click);
             // 
             // cachorroToolStripMenuItem
             // 
             this.cachorroToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
             this.cachorroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultarCachorros,
-            this.listarCachorros});
+            this.GerAdocaoCachorros});
             this.cachorroToolStripMenuItem.Image = global::LocalPetadocoes.Properties.Resources.icons8_cachorro_64;
             this.cachorroToolStripMenuItem.Name = "cachorroToolStripMenuItem";
             resources.ApplyResources(this.cachorroToolStripMenuItem, "cachorroToolStripMenuItem");
             // 
-            // consultarCachorros
+            // GerAdocaoCachorros
             // 
-            this.consultarCachorros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
-            this.consultarCachorros.Image = global::LocalPetadocoes.Properties.Resources.icons8_gerenciador_de_dispositivos_64;
-            this.consultarCachorros.Name = "consultarCachorros";
-            resources.ApplyResources(this.consultarCachorros, "consultarCachorros");
-            // 
-            // listarCachorros
-            // 
-            this.listarCachorros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
-            this.listarCachorros.Image = global::LocalPetadocoes.Properties.Resources.icons8_animal_folder_100;
-            this.listarCachorros.Name = "listarCachorros";
-            resources.ApplyResources(this.listarCachorros, "listarCachorros");
+            this.GerAdocaoCachorros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(191)))), ((int)(((byte)(114)))));
+            this.GerAdocaoCachorros.Image = global::LocalPetadocoes.Properties.Resources.icons8_gerenciador_de_dispositivos_64;
+            this.GerAdocaoCachorros.Name = "GerAdocaoCachorros";
+            resources.ApplyResources(this.GerAdocaoCachorros, "GerAdocaoCachorros");
+            this.GerAdocaoCachorros.Click += new System.EventHandler(this.GerAdocaoCachorros_Click);
             // 
             // mOvimentoToolStripMenuItem
             // 
@@ -267,11 +250,9 @@
         private System.Windows.Forms.ToolStripMenuItem listarAnimais;
         private System.Windows.Forms.ToolStripMenuItem operaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gatoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem GerenciarGatos;
-        private System.Windows.Forms.ToolStripMenuItem listarGatos;
+        private System.Windows.Forms.ToolStripMenuItem GerAdocaoGatos;
         private System.Windows.Forms.ToolStripMenuItem cachorroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarCachorros;
-        private System.Windows.Forms.ToolStripMenuItem listarCachorros;
+        private System.Windows.Forms.ToolStripMenuItem GerAdocaoCachorros;
         private System.Windows.Forms.ToolStripMenuItem mOvimentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gatoStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cachorrosToolStripMenuItem;
