@@ -42,6 +42,16 @@ namespace LocalPet
             Imagem_ong = imagem_ong;
         }
 
+        public Ongs(int id, string nome, string cnpj, string cpf, string descricao, string imagem_ong)
+        {
+            Id = id;
+            Nome = nome;
+            Cnpj = cnpj;
+            Cpf = cpf;
+            Descricao = descricao;
+            Imagem_ong = imagem_ong;
+        }
+
         public void Inserir()
         {
             var cmd = Banco.Abrir();
