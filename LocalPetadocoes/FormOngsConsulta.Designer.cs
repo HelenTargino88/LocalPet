@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txtCpf = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptbImagem = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
@@ -80,7 +80,7 @@
             this.clnDataCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListaCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +89,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.NavajoWhite;
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.txtCpf);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.ptbImagem);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.txtDescricao);
             this.groupBox1.Controls.Add(this.cmbEstado);
@@ -154,13 +154,13 @@
             this.txtCpf.Size = new System.Drawing.Size(114, 20);
             this.txtCpf.TabIndex = 53;
             // 
-            // pictureBox1
+            // ptbImagem
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1231, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 122);
-            this.pictureBox1.TabIndex = 52;
-            this.pictureBox1.TabStop = false;
+            this.ptbImagem.Location = new System.Drawing.Point(1231, 33);
+            this.ptbImagem.Name = "ptbImagem";
+            this.ptbImagem.Size = new System.Drawing.Size(121, 122);
+            this.ptbImagem.TabIndex = 52;
+            this.ptbImagem.TabStop = false;
             // 
             // label17
             // 
@@ -631,7 +631,7 @@
             this.Text = "Ong\'s";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListaCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -677,7 +677,7 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView dtgListaCliente;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptbImagem;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label label18;
