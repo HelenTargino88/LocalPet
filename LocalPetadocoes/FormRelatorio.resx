@@ -133,25 +133,25 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="consultaClientes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="consultaClientes.Text" xml:space="preserve">
     <value>&amp;Consulta</value>
   </data>
   <data name="listarClientes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="listarClientes.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>118, 22</value>
   </data>
   <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
     <value>C&amp;lientes</value>
   </data>
   <data name="listarOngs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>126, 22</value>
   </data>
   <data name="listarOngs.Text" xml:space="preserve">
     <value>&amp;Listar</value>
@@ -160,31 +160,31 @@
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
   <data name="consultaOngs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>126, 22</value>
   </data>
   <data name="consultaOngs.Text" xml:space="preserve">
     <value>&amp;Consultar</value>
   </data>
   <data name="ongsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>118, 22</value>
   </data>
   <data name="ongsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Ongs</value>
   </data>
   <data name="consultaAnimais.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="consultaAnimais.Text" xml:space="preserve">
     <value>&amp;Consulta</value>
   </data>
   <data name="listarAnimais.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="listarAnimais.Text" xml:space="preserve">
     <value>&amp;Listar</value>
   </data>
   <data name="animaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>118, 22</value>
   </data>
   <data name="animaisToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Animais</value>
@@ -199,25 +199,25 @@
     <value>&amp;Relatórios</value>
   </data>
   <data name="GerAdocaoGatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="GerAdocaoGatos.Text" xml:space="preserve">
     <value>&amp;Gerenciar</value>
   </data>
   <data name="gatoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="gatoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Gatos</value>
   </data>
   <data name="GerAdocaoCachorros.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="GerAdocaoCachorros.Text" xml:space="preserve">
     <value>&amp;Gerenciar</value>
   </data>
   <data name="cachorroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="cachorroToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Cachorros</value>
@@ -232,13 +232,13 @@
     <value>&amp;Adoção</value>
   </data>
   <data name="gatoStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="gatoStripMenuItem2.Text" xml:space="preserve">
     <value>&amp;Gatos</value>
   </data>
   <data name="cachorrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="cachorrosToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Cachorros</value>

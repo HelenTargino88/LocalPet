@@ -20,14 +20,14 @@ namespace LocalPetadocoes
 
         private void btnAdiconar_Click(object sender, EventArgs e)
         {
-            Ongs ongs = new Ongs(txtNome.Text, txtCnpj.Text, txtCpf.Text, txtDescricao.Text, ptbImagem.Text);
+            Ongs ongs = new Ongs(txtNome.Text, txtCnpj.Text, txtCpf.Text, txtEmail.Text, txtDescricao.Text);
             ongs.Inserir();
             txtId.Text = ongs.Id.ToString();
 
-            EnderecoOng enderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text, 
-                txtNumeroEnd.Text, txtComplemento.Text,txtBairro.Text, 
-                txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
-            txtId.Text = enderecoOng.Id.ToString();
+            //EnderecoOng enderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text, 
+            //    txtNumeroEnd.Text, txtComplemento.Text,txtBairro.Text, 
+            //    txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
+            //txtId.Text = enderecoOng.Id.ToString();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

@@ -48,6 +48,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clnId,
@@ -63,7 +64,7 @@
             this.clnVacinas,
             this.clnComportamento,
             this.clnAtivo});
-            this.dataGridView1.Location = new System.Drawing.Point(30, 103);
+            this.dataGridView1.Location = new System.Drawing.Point(-1, -3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(1263, 355);
@@ -162,7 +163,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(1349, 657);
+            this.ClientSize = new System.Drawing.Size(1261, 347);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormListAnimais";
             this.Text = "FormListAnimais";
