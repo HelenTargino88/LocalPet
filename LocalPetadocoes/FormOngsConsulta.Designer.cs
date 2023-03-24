@@ -53,7 +53,7 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtCnpj = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.cbTipoEndereco = new System.Windows.Forms.ComboBox();
@@ -111,7 +111,7 @@
             this.groupBox1.Controls.Add(this.txtTelefone);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.txtCnpj);
+            this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.cbTipoEndereco);
@@ -362,13 +362,13 @@
             this.label13.TabIndex = 41;
             this.label13.Text = "CIDADE";
             // 
-            // txtCnpj
+            // txtCpf
             // 
-            this.txtCnpj.Location = new System.Drawing.Point(405, 33);
-            this.txtCnpj.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCnpj.Name = "txtCnpj";
-            this.txtCnpj.Size = new System.Drawing.Size(190, 20);
-            this.txtCnpj.TabIndex = 2;
+            this.txtCpf.Location = new System.Drawing.Point(405, 33);
+            this.txtCpf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(190, 20);
+            this.txtCpf.TabIndex = 2;
             // 
             // label9
             // 
@@ -653,7 +653,7 @@
         private System.Windows.Forms.CheckBox cbAtivoCliente;
         private System.Windows.Forms.DateTimePicker dtCadastroCliente;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtCnpj;
+        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label7;

@@ -20,16 +20,16 @@ namespace LocalPetadocoes
 
         private void btnAdiconar_Click(object sender, EventArgs e)
         {
-            Ongs ongs = new Ongs(txtNome.Text, txtCnpj.Text, txtCep.Text, txtDescricao.Text, /**/, /**/ );
-            ongs.Inserir();
-            txtId.Text = ongs.Id.ToString();
+            //Ongs ongs = new Ongs(txtNome.Text, txtCpf.Text, txtCep.Text, txtDescricao.Text, /**/, /**/ );
+            //ongs.Inserir();
+            //txtId.Text = ongs.Id.ToString();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCnpj.Text, txtCep.Text, txtDescricao.Text, /**/,/**/);
-            ongs.Editar();
-            MessageBox.Show("Ong atualizada com sucesso!");
+            //Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCpf.Text, txtCep.Text, txtDescricao.Text, /**/,/**/);
+            //ongs.Editar();
+            //MessageBox.Show("Ong atualizada com sucesso!");
         }
     }
 }
