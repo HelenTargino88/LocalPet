@@ -20,7 +20,7 @@ namespace LocalPetadocoes
 
         private void btnAdiconar_Click(object sender, EventArgs e)
         {
-            Ongs ongs = new Ongs(txtNome.Text, txtCnpj.Text, txtCpf.Text, txtEmail.Text, txtDescricao.Text);
+            Ongs ongs = new Ongs(txtNome.Text, txtCnpj.Text, txtCpf.Text, txtDescricao.Text, ptbImagem.Text);
             ongs.Inserir();
             txtId.Text = ongs.Id.ToString();
 
