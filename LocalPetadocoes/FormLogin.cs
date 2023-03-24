@@ -21,10 +21,10 @@ namespace LocalPetadocoes
         }
         private void btnLogin_Click_2(object sender, EventArgs e)
         {
-            if (txtUsuario.Text != "" && txtSenha.Text != "")
+            if (txtUsuario.Text != string.Empty && txtSenha.Text != string.Empty)
             {
                 Usuarios user = Usuarios.Logar(txtUsuario.Text, txtSenha.Text);
-                MessageBox.Show("Login efetuado com sucesso");
+                MessageBox.Show("Login efetuado com sucesso!");
                 FormRelatorio frmRelatorio = new FormRelatorio();
                 frmRelatorio.Show();
                 this.Hide();

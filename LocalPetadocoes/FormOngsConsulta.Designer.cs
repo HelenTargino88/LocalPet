@@ -640,7 +640,6 @@
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnArquivar;
         private System.Windows.Forms.Button btnEditar;
