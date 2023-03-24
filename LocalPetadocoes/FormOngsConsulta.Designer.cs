@@ -42,7 +42,6 @@
             this.btnAdiconar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbTipoTelefone = new System.Windows.Forms.ComboBox();
-            this.label122 = new System.Windows.Forms.Label();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,7 +52,6 @@
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.dtCadastroCliente = new System.Windows.Forms.DateTimePicker();
             this.txtTelefone = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtCnpj = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -79,8 +77,6 @@
             this.clnCnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnDataCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
@@ -103,7 +99,6 @@
             this.groupBox1.Controls.Add(this.btnAdiconar);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.cmbTipoTelefone);
-            this.groupBox1.Controls.Add(this.label122);
             this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label3);
@@ -114,7 +109,6 @@
             this.groupBox1.Controls.Add(this.txtBairro);
             this.groupBox1.Controls.Add(this.dtCadastroCliente);
             this.groupBox1.Controls.Add(this.txtTelefone);
-            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txtCnpj);
             this.groupBox1.Controls.Add(this.label9);
@@ -132,7 +126,7 @@
             this.groupBox1.Controls.Add(this.txtNumeroEnd);
             this.groupBox1.Controls.Add(this.cbAtivoCliente);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 55);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
@@ -145,16 +139,16 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(469, 20);
+            this.label18.Location = new System.Drawing.Point(469, 33);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(128, 13);
+            this.label18.Size = new System.Drawing.Size(146, 13);
             this.label18.TabIndex = 54;
             this.label18.Text = "CPF DO RESPONSÁVEL";
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(472, 33);
+            this.txtCpf.Location = new System.Drawing.Point(472, 46);
             this.txtCpf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(114, 20);
@@ -171,16 +165,16 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(14, 71);
+            this.label17.Location = new System.Drawing.Point(14, 84);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 13);
+            this.label17.Size = new System.Drawing.Size(78, 13);
             this.label17.TabIndex = 51;
-            this.label17.Text = "DESCRICAO";
+            this.label17.Text = "DESCRIÇÃO";
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(16, 87);
+            this.txtDescricao.Location = new System.Drawing.Point(16, 100);
             this.txtDescricao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(1064, 20);
@@ -189,7 +183,7 @@
             // cmbEstado
             // 
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(122, 231);
+            this.cmbEstado.Location = new System.Drawing.Point(122, 244);
             this.cmbEstado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(225, 21);
@@ -214,7 +208,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.SandyBrown;
             this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Location = new System.Drawing.Point(692, 271);
+            this.btnEditar.Location = new System.Drawing.Point(692, 284);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(102, 37);
@@ -227,10 +221,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(803, 218);
+            this.label4.Location = new System.Drawing.Point(803, 231);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 19;
             this.label4.Text = "TELEFONE";
             // 
@@ -239,8 +233,8 @@
             this.btnAdiconar.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAdiconar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnAdiconar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdiconar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdiconar.Location = new System.Drawing.Point(236, 271);
+            this.btnAdiconar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdiconar.Location = new System.Drawing.Point(236, 284);
             this.btnAdiconar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAdiconar.Name = "btnAdiconar";
             this.btnAdiconar.Size = new System.Drawing.Size(102, 37);
@@ -253,10 +247,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(871, 20);
+            this.label5.Location = new System.Drawing.Point(871, 33);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 13);
+            this.label5.Size = new System.Drawing.Size(111, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "DATA CADASTRO";
             // 
@@ -267,25 +261,15 @@
             "Telefone",
             "Celular",
             "Comercial"});
-            this.cmbTipoTelefone.Location = new System.Drawing.Point(1006, 233);
+            this.cmbTipoTelefone.Location = new System.Drawing.Point(1006, 246);
             this.cmbTipoTelefone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbTipoTelefone.Name = "cmbTipoTelefone";
             this.cmbTipoTelefone.Size = new System.Drawing.Size(177, 21);
             this.cmbTipoTelefone.TabIndex = 20;
             // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Location = new System.Drawing.Point(614, 18);
-            this.label122.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(39, 13);
-            this.label122.TabIndex = 9;
-            this.label122.Text = "EMAIL";
-            // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(990, 169);
+            this.txtCidade.Location = new System.Drawing.Point(990, 182);
             this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(190, 20);
@@ -294,26 +278,26 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1003, 215);
+            this.label7.Location = new System.Drawing.Point(1003, 228);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 21;
             this.label7.Text = "TIPO";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(322, 19);
+            this.label3.Location = new System.Drawing.Point(322, 32);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "CNPJ";
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(611, 169);
+            this.txtComplemento.Location = new System.Drawing.Point(611, 182);
             this.txtComplemento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(112, 20);
@@ -322,16 +306,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 18);
+            this.label2.Location = new System.Drawing.Point(102, 31);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "NOME";
             // 
             // txtLogradouro
             // 
-            this.txtLogradouro.Location = new System.Drawing.Point(173, 168);
+            this.txtLogradouro.Location = new System.Drawing.Point(173, 181);
             this.txtLogradouro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(336, 20);
@@ -340,16 +324,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(13, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(20, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "ID";
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(741, 169);
+            this.txtBairro.Location = new System.Drawing.Point(741, 182);
             this.txtBairro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(225, 20);
@@ -357,7 +341,7 @@
             // 
             // dtCadastroCliente
             // 
-            this.dtCadastroCliente.Location = new System.Drawing.Point(876, 33);
+            this.dtCadastroCliente.Location = new System.Drawing.Point(876, 46);
             this.dtCadastroCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtCadastroCliente.Name = "dtCadastroCliente";
             this.dtCadastroCliente.Size = new System.Drawing.Size(304, 20);
@@ -365,33 +349,25 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(806, 234);
+            this.txtTelefone.Location = new System.Drawing.Point(806, 247);
             this.txtTelefone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(177, 20);
             this.txtTelefone.TabIndex = 18;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(616, 33);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(237, 20);
-            this.txtEmail.TabIndex = 3;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(988, 154);
+            this.label13.Location = new System.Drawing.Point(988, 167);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 13);
+            this.label13.Size = new System.Drawing.Size(53, 13);
             this.label13.TabIndex = 41;
             this.label13.Text = "CIDADE";
             // 
             // txtCnpj
             // 
-            this.txtCnpj.Location = new System.Drawing.Point(326, 33);
+            this.txtCnpj.Location = new System.Drawing.Point(326, 46);
             this.txtCnpj.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCnpj.Name = "txtCnpj";
             this.txtCnpj.Size = new System.Drawing.Size(114, 20);
@@ -400,16 +376,16 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(171, 154);
+            this.label9.Location = new System.Drawing.Point(171, 167);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 13);
+            this.label9.Size = new System.Drawing.Size(94, 13);
             this.label9.TabIndex = 38;
             this.label9.Text = "LOGRADOURO";
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(104, 33);
+            this.txtNome.Location = new System.Drawing.Point(104, 46);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(191, 20);
@@ -421,7 +397,7 @@
             this.cbTipoEndereco.Items.AddRange(new object[] {
             "Resindencial",
             "Comercial"});
-            this.cbTipoEndereco.Location = new System.Drawing.Point(370, 231);
+            this.cbTipoEndereco.Location = new System.Drawing.Point(370, 244);
             this.cbTipoEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbTipoEndereco.Name = "cbTipoEndereco";
             this.cbTipoEndereco.Size = new System.Drawing.Size(245, 21);
@@ -429,7 +405,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(17, 33);
+            this.txtId.Location = new System.Drawing.Point(17, 46);
             this.txtId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(57, 20);
@@ -438,17 +414,17 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(739, 154);
+            this.label12.Location = new System.Drawing.Point(739, 167);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 13);
+            this.label12.Size = new System.Drawing.Size(54, 13);
             this.label12.TabIndex = 37;
             this.label12.Text = "BAIRRO";
             // 
             // cmbUf
             // 
             this.cmbUf.FormattingEnabled = true;
-            this.cmbUf.Location = new System.Drawing.Point(17, 231);
+            this.cmbUf.Location = new System.Drawing.Point(17, 244);
             this.cmbUf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbUf.Name = "cmbUf";
             this.cmbUf.Size = new System.Drawing.Size(66, 21);
@@ -457,56 +433,56 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(528, 153);
+            this.label10.Location = new System.Drawing.Point(528, 166);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 39;
             this.label10.Text = "NÚMERO";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(119, 215);
+            this.label14.Location = new System.Drawing.Point(119, 228);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 13);
+            this.label14.Size = new System.Drawing.Size(57, 13);
             this.label14.TabIndex = 42;
             this.label14.Text = "ESTADO";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(609, 154);
+            this.label11.Location = new System.Drawing.Point(609, 167);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 13);
+            this.label11.Size = new System.Drawing.Size(101, 13);
             this.label11.TabIndex = 40;
             this.label11.Text = "COMPLEMENTO";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(367, 215);
+            this.label8.Location = new System.Drawing.Point(367, 228);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 13);
+            this.label8.Size = new System.Drawing.Size(36, 13);
             this.label8.TabIndex = 36;
             this.label8.Text = "TIPO";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 154);
+            this.label6.Location = new System.Drawing.Point(13, 167);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 33;
             this.label6.Text = "CEP";
             // 
             // txtCep
             // 
-            this.txtCep.Location = new System.Drawing.Point(17, 169);
+            this.txtCep.Location = new System.Drawing.Point(17, 182);
             this.txtCep.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(134, 20);
@@ -514,7 +490,7 @@
             // 
             // txtNumeroEnd
             // 
-            this.txtNumeroEnd.Location = new System.Drawing.Point(531, 168);
+            this.txtNumeroEnd.Location = new System.Drawing.Point(531, 181);
             this.txtNumeroEnd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtNumeroEnd.Name = "txtNumeroEnd";
             this.txtNumeroEnd.Size = new System.Drawing.Size(59, 20);
@@ -523,10 +499,10 @@
             // cbAtivoCliente
             // 
             this.cbAtivoCliente.AutoSize = true;
-            this.cbAtivoCliente.Location = new System.Drawing.Point(1103, 89);
+            this.cbAtivoCliente.Location = new System.Drawing.Point(1103, 102);
             this.cbAtivoCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbAtivoCliente.Name = "cbAtivoCliente";
-            this.cbAtivoCliente.Size = new System.Drawing.Size(58, 17);
+            this.cbAtivoCliente.Size = new System.Drawing.Size(63, 17);
             this.cbAtivoCliente.TabIndex = 5;
             this.cbAtivoCliente.Text = "ATIVO";
             this.cbAtivoCliente.UseVisualStyleBackColor = true;
@@ -534,10 +510,10 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(14, 215);
+            this.label15.Location = new System.Drawing.Point(14, 228);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(21, 13);
+            this.label15.Size = new System.Drawing.Size(23, 13);
             this.label15.TabIndex = 35;
             this.label15.Text = "UF";
             // 
@@ -572,8 +548,6 @@
             this.clnCnpj,
             this.clnCpf,
             this.clnTelefone,
-            this.clnEndereco,
-            this.clnEmail,
             this.clnDataCad,
             this.clnAtivo});
             this.dtgListaCliente.Location = new System.Drawing.Point(13, 436);
@@ -581,7 +555,7 @@
             this.dtgListaCliente.Name = "dtgListaCliente";
             this.dtgListaCliente.ReadOnly = true;
             this.dtgListaCliente.RowHeadersVisible = false;
-            this.dtgListaCliente.Size = new System.Drawing.Size(826, 239);
+            this.dtgListaCliente.Size = new System.Drawing.Size(689, 239);
             this.dtgListaCliente.TabIndex = 21;
             // 
             // clnId
@@ -590,6 +564,7 @@
             this.clnId.HeaderText = "ID";
             this.clnId.Name = "clnId";
             this.clnId.ReadOnly = true;
+            this.clnId.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clnId.Width = 50;
             // 
             // clnNome
@@ -598,54 +573,47 @@
             this.clnNome.HeaderText = "NOME";
             this.clnNome.Name = "clnNome";
             this.clnNome.ReadOnly = true;
-            this.clnNome.Width = 101;
+            this.clnNome.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clnNome.Width = 120;
             // 
             // clnCnpj
             // 
             this.clnCnpj.HeaderText = "CNPJ";
             this.clnCnpj.Name = "clnCnpj";
             this.clnCnpj.ReadOnly = true;
-            this.clnCnpj.Width = 70;
+            this.clnCnpj.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clnCnpj.Width = 90;
             // 
             // clnCpf
             // 
             this.clnCpf.HeaderText = "CPF RESPONSÁVEL";
             this.clnCpf.Name = "clnCpf";
             this.clnCpf.ReadOnly = true;
+            this.clnCpf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clnCpf.Width = 135;
             // 
             // clnTelefone
             // 
             this.clnTelefone.HeaderText = "TELEFONE";
             this.clnTelefone.Name = "clnTelefone";
             this.clnTelefone.ReadOnly = true;
+            this.clnTelefone.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clnTelefone.Width = 90;
-            // 
-            // clnEndereco
-            // 
-            this.clnEndereco.HeaderText = "ENDEREÇO";
-            this.clnEndereco.Name = "clnEndereco";
-            this.clnEndereco.ReadOnly = true;
-            this.clnEndereco.Width = 120;
-            // 
-            // clnEmail
-            // 
-            this.clnEmail.HeaderText = "EMAIL";
-            this.clnEmail.Name = "clnEmail";
-            this.clnEmail.ReadOnly = true;
-            this.clnEmail.Width = 110;
             // 
             // clnDataCad
             // 
-            this.clnDataCad.HeaderText = "DATA CAD";
+            this.clnDataCad.HeaderText = "DATA CADASTRO";
             this.clnDataCad.Name = "clnDataCad";
             this.clnDataCad.ReadOnly = true;
-            this.clnDataCad.Width = 120;
+            this.clnDataCad.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clnDataCad.Width = 140;
             // 
             // clnAtivo
             // 
             this.clnAtivo.HeaderText = "ATIVO";
             this.clnAtivo.Name = "clnAtivo";
             this.clnAtivo.ReadOnly = true;
+            this.clnAtivo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clnAtivo.Width = 61;
             // 
             // FormOngsConsulta
@@ -676,13 +644,11 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnAdiconar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label122;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox cbAtivoCliente;
         private System.Windows.Forms.DateTimePicker dtCadastroCliente;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtCnpj;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtId;
@@ -721,8 +687,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCnpj;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCpf;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnTelefone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnEndereco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDataCad;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clnAtivo;
     }
