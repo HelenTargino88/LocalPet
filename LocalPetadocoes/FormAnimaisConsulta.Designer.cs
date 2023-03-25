@@ -149,7 +149,7 @@
             "Filhote",
             "Adulto",
             "Idoso"});
-            this.cmbIdade.Location = new System.Drawing.Point(910, 97);
+            this.cmbIdade.Location = new System.Drawing.Point(906, 97);
             this.cmbIdade.Name = "cmbIdade";
             this.cmbIdade.Size = new System.Drawing.Size(148, 21);
             this.cmbIdade.TabIndex = 52;
