@@ -71,7 +71,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.dtgListaCliente = new System.Windows.Forms.DataGridView();
+            this.dtgListOng = new System.Windows.Forms.DataGridView();
             this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,7 +81,7 @@
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgListaCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgListOng)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -592,13 +592,13 @@
             this.label16.TabIndex = 19;
             this.label16.Text = "BUSCAR";
             // 
-            // dtgListaCliente
+            // dtgListOng
             // 
-            this.dtgListaCliente.AllowUserToAddRows = false;
-            this.dtgListaCliente.AllowUserToDeleteRows = false;
-            this.dtgListaCliente.BackgroundColor = System.Drawing.Color.NavajoWhite;
-            this.dtgListaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgListaCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgListOng.AllowUserToAddRows = false;
+            this.dtgListOng.AllowUserToDeleteRows = false;
+            this.dtgListOng.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgListOng.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgListOng.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clnId,
             this.clnNome,
             this.clnCnpj,
@@ -606,13 +606,14 @@
             this.clnTelefone,
             this.clnDataCad,
             this.clnAtivo});
-            this.dtgListaCliente.Location = new System.Drawing.Point(13, 436);
-            this.dtgListaCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dtgListaCliente.Name = "dtgListaCliente";
-            this.dtgListaCliente.ReadOnly = true;
-            this.dtgListaCliente.RowHeadersVisible = false;
-            this.dtgListaCliente.Size = new System.Drawing.Size(689, 239);
-            this.dtgListaCliente.TabIndex = 21;
+            this.dtgListOng.Location = new System.Drawing.Point(13, 436);
+            this.dtgListOng.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dtgListOng.Name = "dtgListOng";
+            this.dtgListOng.ReadOnly = true;
+            this.dtgListOng.RowHeadersVisible = false;
+            this.dtgListOng.Size = new System.Drawing.Size(689, 239);
+            this.dtgListOng.TabIndex = 21;
+            this.dtgListOng.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListOng_CellContentClick);
             // 
             // clnId
             // 
@@ -678,7 +679,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(1674, 687);
-            this.Controls.Add(this.dtgListaCliente);
+            this.Controls.Add(this.dtgListOng);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.groupBox1);
@@ -688,7 +689,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgListaCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgListOng)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -732,7 +733,7 @@
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DataGridView dtgListaCliente;
+        private System.Windows.Forms.DataGridView dtgListOng;
         private System.Windows.Forms.PictureBox ptbImagem;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtDescricao;

@@ -53,7 +53,7 @@
             this.dtgListClientes.ReadOnly = true;
             this.dtgListClientes.Size = new System.Drawing.Size(634, 314);
             this.dtgListClientes.TabIndex = 0;
-            this.dtgListClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dtgListClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListClientes_CellContentClick);
             // 
             // clnId
             // 

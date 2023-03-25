@@ -30,6 +30,9 @@
         {
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbSexo = new System.Windows.Forms.ComboBox();
+            this.cmbIdade = new System.Windows.Forms.ComboBox();
+            this.cmbPorte = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtRaca = new System.Windows.Forms.TextBox();
             this.txtImagem = new System.Windows.Forms.PictureBox();
@@ -58,10 +61,7 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.dtgAnimais = new System.Windows.Forms.DataGridView();
-            this.cmbPorte = new System.Windows.Forms.ComboBox();
-            this.cmbIdade = new System.Windows.Forms.ComboBox();
-            this.cmbSexo = new System.Windows.Forms.ComboBox();
+            this.dtgListAnimais = new System.Windows.Forms.DataGridView();
             this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnRaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,7 +77,7 @@
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtImagem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAnimais)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgListAnimais)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBuscar
@@ -130,6 +130,41 @@
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ANIMAIS";
+            // 
+            // cmbSexo
+            // 
+            this.cmbSexo.FormattingEnabled = true;
+            this.cmbSexo.Items.AddRange(new object[] {
+            "Macho",
+            "Fêmea"});
+            this.cmbSexo.Location = new System.Drawing.Point(685, 46);
+            this.cmbSexo.Name = "cmbSexo";
+            this.cmbSexo.Size = new System.Drawing.Size(96, 21);
+            this.cmbSexo.TabIndex = 53;
+            // 
+            // cmbIdade
+            // 
+            this.cmbIdade.FormattingEnabled = true;
+            this.cmbIdade.Items.AddRange(new object[] {
+            "Filhote",
+            "Adulto",
+            "Idoso"});
+            this.cmbIdade.Location = new System.Drawing.Point(910, 97);
+            this.cmbIdade.Name = "cmbIdade";
+            this.cmbIdade.Size = new System.Drawing.Size(148, 21);
+            this.cmbIdade.TabIndex = 52;
+            // 
+            // cmbPorte
+            // 
+            this.cmbPorte.FormattingEnabled = true;
+            this.cmbPorte.Items.AddRange(new object[] {
+            "Pequeno",
+            "Médio",
+            "Grande"});
+            this.cmbPorte.Location = new System.Drawing.Point(806, 46);
+            this.cmbPorte.Name = "cmbPorte";
+            this.cmbPorte.Size = new System.Drawing.Size(96, 21);
+            this.cmbPorte.TabIndex = 51;
             // 
             // label5
             // 
@@ -426,11 +461,11 @@
             this.label16.TabIndex = 23;
             this.label16.Text = "BUSCAR";
             // 
-            // dtgAnimais
+            // dtgListAnimais
             // 
-            this.dtgAnimais.AllowUserToAddRows = false;
-            this.dtgAnimais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgAnimais.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgListAnimais.AllowUserToAddRows = false;
+            this.dtgListAnimais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgListAnimais.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clnId,
             this.clnNome,
             this.clnRaca,
@@ -444,46 +479,12 @@
             this.clnComportamento,
             this.clnIdade,
             this.clnAtivo});
-            this.dtgAnimais.Location = new System.Drawing.Point(13, 344);
-            this.dtgAnimais.Name = "dtgAnimais";
-            this.dtgAnimais.ReadOnly = true;
-            this.dtgAnimais.Size = new System.Drawing.Size(1304, 355);
-            this.dtgAnimais.TabIndex = 25;
-            // 
-            // cmbPorte
-            // 
-            this.cmbPorte.FormattingEnabled = true;
-            this.cmbPorte.Items.AddRange(new object[] {
-            "Pequeno",
-            "Médio",
-            "Grande"});
-            this.cmbPorte.Location = new System.Drawing.Point(806, 46);
-            this.cmbPorte.Name = "cmbPorte";
-            this.cmbPorte.Size = new System.Drawing.Size(96, 21);
-            this.cmbPorte.TabIndex = 51;
-            // 
-            // cmbIdade
-            // 
-            this.cmbIdade.FormattingEnabled = true;
-            this.cmbIdade.Items.AddRange(new object[] {
-            "Filhote",
-            "Adulto",
-            "Idoso"});
-            this.cmbIdade.Location = new System.Drawing.Point(910, 97);
-            this.cmbIdade.Name = "cmbIdade";
-            this.cmbIdade.Size = new System.Drawing.Size(148, 21);
-            this.cmbIdade.TabIndex = 52;
-            // 
-            // cmbSexo
-            // 
-            this.cmbSexo.FormattingEnabled = true;
-            this.cmbSexo.Items.AddRange(new object[] {
-            "Macho",
-            "Fêmea"});
-            this.cmbSexo.Location = new System.Drawing.Point(685, 46);
-            this.cmbSexo.Name = "cmbSexo";
-            this.cmbSexo.Size = new System.Drawing.Size(96, 21);
-            this.cmbSexo.TabIndex = 53;
+            this.dtgListAnimais.Location = new System.Drawing.Point(13, 344);
+            this.dtgListAnimais.Name = "dtgListAnimais";
+            this.dtgListAnimais.ReadOnly = true;
+            this.dtgListAnimais.Size = new System.Drawing.Size(1304, 355);
+            this.dtgListAnimais.TabIndex = 25;
+            this.dtgListAnimais.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListAnimais_CellContentClick);
             // 
             // clnId
             // 
@@ -579,7 +580,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(1736, 711);
-            this.Controls.Add(this.dtgAnimais);
+            this.Controls.Add(this.dtgListAnimais);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.groupBox1);
@@ -588,7 +589,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtImagem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAnimais)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgListAnimais)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -626,7 +627,7 @@
         private System.Windows.Forms.PictureBox txtImagem;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtRaca;
-        private System.Windows.Forms.DataGridView dtgAnimais;
+        private System.Windows.Forms.DataGridView dtgListAnimais;
         private System.Windows.Forms.ComboBox cmbSexo;
         private System.Windows.Forms.ComboBox cmbIdade;
         private System.Windows.Forms.ComboBox cmbPorte;

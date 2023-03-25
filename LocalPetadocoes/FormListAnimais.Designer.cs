@@ -67,9 +67,9 @@
             this.dtgListAnimais.Location = new System.Drawing.Point(-1, -3);
             this.dtgListAnimais.Name = "dtgListAnimais";
             this.dtgListAnimais.ReadOnly = true;
-            this.dtgListAnimais.Size = new System.Drawing.Size(1263, 355);
+            this.dtgListAnimais.Size = new System.Drawing.Size(1305, 355);
             this.dtgListAnimais.TabIndex = 0;
-            this.dtgListAnimais.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dtgListAnimais.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListAnimais_CellContentClick);
             // 
             // clnId
             // 
@@ -164,7 +164,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(1261, 347);
+            this.ClientSize = new System.Drawing.Size(1301, 347);
             this.Controls.Add(this.dtgListAnimais);
             this.Name = "FormListAnimais";
             this.Text = "FormListAnimais";

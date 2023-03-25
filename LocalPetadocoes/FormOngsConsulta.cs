@@ -29,12 +29,26 @@ namespace LocalPetadocoes
             //    txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
             //txtId.Text = enderecoOng.Id.ToString();
         }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             //Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCnpj.Text, txtCpf.Text, txtDescricao.Text, ptbImagem.Text);
             //ongs.Editar();
             //MessageBox.Show("Ong atualizada com sucesso!");
+        }
+        private void dtgListOng_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var lista = Ongs.Listar();
+            int linha = 0;
+            foreach (var item in lista)
+            {
+                dtgListOng.Rows.Add();
+                dtgListOng.Rows[linha].Cells[0].Value = item.Id;
+                dtgListOng.Rows[linha].Cells[1].Value = item.Nome;
+                dtgListOng.Rows[linha].Cells[2].Value = item.Cnpj;
+                dtgListOng.Rows[linha].Cells[3].Value = item.CpfResponsavel;
+                dtgListOng.Rows[linha].Cells[4].Value = item.Descricao;
+                linha++;
+            }
         }
     }
 }

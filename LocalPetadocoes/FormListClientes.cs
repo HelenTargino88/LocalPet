@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LocalPet;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,20 @@ namespace LocalPetadocoes
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgListClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            var lista = Clientes.Listar();
+            int linha = 0;
+            foreach (var item in lista)
+            {
+                dtgListClientes.Rows.Add();
+                dtgListClientes.Rows[linha].Cells[0].Value = item.Id;
+                dtgListClientes.Rows[linha].Cells[1].Value = item.Nome;
+                dtgListClientes.Rows[linha].Cells[2].Value = item.Cpf;
+                dtgListClientes.Rows[linha].Cells[3].Value = item.Data_nasc;
+                dtgListClientes.Rows[linha].Cells[4].Value = item.Email;
+                linha++;
+            }
         }
     }
 }
