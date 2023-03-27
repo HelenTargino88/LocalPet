@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,15 +14,14 @@ namespace LocalPet
         public string Cpf { get; set; }
         public DateTime Data_nasc { get; set; }
         public string Email { get; set; }
-        public List<EnderecoCli> enderecoCli { get; set; }
-        public Clientes(int id, string nome, string cpf, DateTime data_nasc, string email, List<EnderecoCli> endereco)
+
+        public Clientes(int id, string nome, string cpf, DateTime data_nasc, string email)
         {
             Id = id;
             Nome = nome;
             Cpf = cpf;
             Data_nasc = data_nasc;
             Email = email;
-            enderecoCli = endereco;
         }
         public Clientes(string nome, string cpf, DateTime data_nasc, string email)
         {
@@ -32,14 +30,9 @@ namespace LocalPet
             Data_nasc = data_nasc;
             Email = email;
         }
-       
         public Clientes()
         {
 
-        }
-        public Clientes (int id)
-        {
-            enderecoCli = EnderecoCli.ListarPorCliente(id);
         }
 
         public void Inserir()
@@ -58,7 +51,7 @@ namespace LocalPet
         {
             List<Clientes> lista = new List<Clientes>();
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select * from clientes order by nome asc";
+            cmd.CommandText = "select * from clientes order by name asc";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -67,9 +60,7 @@ namespace LocalPet
                  dr.GetString(1),
                  dr.GetString(2),
                  dr.GetDateTime(3),
-                 dr.GetString(4),
-                 EnderecoCli.ListarPorCliente(dr.GetInt32(0))
-                 ));
+                 dr.GetString(4)));
             }
             return lista;
         }
@@ -92,7 +83,7 @@ namespace LocalPet
         public void Editar(Clientes clientes)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update clientes set nome = '" + clientes.Nome + "'," + "cpf = '" + clientes.Cpf + "'," + "data_nasc = '" + clientes.Data_nasc + "'," + "email = '" + clientes.Email + "'," + "";
+            cmd.CommandText = "update clientes set " + "nome = '" + clientes.Nome + "'," + "cpf = '" + clientes.Cpf + "'," + "data_nasc = '" + clientes.Data_nasc + "'," + "email = '" + clientes.Email + "'," + "";
             cmd.ExecuteNonQuery();
         }
         public static bool Arquivar(int id)
@@ -126,8 +117,8 @@ namespace LocalPet
             while (dr.Read())
             {
                 lista.Add(new Clientes(
-                    dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetDateTime(3), dr.GetString(4), EnderecoCli.ListarPorCliente(dr.GetInt32(0))
-                    )) ;
+                    dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetDateTime(3), dr.GetString(4)
+                    ));
             }
             return lista;
         }
