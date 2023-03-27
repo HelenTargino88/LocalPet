@@ -51,7 +51,7 @@ namespace LocalPet
         {
             List<Clientes> lista = new List<Clientes>();
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select * from clientes order by name asc";
+            cmd.CommandText = "select * from clientes order by nome asc";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {

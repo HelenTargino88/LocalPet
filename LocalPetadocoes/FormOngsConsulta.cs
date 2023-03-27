@@ -66,21 +66,41 @@ namespace LocalPetadocoes
         }
         private void dtgEnderecoOng_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var listab = EnderecoOng.ListarPorOng();
+            var listab = EnderecoOng.Listar();
             int linhab = 0;
             foreach (var item in listab)
             {
-                dtgListOng.Rows.Add();
-                dtgListOng.Rows[linhab].Cells[0].Value = item.Id;
-                dtgListOng.Rows[linhab].Cells[1].Value = item.CEP;
-                dtgListOng.Rows[linhab].Cells[2].Value = item.Logradouro;
-                dtgListOng.Rows[linhab].Cells[3].Value = item.Numero;
-                dtgListOng.Rows[linhab].Cells[4].Value = item.Complemento;
-                dtgListOng.Rows[linhab].Cells[5].Value = item.Bairro;
-                dtgListOng.Rows[linhab].Cells[6].Value = item.Cidade;
-                dtgListOng.Rows[linhab].Cells[7].Value = item.Estado;
-                dtgListOng.Rows[linhab].Cells[8].Value = item.UF;
-                dtgListOng.Rows[linhab].Cells[9].Value = item.Tipo;
+                dtgEnderecoOng.Rows.Add();
+                dtgEnderecoOng.Rows[linhab].Cells[0].Value = item.CEP;
+                dtgEnderecoOng.Rows[linhab].Cells[1].Value = item.Logradouro;
+                dtgEnderecoOng.Rows[linhab].Cells[2].Value = item.Numero;
+                dtgEnderecoOng.Rows[linhab].Cells[3].Value = item.Complemento;
+                dtgEnderecoOng.Rows[linhab].Cells[4].Value = item.Bairro;
+                dtgEnderecoOng.Rows[linhab].Cells[5].Value = item.Cidade;
+                dtgEnderecoOng.Rows[linhab].Cells[6].Value = item.Estado;
+                dtgEnderecoOng.Rows[linhab].Cells[7].Value = item.UF;
+                dtgEnderecoOng.Rows[linhab].Cells[8].Value = item.Tipo;
+                dtgEnderecoOng.Rows[linhab].Cells[9].Value = item.Ongs;
+                linhab++;                         
+            }
+        }
+        private void dtgTelefone_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var listab = TelefoneOng.Listar();
+            int linhab = 0;
+            foreach (var item in listab)
+            {
+                dtgEnderecoOng.Rows.Add();
+                dtgEnderecoOng.Rows[linhab].Cells[0].Value = item.CEP;
+                dtgEnderecoOng.Rows[linhab].Cells[1].Value = item.Logradouro;
+                dtgEnderecoOng.Rows[linhab].Cells[2].Value = item.Numero;
+                dtgEnderecoOng.Rows[linhab].Cells[3].Value = item.Complemento;
+                dtgEnderecoOng.Rows[linhab].Cells[4].Value = item.Bairro;
+                dtgEnderecoOng.Rows[linhab].Cells[5].Value = item.Cidade;
+                dtgEnderecoOng.Rows[linhab].Cells[6].Value = item.Estado;
+                dtgEnderecoOng.Rows[linhab].Cells[7].Value = item.UF;
+                dtgEnderecoOng.Rows[linhab].Cells[8].Value = item.Tipo;
+                dtgEnderecoOng.Rows[linhab].Cells[9].Value = item.Ongs;
                 linhab++;
             }
         }

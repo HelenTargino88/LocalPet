@@ -14,58 +14,60 @@ namespace LocalPet
         public int Id { get; set; }
         public string Numero { get; set; }
         public string Tipo { get; set; }
+        public Ongs Ongs { get; set; }
 
-        public TelefoneOng(int id, string numero, string tipo)
+        public TelefoneOng(int id, string numero, string tipo, Ongs ongs)
         {
             Id = id;
             Numero = numero;
             Tipo = tipo;
+            Ongs = ongs;
         }
-
+        public TelefoneOng(string numero, string tipo, Ongs ongs)
+        {
+            Numero = numero;
+            Tipo = tipo;
+            Ongs = ongs;    
+        }
         public TelefoneOng(string numero, string tipo)
         {
             Numero = numero;
             Tipo = tipo;
         }
 
-        public void Inserir(int ong_id)
+        public void Inserir()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "insert telefone_ong (numero, tipo) " +
-                "values (" + ong_id + ",'" + Numero + "', '" + Tipo + "')";
+            cmd.CommandText = "insert telefone_ong (numero, tipo, ongs_id) " +
+                "values (" + Numero + "', '" + Tipo + "', '" + Ongs + "')";
             cmd.ExecuteNonQuery();
         }
-        public static List<TelefoneOng> ListarPorOng(int ong_id)
+        public static List<TelefoneOng> Listar()
         {
-            List<TelefoneOng> listaTel = new List<TelefoneOng>();
+            List<TelefoneOng> listaTelOng = new List<TelefoneOng>();
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select  numero, tipo, id from telefone_ong where ong_id = " + ong_id;
+            cmd.CommandText = "select * from telefone_ong";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                listaTel.Add(new TelefoneOng(
-                            dr.GetInt32(2),
-                            dr.GetString(0),
-                            dr.GetString(1)
+                listaTelOng.Add(new TelefoneOng(
+                            dr.GetInt32(0),
+                            dr.GetString(1),
+                            dr.GetString(2),
+                            Ongs.ObterPorId(dr.GetInt32(3))
                         )
                     );
             }
-            return listaTel;
+            return listaTelOng;
         }
-        public void Editar()
+        public static void Editar(TelefoneOng telefone_ong)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update telefone_ong set numero = '" + Numero + "'," + "tipo = '" + Tipo +             
-                "where id = " + Id;
+            cmd.CommandText = "update telefone_ong set numero = '" + telefone_ong.Numero + "'," + "tipo = '" + telefone_ong.Tipo + "'," + "ongs_id = '" + telefone_ong.Ongs +
+                "where id = " + telefone_ong.Id;
             cmd.ExecuteNonQuery();
         }
-        public static void Atualizar(TelefoneOng telefone_ong)
-        {
-            var cmd = Banco.Abrir();
-            cmd.CommandText = "update telefone_ong set " + "numero = '" + telefone_ong.Numero + "'," + "tipo = '" + telefone_ong.Tipo + "'," +
-               "where id = '" + telefone_ong.Id; ;
-            cmd.ExecuteNonQuery();
-        }
+        
         public bool Excluir(int _id)
         {
             var cmd = Banco.Abrir();

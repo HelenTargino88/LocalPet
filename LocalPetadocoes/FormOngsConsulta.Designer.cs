@@ -71,26 +71,30 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.dtgListOng = new System.Windows.Forms.DataGridView();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.dtgEnderecoOng = new System.Windows.Forms.DataGridView();
+            this.clnCep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnLogradouro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnComplemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgTelefone = new System.Windows.Forms.DataGridView();
+            this.clnTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnTipoTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnDataCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.dtgEnderecoOng = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListOng)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEnderecoOng)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTelefone)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -604,7 +608,6 @@
             this.clnNome,
             this.clnCnpj,
             this.clnCpf,
-            this.clnTelefone,
             this.clnDataCad,
             this.clnAtivo});
             this.dtgListOng.Location = new System.Drawing.Point(13, 436);
@@ -612,9 +615,119 @@
             this.dtgListOng.Name = "dtgListOng";
             this.dtgListOng.ReadOnly = true;
             this.dtgListOng.RowHeadersVisible = false;
-            this.dtgListOng.Size = new System.Drawing.Size(689, 239);
+            this.dtgListOng.Size = new System.Drawing.Size(599, 239);
             this.dtgListOng.TabIndex = 21;
             this.dtgListOng.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListOng_CellContentClick);
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(991, 183);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(189, 20);
+            this.txtCidade.TabIndex = 56;
+            // 
+            // dtgEnderecoOng
+            // 
+            this.dtgEnderecoOng.AllowUserToAddRows = false;
+            this.dtgEnderecoOng.AllowUserToDeleteRows = false;
+            this.dtgEnderecoOng.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgEnderecoOng.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgEnderecoOng.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnCep,
+            this.clnLogradouro,
+            this.clnNumero,
+            this.clnComplemento,
+            this.clnBairro,
+            this.clnCidade,
+            this.clnEstado,
+            this.clnTipo});
+            this.dtgEnderecoOng.Location = new System.Drawing.Point(625, 436);
+            this.dtgEnderecoOng.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dtgEnderecoOng.Name = "dtgEnderecoOng";
+            this.dtgEnderecoOng.ReadOnly = true;
+            this.dtgEnderecoOng.RowHeadersVisible = false;
+            this.dtgEnderecoOng.Size = new System.Drawing.Size(804, 239);
+            this.dtgEnderecoOng.TabIndex = 22;
+            this.dtgEnderecoOng.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEnderecoOng_CellContentClick);
+            // 
+            // clnCep
+            // 
+            this.clnCep.HeaderText = "CEP";
+            this.clnCep.Name = "clnCep";
+            this.clnCep.ReadOnly = true;
+            // 
+            // clnLogradouro
+            // 
+            this.clnLogradouro.HeaderText = "LOGRADOURO";
+            this.clnLogradouro.Name = "clnLogradouro";
+            this.clnLogradouro.ReadOnly = true;
+            // 
+            // clnNumero
+            // 
+            this.clnNumero.HeaderText = "NUMERO";
+            this.clnNumero.Name = "clnNumero";
+            this.clnNumero.ReadOnly = true;
+            // 
+            // clnComplemento
+            // 
+            this.clnComplemento.HeaderText = "COMPLEMENTO";
+            this.clnComplemento.Name = "clnComplemento";
+            this.clnComplemento.ReadOnly = true;
+            // 
+            // clnBairro
+            // 
+            this.clnBairro.HeaderText = "BAIRRO";
+            this.clnBairro.Name = "clnBairro";
+            this.clnBairro.ReadOnly = true;
+            // 
+            // clnCidade
+            // 
+            this.clnCidade.HeaderText = "CIDADE";
+            this.clnCidade.Name = "clnCidade";
+            this.clnCidade.ReadOnly = true;
+            // 
+            // clnEstado
+            // 
+            this.clnEstado.HeaderText = "ESTADO";
+            this.clnEstado.Name = "clnEstado";
+            this.clnEstado.ReadOnly = true;
+            // 
+            // clnTipo
+            // 
+            this.clnTipo.HeaderText = "TIPO";
+            this.clnTipo.Name = "clnTipo";
+            this.clnTipo.ReadOnly = true;
+            // 
+            // dtgTelefone
+            // 
+            this.dtgTelefone.AllowUserToAddRows = false;
+            this.dtgTelefone.AllowUserToDeleteRows = false;
+            this.dtgTelefone.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgTelefone.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTelefone.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnTel,
+            this.clnTipoTelefone});
+            this.dtgTelefone.Location = new System.Drawing.Point(1437, 436);
+            this.dtgTelefone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dtgTelefone.Name = "dtgTelefone";
+            this.dtgTelefone.ReadOnly = true;
+            this.dtgTelefone.RowHeadersVisible = false;
+            this.dtgTelefone.Size = new System.Drawing.Size(204, 239);
+            this.dtgTelefone.TabIndex = 23;
+            this.dtgTelefone.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTelefone_CellContentClick);
+            // 
+            // clnTel
+            // 
+            this.clnTel.HeaderText = "TELEFONE";
+            this.clnTel.Name = "clnTel";
+            this.clnTel.ReadOnly = true;
+            // 
+            // clnTipoTelefone
+            // 
+            this.clnTipoTelefone.HeaderText = "TIPO";
+            this.clnTipoTelefone.Name = "clnTipoTelefone";
+            this.clnTipoTelefone.ReadOnly = true;
             // 
             // clnId
             // 
@@ -650,14 +763,6 @@
             this.clnCpf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clnCpf.Width = 135;
             // 
-            // clnTelefone
-            // 
-            this.clnTelefone.HeaderText = "TELEFONE";
-            this.clnTelefone.Name = "clnTelefone";
-            this.clnTelefone.ReadOnly = true;
-            this.clnTelefone.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.clnTelefone.Width = 90;
-            // 
             // clnDataCad
             // 
             this.clnDataCad.HeaderText = "DATA CADASTRO";
@@ -674,101 +779,13 @@
             this.clnAtivo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clnAtivo.Width = 61;
             // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(991, 183);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(189, 20);
-            this.txtCidade.TabIndex = 56;
-            // 
-            // dtgEnderecoOng
-            // 
-            this.dtgEnderecoOng.AllowUserToAddRows = false;
-            this.dtgEnderecoOng.AllowUserToDeleteRows = false;
-            this.dtgEnderecoOng.BackgroundColor = System.Drawing.Color.NavajoWhite;
-            this.dtgEnderecoOng.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgEnderecoOng.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewCheckBoxColumn1});
-            this.dtgEnderecoOng.Location = new System.Drawing.Point(710, 436);
-            this.dtgEnderecoOng.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dtgEnderecoOng.Name = "dtgEnderecoOng";
-            this.dtgEnderecoOng.ReadOnly = true;
-            this.dtgEnderecoOng.RowHeadersVisible = false;
-            this.dtgEnderecoOng.Size = new System.Drawing.Size(689, 239);
-            this.dtgEnderecoOng.TabIndex = 22;
-            this.dtgEnderecoOng.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEnderecoOng_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.Frozen = true;
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.Frozen = true;
-            this.dataGridViewTextBoxColumn2.HeaderText = "NOME";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn2.Width = 120;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "CNPJ";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn3.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "CPF RESPONSÁVEL";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn4.Width = 135;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "TELEFONE";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn5.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "DATA CADASTRO";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn6.Width = 140;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.HeaderText = "ATIVO";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCheckBoxColumn1.Width = 61;
-            // 
             // FormOngsConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(1674, 687);
+            this.Controls.Add(this.dtgTelefone);
             this.Controls.Add(this.dtgEnderecoOng);
             this.Controls.Add(this.dtgListOng);
             this.Controls.Add(this.txtBuscar);
@@ -783,6 +800,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListOng)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEnderecoOng)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTelefone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -831,21 +849,24 @@
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.DataGridView dtgEnderecoOng;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnCep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnLogradouro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnNumero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnComplemento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnBairro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnCidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnEstado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnTipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCnpj;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCpf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnTelefone;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDataCad;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clnAtivo;
-        private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.DataGridView dtgEnderecoOng;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridView dtgTelefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnTel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnTipoTelefone;
     }
 }
