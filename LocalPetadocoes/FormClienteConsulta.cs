@@ -30,6 +30,15 @@ namespace LocalPetadocoes
         {
             Clientes clientes = new Clientes(int.Parse(txtId.Text), txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
             clientes.Editar();
+
+            EnderecoCli enderecoCli = new EnderecoCli(txtCEP.Text, txtLogradouro.Text,
+                txtNumero.Text, txtComplemento.Text, txtBairro.Text,
+                txtCidade.Text, cmbUF.Text, cmbEstado.Text, cmbTipo.Text);
+            enderecoCli.Editar();
+
+            TelefoneCli telefoneCli = new TelefoneCli(txtTelefone.Text, cmbTipoTelefone.Text);
+            telefoneCli.Editar();
+
             MessageBox.Show("Cliente atualizado com sucesso!");
         }
 

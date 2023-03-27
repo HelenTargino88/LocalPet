@@ -39,10 +39,9 @@
             this.btnArquivar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnAdiconar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbTipoTelefone = new System.Windows.Forms.ComboBox();
-            this.txtCidade = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtComplemento = new System.Windows.Forms.TextBox();
@@ -79,14 +78,25 @@
             this.clnTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnDataCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.dtgEnderecoOng = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListOng)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEnderecoOng)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Controls.Add(this.ptbImagem);
@@ -96,10 +106,9 @@
             this.groupBox1.Controls.Add(this.btnArquivar);
             this.groupBox1.Controls.Add(this.btnEditar);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.btnAdiconar);
+            this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.cmbTipoTelefone);
-            this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtComplemento);
@@ -256,21 +265,21 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "TELEFONE";
             // 
-            // btnAdiconar
+            // btnExcluir
             // 
-            this.btnAdiconar.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAdiconar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAdiconar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdiconar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdiconar.Location = new System.Drawing.Point(236, 284);
-            this.btnAdiconar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnAdiconar.Name = "btnAdiconar";
-            this.btnAdiconar.Size = new System.Drawing.Size(102, 37);
-            this.btnAdiconar.TabIndex = 11;
-            this.btnAdiconar.Text = "ADICIONAR";
-            this.btnAdiconar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdiconar.UseVisualStyleBackColor = false;
-            this.btnAdiconar.Click += new System.EventHandler(this.btnAdiconar_Click);
+            this.btnExcluir.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(236, 284);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(102, 37);
+            this.btnExcluir.TabIndex = 11;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // label5
             // 
@@ -294,14 +303,6 @@
             this.cmbTipoTelefone.Name = "cmbTipoTelefone";
             this.cmbTipoTelefone.Size = new System.Drawing.Size(177, 21);
             this.cmbTipoTelefone.TabIndex = 20;
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(990, 182);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(190, 20);
-            this.txtCidade.TabIndex = 47;
             // 
             // label7
             // 
@@ -673,12 +674,102 @@
             this.clnAtivo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clnAtivo.Width = 61;
             // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(991, 183);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(189, 20);
+            this.txtCidade.TabIndex = 56;
+            // 
+            // dtgEnderecoOng
+            // 
+            this.dtgEnderecoOng.AllowUserToAddRows = false;
+            this.dtgEnderecoOng.AllowUserToDeleteRows = false;
+            this.dtgEnderecoOng.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgEnderecoOng.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgEnderecoOng.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewCheckBoxColumn1});
+            this.dtgEnderecoOng.Location = new System.Drawing.Point(710, 436);
+            this.dtgEnderecoOng.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dtgEnderecoOng.Name = "dtgEnderecoOng";
+            this.dtgEnderecoOng.ReadOnly = true;
+            this.dtgEnderecoOng.RowHeadersVisible = false;
+            this.dtgEnderecoOng.Size = new System.Drawing.Size(689, 239);
+            this.dtgEnderecoOng.TabIndex = 22;
+            this.dtgEnderecoOng.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEnderecoOng_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.Frozen = true;
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.Frozen = true;
+            this.dataGridViewTextBoxColumn2.HeaderText = "NOME";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn2.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "CNPJ";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn3.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "CPF RESPONSÁVEL";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn4.Width = 135;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "TELEFONE";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn5.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "DATA CADASTRO";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn6.Width = 140;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.HeaderText = "ATIVO";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCheckBoxColumn1.Width = 61;
+            // 
             // FormOngsConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(1674, 687);
+            this.Controls.Add(this.dtgEnderecoOng);
             this.Controls.Add(this.dtgListOng);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label16);
@@ -686,10 +777,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOngsConsulta";
             this.Text = "Ong\'s";
+            this.Load += new System.EventHandler(this.FormOngsConsulta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListOng)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEnderecoOng)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -699,7 +792,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnArquivar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnAdiconar;
+        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -719,7 +812,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cbTipoEndereco;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.TextBox txtNumeroEnd;
@@ -746,5 +838,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnTelefone;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDataCad;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clnAtivo;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.DataGridView dtgEnderecoOng;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
     }
 }
