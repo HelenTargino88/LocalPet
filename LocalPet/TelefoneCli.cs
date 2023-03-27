@@ -1,4 +1,5 @@
 ﻿using LocalPet;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,12 +14,20 @@ namespace LocalPet
         public int Id { get; set; }
         public string Numero { get; set; }
         public string Tipo { get; set; }
+        public Clientes Clientes { get; set; }
 
-        public TelefoneCli(int id, string numero, string tipo)
+        public TelefoneCli(int id, string numero, string tipo, Clientes clientes)
         {
             Id = id;
             Numero = numero;
             Tipo = tipo;
+            Clientes = clientes;
+        }
+        public TelefoneCli(string numero, string tipo, Clientes clientes)
+        {
+            Numero = numero;
+            Tipo = tipo;
+            Clientes = clientes;
         }
 
         public TelefoneCli(string numero, string tipo)
@@ -27,44 +36,39 @@ namespace LocalPet
             Tipo = tipo;
         }
 
-        public void Inserir(int cliente_id)
+        public void Inserir()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "insert telefone_cli (numero, tipo) " +
-                "values (" + cliente_id + ",'" + Numero + "', '" + Tipo + "')";
+            cmd.CommandText = "insert telefone_cli (numero, tipo, cliente_id) " +
+                "values (" + Numero + ",'" + Tipo + "', '" + Clientes + "')";
             cmd.ExecuteNonQuery();
         }
-        public static List<TelefoneCli> ListarPorCliente(int cliente_id)
+        public static List<TelefoneCli> Listar()
         {
-            List<TelefoneCli> listaTel = new List<TelefoneCli>();
+            List<TelefoneCli> listaTelCli = new List<TelefoneCli>();
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select  numero, tipo, id from telefone_cli where cliente_id = " + cliente_id;
+            cmd.CommandText = "select  * from telefone_cli";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                listaTel.Add(new TelefoneCli(
-                            dr.GetInt32(2),
-                            dr.GetString(0),
-                            dr.GetString(1)
+                listaTelCli.Add(new TelefoneCli(
+                            dr.GetInt32(0),
+                            dr.GetString(1),
+                            dr.GetString(2),
+                            Clientes.ObterPorId(dr.GetInt32(3))
                         )
                     );
             }
-            return listaTel;
+            return listaTelCli;
         }
-        public void Editar()
+        public static void Editar(TelefoneCli telefone_cli)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update telefone_cli set numero = '" + Numero + "'," + "tipo = '" + Tipo +
-                "where id = " + Id;
+            cmd.CommandText = "update telefone_cli set numero = '" + telefone_cli.Numero + "'," + "tipo = '" + telefone_cli.Tipo + "'," + "cliente_id = '" + telefone_cli.Clientes +
+                "where id = " + telefone_cli.Id;
             cmd.ExecuteNonQuery();
         }
-        public static void Atualizar(TelefoneCli telefone_cli)
-        {
-            var cmd = Banco.Abrir();
-            cmd.CommandText = "update telefone_cli set " + "numero = '" + telefone_cli.Numero + "'," + "tipo = '" + telefone_cli.Tipo + "'," +
-               "where id = '" + telefone_cli.Id; ;
-            cmd.ExecuteNonQuery();
-        }
+
         public bool Excluir(int _id)
         {
             var cmd = Banco.Abrir();

@@ -39,10 +39,9 @@
             this.btnArquivar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnAdiconar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbTipoTelefone = new System.Windows.Forms.ComboBox();
-            this.txtCidade = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtComplemento = new System.Windows.Forms.TextBox();
@@ -72,21 +71,36 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.dtgListOng = new System.Windows.Forms.DataGridView();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.dtgEnderecoOng = new System.Windows.Forms.DataGridView();
+            this.clnCep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnLogradouro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnComplemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgTelefone = new System.Windows.Forms.DataGridView();
+            this.clnTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnTipoTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnDataCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListOng)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEnderecoOng)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTelefone)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Controls.Add(this.ptbImagem);
@@ -96,10 +110,9 @@
             this.groupBox1.Controls.Add(this.btnArquivar);
             this.groupBox1.Controls.Add(this.btnEditar);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.btnAdiconar);
+            this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.cmbTipoTelefone);
-            this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtComplemento);
@@ -256,21 +269,21 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "TELEFONE";
             // 
-            // btnAdiconar
+            // btnExcluir
             // 
-            this.btnAdiconar.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAdiconar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAdiconar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdiconar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdiconar.Location = new System.Drawing.Point(236, 284);
-            this.btnAdiconar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnAdiconar.Name = "btnAdiconar";
-            this.btnAdiconar.Size = new System.Drawing.Size(102, 37);
-            this.btnAdiconar.TabIndex = 11;
-            this.btnAdiconar.Text = "ADICIONAR";
-            this.btnAdiconar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdiconar.UseVisualStyleBackColor = false;
-            this.btnAdiconar.Click += new System.EventHandler(this.btnAdiconar_Click);
+            this.btnExcluir.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(236, 284);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(102, 37);
+            this.btnExcluir.TabIndex = 11;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // label5
             // 
@@ -294,14 +307,6 @@
             this.cmbTipoTelefone.Name = "cmbTipoTelefone";
             this.cmbTipoTelefone.Size = new System.Drawing.Size(177, 21);
             this.cmbTipoTelefone.TabIndex = 20;
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(990, 182);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(190, 20);
-            this.txtCidade.TabIndex = 47;
             // 
             // label7
             // 
@@ -603,7 +608,6 @@
             this.clnNome,
             this.clnCnpj,
             this.clnCpf,
-            this.clnTelefone,
             this.clnDataCad,
             this.clnAtivo});
             this.dtgListOng.Location = new System.Drawing.Point(13, 436);
@@ -611,9 +615,119 @@
             this.dtgListOng.Name = "dtgListOng";
             this.dtgListOng.ReadOnly = true;
             this.dtgListOng.RowHeadersVisible = false;
-            this.dtgListOng.Size = new System.Drawing.Size(689, 239);
+            this.dtgListOng.Size = new System.Drawing.Size(599, 239);
             this.dtgListOng.TabIndex = 21;
             this.dtgListOng.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListOng_CellContentClick);
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(991, 183);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(189, 20);
+            this.txtCidade.TabIndex = 56;
+            // 
+            // dtgEnderecoOng
+            // 
+            this.dtgEnderecoOng.AllowUserToAddRows = false;
+            this.dtgEnderecoOng.AllowUserToDeleteRows = false;
+            this.dtgEnderecoOng.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgEnderecoOng.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgEnderecoOng.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnCep,
+            this.clnLogradouro,
+            this.clnNumero,
+            this.clnComplemento,
+            this.clnBairro,
+            this.clnCidade,
+            this.clnEstado,
+            this.clnTipo});
+            this.dtgEnderecoOng.Location = new System.Drawing.Point(625, 436);
+            this.dtgEnderecoOng.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dtgEnderecoOng.Name = "dtgEnderecoOng";
+            this.dtgEnderecoOng.ReadOnly = true;
+            this.dtgEnderecoOng.RowHeadersVisible = false;
+            this.dtgEnderecoOng.Size = new System.Drawing.Size(804, 239);
+            this.dtgEnderecoOng.TabIndex = 22;
+            this.dtgEnderecoOng.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEnderecoOng_CellContentClick);
+            // 
+            // clnCep
+            // 
+            this.clnCep.HeaderText = "CEP";
+            this.clnCep.Name = "clnCep";
+            this.clnCep.ReadOnly = true;
+            // 
+            // clnLogradouro
+            // 
+            this.clnLogradouro.HeaderText = "LOGRADOURO";
+            this.clnLogradouro.Name = "clnLogradouro";
+            this.clnLogradouro.ReadOnly = true;
+            // 
+            // clnNumero
+            // 
+            this.clnNumero.HeaderText = "NUMERO";
+            this.clnNumero.Name = "clnNumero";
+            this.clnNumero.ReadOnly = true;
+            // 
+            // clnComplemento
+            // 
+            this.clnComplemento.HeaderText = "COMPLEMENTO";
+            this.clnComplemento.Name = "clnComplemento";
+            this.clnComplemento.ReadOnly = true;
+            // 
+            // clnBairro
+            // 
+            this.clnBairro.HeaderText = "BAIRRO";
+            this.clnBairro.Name = "clnBairro";
+            this.clnBairro.ReadOnly = true;
+            // 
+            // clnCidade
+            // 
+            this.clnCidade.HeaderText = "CIDADE";
+            this.clnCidade.Name = "clnCidade";
+            this.clnCidade.ReadOnly = true;
+            // 
+            // clnEstado
+            // 
+            this.clnEstado.HeaderText = "ESTADO";
+            this.clnEstado.Name = "clnEstado";
+            this.clnEstado.ReadOnly = true;
+            // 
+            // clnTipo
+            // 
+            this.clnTipo.HeaderText = "TIPO";
+            this.clnTipo.Name = "clnTipo";
+            this.clnTipo.ReadOnly = true;
+            // 
+            // dtgTelefone
+            // 
+            this.dtgTelefone.AllowUserToAddRows = false;
+            this.dtgTelefone.AllowUserToDeleteRows = false;
+            this.dtgTelefone.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dtgTelefone.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTelefone.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnTel,
+            this.clnTipoTelefone});
+            this.dtgTelefone.Location = new System.Drawing.Point(1437, 436);
+            this.dtgTelefone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dtgTelefone.Name = "dtgTelefone";
+            this.dtgTelefone.ReadOnly = true;
+            this.dtgTelefone.RowHeadersVisible = false;
+            this.dtgTelefone.Size = new System.Drawing.Size(204, 239);
+            this.dtgTelefone.TabIndex = 23;
+            this.dtgTelefone.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTelefone_CellContentClick);
+            // 
+            // clnTel
+            // 
+            this.clnTel.HeaderText = "TELEFONE";
+            this.clnTel.Name = "clnTel";
+            this.clnTel.ReadOnly = true;
+            // 
+            // clnTipoTelefone
+            // 
+            this.clnTipoTelefone.HeaderText = "TIPO";
+            this.clnTipoTelefone.Name = "clnTipoTelefone";
+            this.clnTipoTelefone.ReadOnly = true;
             // 
             // clnId
             // 
@@ -649,14 +763,6 @@
             this.clnCpf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clnCpf.Width = 135;
             // 
-            // clnTelefone
-            // 
-            this.clnTelefone.HeaderText = "TELEFONE";
-            this.clnTelefone.Name = "clnTelefone";
-            this.clnTelefone.ReadOnly = true;
-            this.clnTelefone.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.clnTelefone.Width = 90;
-            // 
             // clnDataCad
             // 
             this.clnDataCad.HeaderText = "DATA CADASTRO";
@@ -679,6 +785,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(1674, 687);
+            this.Controls.Add(this.dtgTelefone);
+            this.Controls.Add(this.dtgEnderecoOng);
             this.Controls.Add(this.dtgListOng);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label16);
@@ -686,10 +794,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOngsConsulta";
             this.Text = "Ong\'s";
+            this.Load += new System.EventHandler(this.FormOngsConsulta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListOng)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEnderecoOng)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTelefone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -699,7 +810,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnArquivar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnAdiconar;
+        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -719,7 +830,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cbTipoEndereco;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.TextBox txtNumeroEnd;
@@ -739,12 +849,24 @@
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.DataGridView dtgEnderecoOng;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnCep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnLogradouro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnNumero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnComplemento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnBairro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnCidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnEstado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnTipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCnpj;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCpf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnTelefone;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDataCad;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clnAtivo;
+        private System.Windows.Forms.DataGridView dtgTelefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnTel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnTipoTelefone;
     }
 }

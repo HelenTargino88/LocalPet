@@ -38,11 +38,11 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.cmbEstado = new System.Windows.Forms.ComboBox();
-            this.cmbUf = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.cmbTipoEndereco = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
@@ -53,7 +53,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.txtCep = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnArquivar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -110,11 +110,11 @@
             this.groupBox1.Controls.Add(this.txtTelefone);
             this.groupBox1.Controls.Add(this.txtNumero);
             this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.cmbEstado);
-            this.groupBox1.Controls.Add(this.cmbUf);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.cmbTipoEndereco);
+            this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.txtBairro);
@@ -125,7 +125,7 @@
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.txtCep);
+            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.btnArquivar);
             this.groupBox1.Controls.Add(this.btnEditar);
             this.groupBox1.Controls.Add(this.btnExcluir);
@@ -208,21 +208,21 @@
             // 
             // cmbEstado
             // 
-            this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(571, 146);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(225, 21);
-            this.cmbEstado.TabIndex = 49;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(571, 146);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(225, 21);
+            this.comboBox1.TabIndex = 49;
             // 
-            // cmbUf
+            // comboBox2
             // 
-            this.cmbUf.FormattingEnabled = true;
-            this.cmbUf.Location = new System.Drawing.Point(491, 146);
-            this.cmbUf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmbUf.Name = "cmbUf";
-            this.cmbUf.Size = new System.Drawing.Size(66, 21);
-            this.cmbUf.TabIndex = 48;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(491, 146);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(66, 21);
+            this.comboBox2.TabIndex = 48;
             // 
             // label17
             // 
@@ -244,14 +244,14 @@
             this.label18.TabIndex = 38;
             this.label18.Text = "UF";
             // 
-            // cmbTipoEndereco
+            // comboBox3
             // 
-            this.cmbTipoEndereco.FormattingEnabled = true;
-            this.cmbTipoEndereco.Location = new System.Drawing.Point(815, 146);
-            this.cmbTipoEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmbTipoEndereco.Name = "cmbTipoEndereco";
-            this.cmbTipoEndereco.Size = new System.Drawing.Size(245, 21);
-            this.cmbTipoEndereco.TabIndex = 36;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(815, 146);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(245, 21);
+            this.comboBox3.TabIndex = 36;
             // 
             // label19
             // 
@@ -345,13 +345,13 @@
             this.label24.TabIndex = 35;
             this.label24.Text = "CEP";
             // 
-            // txtCep
+            // textBox5
             // 
-            this.txtCep.Location = new System.Drawing.Point(491, 45);
-            this.txtCep.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(134, 20);
-            this.txtCep.TabIndex = 34;
+            this.textBox5.Location = new System.Drawing.Point(491, 45);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(134, 20);
+            this.textBox5.TabIndex = 34;
             // 
             // btnArquivar
             // 
@@ -641,11 +641,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDataCad;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.ComboBox cmbEstado;
-        private System.Windows.Forms.ComboBox cmbUf;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox cmbTipoEndereco;
+        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtBairro;
@@ -656,7 +656,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtCep;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cmbTipoTelefone;
         private System.Windows.Forms.Label label27;

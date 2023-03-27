@@ -21,9 +21,10 @@ namespace LocalPet
         public string Estado { get; set; }
         public string UF { get; set; }
         public string Tipo { get; set; }
+        public Clientes Clientes { get; set; }
 
         // Métodos construtores
-        public EnderecoCli(int id, string cep, string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string uF, string tipo)
+        public EnderecoCli(int id, string cep, string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string uF, string tipo, Clientes clientes)
         {
             Id = id;
             CEP = cep;
@@ -35,6 +36,20 @@ namespace LocalPet
             Estado = estado;
             UF = uF;
             Tipo = tipo;
+            Clientes = clientes;
+        }
+        public EnderecoCli(string cep, string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string uF, string tipo, Clientes clientes)
+        {
+            CEP = cep;
+            Logradouro = logradouro;
+            Numero = numero;
+            Complemento = complemento;
+            Bairro = bairro;
+            Cidade = cidade;
+            Estado = estado;
+            UF = uF;
+            Tipo = tipo;
+            Clientes = clientes;
         }
 
         public EnderecoCli(string cep, string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string uF, string tipo)
@@ -55,16 +70,16 @@ namespace LocalPet
       public void Inserir(int cliente_id)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "insert endereco_cli (cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo) " +
-                "values (" + cliente_id + ",'" + CEP + "', '" + Logradouro + "', '" + Numero + "', '" + Complemento + "', " +
-                "'" + Bairro + "', '" + Cidade + "', '" + Estado + "', '" + UF + "', '" + Tipo + "')";
+            cmd.CommandText = "insert endereco_cli (cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo, clientes_id) " +
+                "values ("+ CEP + "', '" + Logradouro + "', '" + Numero + "', '" + Complemento + "', " +
+                "'" + Bairro + "', '" + Cidade + "', '" + Estado + "', '" + UF + "', '" + Tipo + "', '" + Clientes + "')";
             cmd.ExecuteNonQuery();
         }
-        public static List<EnderecoCli> ListarPorCliente(int cliente_id)
+        public static List<EnderecoCli> Listar()
         {
             List<EnderecoCli> listaEnd = new List<EnderecoCli>();
             var cmd = Banco.Abrir();
-            cmd.CommandText = "select  cep, logradouro, numero, complemento, bairro, cidade, estado, uf, tipo, id from enderecos where cliente_id = " + cliente_id;
+            cmd.CommandText = "select * from cliente_id";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -77,8 +92,7 @@ namespace LocalPet
                             dr.GetString(5),
                             dr.GetString(6),
                             dr.GetString(7),
-                            dr.GetString(8),
-                            dr.GetString(9)
+                            dr.GetString(8)
                         )
                     );
             }

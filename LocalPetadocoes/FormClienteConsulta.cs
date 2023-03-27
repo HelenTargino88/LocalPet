@@ -19,26 +19,19 @@ namespace LocalPetadocoes
         {
             InitializeComponent();
         }
+
+        private void btnAdiconar_Click(object sender, EventArgs e)
+        {
+            Clientes clientes = new Clientes(txtNome.Text, txtCpf.Text,DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
+            clientes.Inserir();
+            txtId.Text = clientes.Id.ToString();
+        }
+
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (btnEditar.Text == "Editar")
-            {
-                txtId.ReadOnly = false;
-                txtId.Focus();
-                btnEditar.Text = "Gravar";
-               
-            }
-            else
-            {
-                Clientes clientes = new Clientes(txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
-                clientes.Editar(clientes);
-                txtId.ReadOnly = true;
-                txtNome.Focus();
-                btnEditar.Text = "Editar";
-                MessageBox.Show("Cliente atualizado com sucesso!");
-
-            }
-           
+            Clientes clientes = new Clientes(int.Parse(txtId.Text), txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
+            clientes.Editar();
+            MessageBox.Show("Cliente atualizado com sucesso!");
         }
 
         private void dtgListClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
