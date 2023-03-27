@@ -33,7 +33,7 @@ namespace LocalPetadocoes
             }
             else
             {
-                Animais animais = new Animais(int.Parse(txtId.Text), txtNome.Text,  Raca.ObterPorId(int.Parse(txtRaca.Text)), txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, cbAtivo.Checked);
+                Animais animais = new Animais(int.Parse(txtId.Text), txtNome.Text,  Raca.ObterPorId(int.Parse(txtRaca.Text)), txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, true);
                 animais.Editar(animais);
                 MessageBox.Show("Animal atualizado com sucesso!");
                 txtNome.Clear();

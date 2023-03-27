@@ -83,7 +83,7 @@ namespace LocalPet
         public void Editar(Clientes clientes)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update clientes set " + "nome = '" + clientes.Nome + "'," + "cpf = '" + clientes.Cpf + "'," + "data_nasc = '" + clientes.Data_nasc + "'," + "email = '" + clientes.Email + "'," + "";
+            cmd.CommandText = "update clientes set nome = '" + clientes.Nome + "'," + "cpf = '" + clientes.Cpf + "'," + "data_nasc = '" + clientes.Data_nasc + "'," + "email = '" + clientes.Email + "'," + "";
             cmd.ExecuteNonQuery();
         }
         public static bool Arquivar(int id)
