@@ -19,23 +19,12 @@ namespace LocalPetadocoes
         }
         private void btnAdiconar_Click(object sender, EventArgs e)
         {
-            Animais animais = new Animais(txtNome.Text, /*txtRaca.Text*/, txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, true);
-            animais.Inserir();
-            MessageBox.Show("Animal adicionado com sucesso!");
-            txtNome.Clear();
-            txtRaca.Clear();
-            txtEspecie.Clear();
-            txtDescricao.Clear();
-            txtEnfermidades.Clear();
-            txtMedicamentos.Clear();
-            txtVacinas.Clear();
-            txtComportamento.Clear();
-            txtNome.Focus();
+            
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Animais animais = new Animais(int.Parse(txtId.Text), txtNome.Text,  /*txtRaca.Text*/, txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, true);
+            Animais animais = new Animais(int.Parse(txtId.Text), txtNome.Text,  Raca.ObterPorId(int.Parse(txtRaca.Text)), txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, true);
             animais.Editar();
             MessageBox.Show("Animal atualizado com sucesso!");
             txtNome.Clear();
@@ -75,6 +64,51 @@ namespace LocalPetadocoes
                 dtgListAnimais.Rows[linha].Cells[11].Value = item.Idade;
                 dtgListAnimais.Rows[linha].Cells[12].Value = item.Ativo;
                 linha++;
+            }
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (txtId.Text != string.Empty)
+            {
+                Animais animais = Animais.ObterPorId(int.Parse(txtId.Text));
+                if (animais.Id > 0)
+                {
+                    txtNome.Text = animais.Nome;
+                    txtRaca.Text = animais.Raca.ToString();
+                    txtEspecie.Text = animais.Especie;
+                    cmbSexo.Text = animais.Sexo;
+                    cmbPorte.Text = animais.Porte;
+                    cbAtivo.Checked = animais.Ativo;
+                    txtEnfermidades.Text = animais.Enfermidades;
+                    txtMedicamentos.Text = animais.Medicamentos;
+                    txtVacinas.Text = animais.Vacinas;
+                    txtComportamento.Text = animais.Comportamento;
+                    cmbIdade.Text = animais.Idade;
+                    txtDescricao.Text = animais.Descricao;
+
+
+                }
+                else
+                {
+                    txtDescricao.Text = "Animal não cadastrado! o(╥﹏╥)o";
+                }
+
+            }
+            else
+            {
+                txtNome.Clear();
+                txtRaca.Clear();
+                txtEspecie.Clear();
+                cmbIdade.Enabled.ToString();
+                cmbIdade.Enabled = false;
+                cbAtivo.Enabled = false;
+                txtEnfermidades.Clear();
+                txtMedicamentos.Clear();
+                txtVacinas.Clear();
+                txtComportamento.Enabled = false;
+                cmbIdade.Enabled = false;
+                txtDescricao.Enabled = false;
             }
         }
     }

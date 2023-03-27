@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,15 +31,6 @@ namespace LocalPetadocoes
         {
             Clientes clientes = new Clientes(int.Parse(txtId.Text), txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
             clientes.Editar();
-
-            EnderecoCli enderecoCli = new EnderecoCli(txtCEP.Text, txtLogradouro.Text,
-                txtNumero.Text, txtComplemento.Text, txtBairro.Text,
-                txtCidade.Text, cmbUF.Text, cmbEstado.Text, cmbTipo.Text);
-            enderecoCli.Editar();
-
-            TelefoneCli telefoneCli = new TelefoneCli(txtTelefone.Text, cmbTipoTelefone.Text);
-            telefoneCli.Editar();
-
             MessageBox.Show("Cliente atualizado com sucesso!");
         }
 
@@ -56,6 +48,28 @@ namespace LocalPetadocoes
                 dtgListClientes.Rows[linha].Cells[4].Value = item.Email;
                 linha++;
             }
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (txtId.Text != string.Empty)
+            {
+                Clientes clientes = Clientes.ObterPorId(int.Parse(txtId.Text));
+                if (clientes.Excluir(clientes.Id))
+                {
+                    MessageBox.Show("Cliente " + clientes.Nome + " excluido com sucesso!");
+                }
+            }
+        }
+
+        private void btnArquivar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+             
         }
     }
 }
