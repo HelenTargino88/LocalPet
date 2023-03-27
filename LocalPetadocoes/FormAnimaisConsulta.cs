@@ -121,5 +121,17 @@ namespace LocalPetadocoes
         {
 
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (txtId.Text != string.Empty)
+            {
+                Animais animais = Animais.ObterPorId(int.Parse(txtId.Text));
+                if (animais.Excluir(animais.Id))
+                {
+                    MessageBox.Show("Animal " + animais.Nome + " excluido com sucesso!");
+                }
+            }
+        }
     }
 }

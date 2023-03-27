@@ -45,18 +45,12 @@ namespace LocalPetadocoes
 
         private void dtgListClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var lista = Clientes.Listar();
-            int linha = 0;
-            foreach (var item in lista)
-            {
-                dtgListClientes.Rows.Add();
-                dtgListClientes.Rows[linha].Cells[0].Value = item.Id;
-                dtgListClientes.Rows[linha].Cells[1].Value = item.Nome;
-                dtgListClientes.Rows[linha].Cells[2].Value = item.Cpf;
-                dtgListClientes.Rows[linha].Cells[3].Value = item.Data_nasc;
-                dtgListClientes.Rows[linha].Cells[4].Value = item.Email;
-                linha++;
-            }
+            txtId.Text = dtgListClientes.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtNome.Text = dtgListClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtCpf.Text = dtgListClientes.Rows[e.RowIndex].Cells[2].Value.ToString();
+            dtNascCliente.Text = dtgListClientes.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtEmail.Text = dtgListClientes.Rows[e.RowIndex].Cells[4].Value.ToString();
+
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -66,16 +60,10 @@ namespace LocalPetadocoes
                 Clientes clientes = Clientes.ObterPorId(int.Parse(txtId.Text));
                 if (clientes.Excluir(clientes.Id))
                 {
-                    MessageBox.Show("Cliente " + clientes.Nome + " excluido com sucesso!");
+                    MessageBox.Show("Cliente " +    clientes.Nome + " excluido com sucesso!");
                 }
             }
         }
-
-        private void btnArquivar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtId_TextChanged(object sender, EventArgs e)
         {
             if (txtId.Text != string.Empty)
@@ -128,6 +116,9 @@ namespace LocalPetadocoes
                 cmbTipoEndereco.Enabled = false;
                 
             }
+        }
+        private void lbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }

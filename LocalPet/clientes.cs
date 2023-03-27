@@ -83,21 +83,9 @@ namespace LocalPet
         public void Editar(Clientes clientes)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update clientes set " + "nome = '" + clientes.Nome + "'," + "cpf = '" + clientes.Cpf + "'," + "data_nasc = '" + clientes.Data_nasc + "'," + "email = '" + clientes.Email + "'," + "";
-            cmd.ExecuteNonQuery();
-        }
-        public static bool Arquivar(int id)
-        {
-            var cmd = Banco.Abrir();
-            cmd.CommandText = "uptdate clientes set descontinuado = 1 where id =" + id;
-            return cmd.ExecuteNonQuery() == 1 ? true : false;
-        }
-        public static bool Restaurar(int id)
-        {
-            var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update clientes set descontinuado = 0 where id =" + id;
-            return cmd.ExecuteNonQuery() == 1 ? true : false;
+            cmd.CommandText = "update clientes set nome = '" + Nome + "'," + "cpf = '" + Cpf + "'," + "data_nasc = '" + Data_nasc + "'," + "email = '" + Email;
+            cmd.ExecuteNonQuery();
         }
         public bool Excluir(int _id)
         {
