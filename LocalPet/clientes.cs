@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,14 +15,15 @@ namespace LocalPet
         public string Cpf { get; set; }
         public DateTime Data_nasc { get; set; }
         public string Email { get; set; }
-
-        public Clientes(int id, string nome, string cpf, DateTime data_nasc, string email)
+        public List<EnderecoCli> enderecoCli { get; set; }
+        public Clientes(int id, string nome, string cpf, DateTime data_nasc, string email, List<EnderecoCli> endereco)
         {
             Id = id;
             Nome = nome;
             Cpf = cpf;
             Data_nasc = data_nasc;
             Email = email;
+            enderecoCli = endereco;
         }
         public Clientes(string nome, string cpf, DateTime data_nasc, string email)
         {
@@ -30,9 +32,14 @@ namespace LocalPet
             Data_nasc = data_nasc;
             Email = email;
         }
+       
         public Clientes()
         {
 
+        }
+        public Clientes (int id)
+        {
+            enderecoCli = EnderecoCli.ListarPorCliente(id);
         }
 
         public void Inserir()
@@ -60,7 +67,9 @@ namespace LocalPet
                  dr.GetString(1),
                  dr.GetString(2),
                  dr.GetDateTime(3),
-                 dr.GetString(4)));
+                 dr.GetString(4),
+                 EnderecoCli.ListarPorCliente(dr.GetInt32(0))
+                 ));
             }
             return lista;
         }
@@ -117,8 +126,8 @@ namespace LocalPet
             while (dr.Read())
             {
                 lista.Add(new Clientes(
-                    dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetDateTime(3), dr.GetString(4)
-                    ));
+                    dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetDateTime(3), dr.GetString(4), EnderecoCli.ListarPorCliente(dr.GetInt32(0))
+                    )) ;
             }
             return lista;
         }
