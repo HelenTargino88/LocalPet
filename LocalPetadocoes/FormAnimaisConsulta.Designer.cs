@@ -50,7 +50,7 @@
             this.txtEspecie = new System.Windows.Forms.TextBox();
             this.btnArquivar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.btnAdiconar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -87,6 +87,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(660, 20);
             this.txtBuscar.TabIndex = 22;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // groupBox1
             // 
@@ -111,7 +112,7 @@
             this.groupBox1.Controls.Add(this.txtEspecie);
             this.groupBox1.Controls.Add(this.btnArquivar);
             this.groupBox1.Controls.Add(this.btnEditar);
-            this.groupBox1.Controls.Add(this.btnAdiconar);
+            this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -192,7 +193,6 @@
             this.txtImagem.Size = new System.Drawing.Size(121, 103);
             this.txtImagem.TabIndex = 48;
             this.txtImagem.TabStop = false;
-            this.txtImagem.Click += new System.EventHandler(this.txtImagem_Click);
             // 
             // label4
             // 
@@ -326,7 +326,6 @@
             this.btnArquivar.Text = "ARQUIVAR";
             this.btnArquivar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnArquivar.UseVisualStyleBackColor = false;
-            this.btnArquivar.Click += new System.EventHandler(this.btnArquivar_Click);
             // 
             // btnEditar
             // 
@@ -344,21 +343,20 @@
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // btnAdiconar
+            // btnExcluir
             // 
-            this.btnAdiconar.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnAdiconar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAdiconar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdiconar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdiconar.Location = new System.Drawing.Point(74, 182);
-            this.btnAdiconar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnAdiconar.Name = "btnAdiconar";
-            this.btnAdiconar.Size = new System.Drawing.Size(102, 37);
-            this.btnAdiconar.TabIndex = 11;
-            this.btnAdiconar.Text = "ADICIONAR";
-            this.btnAdiconar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdiconar.UseVisualStyleBackColor = false;
-            this.btnAdiconar.Click += new System.EventHandler(this.btnAdiconar_Click);
+            this.btnExcluir.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(74, 182);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(102, 37);
+            this.btnExcluir.TabIndex = 11;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             // 
             // txtEmail
             // 
@@ -615,7 +613,7 @@
         private System.Windows.Forms.TextBox txtEspecie;
         private System.Windows.Forms.Button btnArquivar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnAdiconar;
+        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Label txtEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

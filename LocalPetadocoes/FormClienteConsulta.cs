@@ -22,9 +22,25 @@ namespace LocalPetadocoes
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Clientes clientes = new Clientes(txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
-            clientes.Editar(clientes);
-            MessageBox.Show("Cliente atualizado com sucesso!");
+
+            if (btnEditar.Text == "Editar")
+            {
+                txtId.ReadOnly = false;
+                txtId.Focus();
+                btnEditar.Text = "Gravar";
+
+            }
+            else
+            {
+                Clientes clientes = new Clientes(txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
+                clientes.Editar(clientes);
+                txtId.ReadOnly = true;
+                txtNome.Focus();
+                btnEditar.Text = "Editar";
+                MessageBox.Show("Cliente atualizado com sucesso!");
+
+            }
+
         }
 
         private void dtgListClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -58,11 +74,6 @@ namespace LocalPetadocoes
         private void btnArquivar_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-             
         }
 
         private void txtId_TextChanged(object sender, EventArgs e)
@@ -117,21 +128,6 @@ namespace LocalPetadocoes
                 cmbTipoEndereco.Enabled = false;
                 
             }
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormClienteConsulta_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtNascCliente_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

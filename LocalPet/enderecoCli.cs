@@ -84,15 +84,15 @@ namespace LocalPet
             while (dr.Read())
             {
                 listaEnd.Add(new EnderecoCli(
-                            dr.GetInt32(0),
-                            dr.GetString(1),
-                            dr.GetString(2),
-                            dr.GetString(3),
-                            dr.GetString(4),
-                            dr.GetString(5),
-                            dr.GetString(6),
-                            dr.GetString(7),
-                            dr.GetString(8)
+                            //dr.GetInt32(0),
+                            //dr.GetString(1),
+                            //dr.GetString(2),
+                            //dr.GetString(3),
+                            //dr.GetString(4),
+                            //dr.GetString(5),
+                            //dr.GetString(6),
+                            //dr.GetString(7),
+                            //dr.GetString(8)
                         )
                     );
             }
@@ -145,7 +145,7 @@ namespace LocalPet
             List<EnderecoCli> lista = new List<EnderecoCli>();
             while (dr.Read())
             {
-                lista.Add(new EnderecoCli(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5), dr.GetString(6), dr.GetString(7), dr.GetString(8),dr.GetString(9)));
+                //lista.Add(new EnderecoCli(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5), dr.GetString(6), dr.GetString(7), dr.GetString(8),dr.GetString(9)));
             }
             return lista;
 

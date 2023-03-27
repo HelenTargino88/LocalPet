@@ -131,20 +131,7 @@ namespace LocalPet
         public void Editar(Animais animais)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update animais set " +
-                "nome = '" + animais.Nome + "'," +
-                "raca = '" + animais.Raca + "'," +
-                "especie = '" + animais.Especie + "'," +         
-                "porte = '" + animais.Porte + "'," +
-                "idade = '" + animais.Idade + "'," +
-                "descricao = '" + animais.Descricao + "'," +
-                "enfermidades = '" +animais.Enfermidades+"'," +
-                "medicamentos = '" + animais.Medicamentos + "'," +
-                "vacinas = '" + animais.Vacinas + "'," +
-                "comportamento = '" + animais.Comportamento + "'," +
-                "imagem_animal = '" + animais.Imagem_animal + "'," +
-                "ativo = '" + animais.Ativo + "'," +
-                "where id = '" + animais.Id;
+            cmd.CommandText = "update animais set nome = '" + animais.Nome + "', raca = '" + animais.Raca + "', especie = '" + animais.Especie + "', sexo = '" + animais.Sexo + "', porte = '" + animais.Porte + "', idade = '" + animais.Idade + "', descricao = '" + animais.Descricao + "', enfermidades = '" +animais.Enfermidades+"', medicamentos = '" + animais.Medicamentos + "', vacinas = '" + animais.Vacinas + "', comportamento = '" + animais.Comportamento + "', imagem_animal = '" + animais.Imagem_animal + "', ativo = '" + animais.Ativo + "', where id = '" + animais.Id;
             cmd.ExecuteReader();
         }
         public bool Excluir(int _id)

@@ -17,11 +17,6 @@ namespace LocalPetadocoes
         {
             InitializeComponent();
         }
-        private void btnAdiconar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (btnEditar.Text == "Editar")
@@ -33,7 +28,7 @@ namespace LocalPetadocoes
             }
             else
             {
-                Animais animais = new Animais(int.Parse(txtId.Text), txtNome.Text,  Raca.ObterPorId(int.Parse(txtRaca.Text)), txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, true);
+                Animais animais = new Animais(int.Parse(txtId.Text), txtNome.Text, Raca.ObterPorId(int.Parse(txtRaca.Text)), txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, true);
                 animais.Editar(animais);
                 MessageBox.Show("Animal atualizado com sucesso!");
                 txtNome.Clear();
@@ -122,8 +117,7 @@ namespace LocalPetadocoes
                 txtDescricao.Enabled = false;
             }
         }
-
-        private void txtImagem_Click(object sender, EventArgs e)
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
 
         }
