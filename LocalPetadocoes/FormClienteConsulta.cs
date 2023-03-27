@@ -64,5 +64,74 @@ namespace LocalPetadocoes
         {
              
         }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (txtId.Text != string.Empty)
+            {
+                Clientes clientes = Clientes.ObterPorId(int.Parse(txtId.Text));
+                if (clientes.Id > 0)
+                {
+                    txtNome.Text = clientes.Nome;
+                    txtCpf.Text = clientes.Cpf;
+                    txtEmail.Text = clientes.Email;
+                    dtNascCliente.MaxDate = clientes.Data_nasc;
+
+                }
+                else
+                {
+                }
+                EnderecoCli enderecoCli = EnderecoCli.ObterPorId(int.Parse(txtId.Text));
+                if (clientes.Id > 0)
+                {
+                    txtCep.Text = enderecoCli.CEP;
+                    txtLogradouro.Text = enderecoCli.Logradouro;
+                    txtNumero.Text = enderecoCli.Numero;
+                    txtComplemento.Text = enderecoCli.Complemento;
+                    txtBairro.Text = enderecoCli.Bairro;
+                    txtCidade.Text = enderecoCli.Cidade;
+                    cmbEstado.Text = enderecoCli.Estado;
+                    cmbUf.Text = enderecoCli.UF;
+                    cmbTipoEndereco.Text = enderecoCli.Tipo;
+
+
+                }
+                else
+                {
+                }
+            }
+            else 
+            {
+                txtNome.Clear();
+                txtCpf.Clear();
+                txtEmail.Clear();
+                dtNascCliente.Enabled = false;
+                txtCep.Clear();
+                txtLogradouro.Clear();
+                txtNumero.Clear();
+                txtComplemento.Clear();
+                txtBairro.Clear();
+                txtCidade.Clear();
+                cmbEstado.Enabled = false;
+                cmbUf.Enabled = false;
+                cmbTipoEndereco.Enabled = false;
+                
+            }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormClienteConsulta_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtNascCliente_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

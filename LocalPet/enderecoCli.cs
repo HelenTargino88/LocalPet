@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -63,6 +64,9 @@ namespace LocalPet
             UF = uF;
             Tipo = tipo;
         }
+        public EnderecoCli() 
+        { 
+        }
       public void Inserir(int cliente_id)
         {
             var cmd = Banco.Abrir();
@@ -88,9 +92,7 @@ namespace LocalPet
                             dr.GetString(5),
                             dr.GetString(6),
                             dr.GetString(7),
-                            dr.GetString(8),
-                            dr.GetString(9),
-                            Clientes.ObterPorId(dr.GetInt32(10))
+                            dr.GetString(8)
                         )
                     );
             }
@@ -112,6 +114,41 @@ namespace LocalPet
             cmd.CommandText = "delete from endereco_cli where id = " + _id;
             bool result = cmd.ExecuteNonQuery() == 1 ? true : false;
             return result;
+        }
+        public static EnderecoCli ObterPorId(int id)
+        {
+            EnderecoCli enderecoCli = new EnderecoCli();
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "select * from endereco_cli where id = " + id;
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {  
+                enderecoCli.Id = dr.GetInt32(0);
+                enderecoCli.CEP = dr.GetString(1);
+                enderecoCli.Logradouro = dr.GetString(2);
+                enderecoCli.Numero = dr.GetString(3);
+                enderecoCli.Complemento = dr.GetString(4);
+                enderecoCli.Bairro = dr.GetString(5);
+                enderecoCli.Cidade = dr.GetString(6);
+                enderecoCli.Estado = dr.GetString(7);
+                enderecoCli.UF = dr.GetString(8);
+                enderecoCli.Tipo = dr.GetString(9);
+            }
+            return enderecoCli;
+
+        }
+        public static List<EnderecoCli> BuscarPorNome(string _parte)
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandText = "select * from endereco_cli where nome like '%" + _parte + "%'order by nome;";
+            var dr = cmd.ExecuteReader();
+            List<EnderecoCli> lista = new List<EnderecoCli>();
+            while (dr.Read())
+            {
+                lista.Add(new EnderecoCli(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5), dr.GetString(6), dr.GetString(7), dr.GetString(8),dr.GetString(9)));
+            }
+            return lista;
+
         }
 
     }
