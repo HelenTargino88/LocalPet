@@ -48,6 +48,7 @@
             // dtgListAnimais
             // 
             this.dtgListAnimais.AllowUserToAddRows = false;
+            this.dtgListAnimais.AllowUserToDeleteRows = false;
             this.dtgListAnimais.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.dtgListAnimais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgListAnimais.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -67,6 +68,7 @@
             this.dtgListAnimais.Location = new System.Drawing.Point(-1, -3);
             this.dtgListAnimais.Name = "dtgListAnimais";
             this.dtgListAnimais.ReadOnly = true;
+            this.dtgListAnimais.RowHeadersVisible = false;
             this.dtgListAnimais.Size = new System.Drawing.Size(1305, 355);
             this.dtgListAnimais.TabIndex = 0;
             this.dtgListAnimais.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListAnimais_CellContentClick);

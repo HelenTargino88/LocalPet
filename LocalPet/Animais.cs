@@ -114,14 +114,6 @@ namespace LocalPet
             }
             return animais;
         }
-        public void Editar()
-        {
-            var cmd = Banco.Abrir();
-            cmd.CommandText = "update animais set nome = '" + Nome + "', raca = '" + Raca + "', especie = '" + Especie + "', sexo = '" + Sexo + "', porte = '" + Porte + "', " +
-                "idade = '" + Idade + "', descricao = '" + Descricao + "', enfermidades = '" + Enfermidades + "', medicamentos = '" + Medicamentos + "', " +
-                "vacinas = '" + Vacinas + "', comportamento = '" + Comportamento + "', imagem_animal = '" + Imagem_animal + "', ativo = '" + Ativo+"'where id = " + Id;
-            cmd.ExecuteReader();
-        }
         public static bool Arquivar(int id) // Arquivando
         {
             var cmd = Banco.Abrir();
@@ -136,7 +128,7 @@ namespace LocalPet
             cmd.CommandText = "update especies set descontinuado = 0 where id =" + id;
             return cmd.ExecuteNonQuery() == 1 ? true : false;
         }
-        public static void Atualizar(Animais animais)
+        public void Editar(Animais animais)
         {
             var cmd = Banco.Abrir();
             cmd.CommandText = "update animais set " +

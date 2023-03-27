@@ -36,18 +36,18 @@ namespace LocalPetadocoes
         }
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCnpj.Text, txtCpf.Text, txtDescricao.Text, ptbImagem.Text);
-            ongs.Editar();            
+            //Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCnpj.Text, txtCpf.Text, txtDescricao.Text, ptbImagem.Text);
+            //ongs.Editar();            
 
-            EnderecoOng enderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text,
-                txtNumeroEnd.Text, txtComplemento.Text, txtBairro.Text,
-                txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
-            enderecoOng.Editar();
+            //EnderecoOng enderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text,
+            //    txtNumeroEnd.Text, txtComplemento.Text, txtBairro.Text,
+            //    txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
+            //enderecoOng.Editar();
 
-            TelefoneOng telefoneOng = new TelefoneOng(txtTelefone.Text, cmbTipoTelefone.Text);
-            telefoneOng.Editar();
+            //TelefoneOng telefoneOng = new TelefoneOng(txtTelefone.Text, cmbTipoTelefone.Text);
+            //telefoneOng.Editar();
 
-            MessageBox.Show("Ong atualizada com sucesso!");
+            //MessageBox.Show("Ong atualizada com sucesso!");
         }
         private void dtgListOng_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -86,28 +86,23 @@ namespace LocalPetadocoes
         }
         private void dtgTelefone_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var listab = TelefoneOng.Listar();
-            int linhab = 0;
-            foreach (var item in listab)
-            {
-                dtgEnderecoOng.Rows.Add();
-                dtgEnderecoOng.Rows[linhab].Cells[0].Value = item.CEP;
-                dtgEnderecoOng.Rows[linhab].Cells[1].Value = item.Logradouro;
-                dtgEnderecoOng.Rows[linhab].Cells[2].Value = item.Numero;
-                dtgEnderecoOng.Rows[linhab].Cells[3].Value = item.Complemento;
-                dtgEnderecoOng.Rows[linhab].Cells[4].Value = item.Bairro;
-                dtgEnderecoOng.Rows[linhab].Cells[5].Value = item.Cidade;
-                dtgEnderecoOng.Rows[linhab].Cells[6].Value = item.Estado;
-                dtgEnderecoOng.Rows[linhab].Cells[7].Value = item.UF;
-                dtgEnderecoOng.Rows[linhab].Cells[8].Value = item.Tipo;
-                dtgEnderecoOng.Rows[linhab].Cells[9].Value = item.Ongs;
-                linhab++;
-            }
-        }
-
-        private void txtCidade_TextChanged(object sender, EventArgs e)
-        {
-
+        //    var listab = TelefoneOng.Listar();
+        //    int linhab = 0;
+        //    foreach (var item in listab)
+        //    {
+        //        dtgEnderecoOng.Rows.Add();
+        //        dtgEnderecoOng.Rows[linhab].Cells[0].Value = item.CEP;
+        //        dtgEnderecoOng.Rows[linhab].Cells[1].Value = item.Logradouro;
+        //        dtgEnderecoOng.Rows[linhab].Cells[2].Value = item.Numero;
+        //        dtgEnderecoOng.Rows[linhab].Cells[3].Value = item.Complemento;
+        //        dtgEnderecoOng.Rows[linhab].Cells[4].Value = item.Bairro;
+        //        dtgEnderecoOng.Rows[linhab].Cells[5].Value = item.Cidade;
+        //        dtgEnderecoOng.Rows[linhab].Cells[6].Value = item.Estado;
+        //        dtgEnderecoOng.Rows[linhab].Cells[7].Value = item.UF;
+        //        dtgEnderecoOng.Rows[linhab].Cells[8].Value = item.Tipo;
+        //        dtgEnderecoOng.Rows[linhab].Cells[9].Value = item.Ongs;
+        //        linhab++;
+        //    }
         }
 
         private void FormOngsConsulta_Load(object sender, EventArgs e)

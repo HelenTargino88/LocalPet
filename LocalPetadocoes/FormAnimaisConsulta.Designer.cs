@@ -192,6 +192,7 @@
             this.txtImagem.Size = new System.Drawing.Size(121, 103);
             this.txtImagem.TabIndex = 48;
             this.txtImagem.TabStop = false;
+            this.txtImagem.Click += new System.EventHandler(this.txtImagem_Click);
             // 
             // label4
             // 

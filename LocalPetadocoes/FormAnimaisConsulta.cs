@@ -24,18 +24,29 @@ namespace LocalPetadocoes
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Animais animais = new Animais(int.Parse(txtId.Text), txtNome.Text,  Raca.ObterPorId(int.Parse(txtRaca.Text)), txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, true);
-            animais.Editar();
-            MessageBox.Show("Animal atualizado com sucesso!");
-            txtNome.Clear();
-            txtRaca.Clear();
-            txtEspecie.Clear();
-            txtDescricao.Clear();
-            txtEnfermidades.Clear();
-            txtMedicamentos.Clear();
-            txtVacinas.Clear();
-            txtComportamento.Clear();
-            txtNome.Focus();
+            if (btnEditar.Text == "Editar")
+            {
+                txtId.ReadOnly = false;
+                txtId.Focus();
+                btnEditar.Text = "Gravar";
+
+            }
+            else
+            {
+                Animais animais = new Animais(int.Parse(txtId.Text), txtNome.Text,  Raca.ObterPorId(int.Parse(txtRaca.Text)), txtEspecie.Text, cmbSexo.Text, cmbPorte.Text, cmbIdade.Text, txtDescricao.Text, txtEnfermidades.Text, txtMedicamentos.Text, txtVacinas.Text, txtComportamento.Text, txtImagem.Text, cbAtivo.Checked);
+                animais.Editar(animais);
+                MessageBox.Show("Animal atualizado com sucesso!");
+                txtNome.Clear();
+                txtRaca.Clear();
+                txtEspecie.Clear();
+                txtDescricao.Clear();
+                txtEnfermidades.Clear();
+                txtMedicamentos.Clear();
+                txtVacinas.Clear();
+                txtComportamento.Clear();
+                txtNome.Focus();
+            }
+            
         }
 
         private void btnArquivar_Click(object sender, EventArgs e)
@@ -110,6 +121,11 @@ namespace LocalPetadocoes
                 cmbIdade.Enabled = false;
                 txtDescricao.Enabled = false;
             }
+        }
+
+        private void txtImagem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

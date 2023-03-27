@@ -96,17 +96,7 @@ namespace LocalPet
             }
             return listaEnd;
         }
-        public void Editar()
-        {
-            var cmd = Banco.Abrir();
-            cmd.CommandText = "update endereco_cli set cep = '" + CEP + "'," +
-                "logradouro = '" + Logradouro + "', numero = '" + Numero + "', complemento = " + Complemento + "" +
-                "bairro = '" + Bairro + "', cidade = '" + Cidade + "', estado = " + Estado + "" +
-                "uf = '" + UF + "', tipo = " + Tipo + "" +
-                "where id = " + Id;
-            cmd.ExecuteNonQuery();
-        }
-        public static void Atualizar(EnderecoCli endereco_cli)
+        public void Editar(EnderecoCli endereco_cli)
         {
             var cmd = Banco.Abrir();
             cmd.CommandText = "update endereco_cli set " + "cep = '" + endereco_cli.CEP + "'," + "logradouro = '" + endereco_cli.Logradouro + "'," +

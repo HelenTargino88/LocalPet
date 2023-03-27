@@ -20,17 +20,10 @@ namespace LocalPetadocoes
             InitializeComponent();
         }
 
-        private void btnAdiconar_Click(object sender, EventArgs e)
-        {
-            Clientes clientes = new Clientes(txtNome.Text, txtCpf.Text,DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
-            clientes.Inserir();
-            txtId.Text = clientes.Id.ToString();
-        }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Clientes clientes = new Clientes(int.Parse(txtId.Text), txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
-            clientes.Editar();
+            Clientes clientes = new Clientes(txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
+            clientes.Editar(clientes);
             MessageBox.Show("Cliente atualizado com sucesso!");
         }
 
