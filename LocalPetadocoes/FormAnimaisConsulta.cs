@@ -66,5 +66,50 @@ namespace LocalPetadocoes
                 linha++;
             }
         }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            if (txtId.Text != string.Empty)
+            {
+                Animais animais = Animais.ObterPorId(int.Parse(txtId.Text));
+                if (animais.Id > 0)
+                {
+                    txtNome.Text = animais.Nome;
+                    txtRaca.Text = animais.Raca.ToString();
+                    txtEspecie.Text = animais.Especie;
+                    cmbSexo.Text = animais.Sexo;
+                    cmbPorte.Text = animais.Porte;
+                    cbAtivo.Checked = animais.Ativo;
+                    txtEnfermidades.Text = animais.Enfermidades;
+                    txtMedicamentos.Text = animais.Medicamentos;
+                    txtVacinas.Text = animais.Vacinas;
+                    txtComportamento.Text = animais.Comportamento;
+                    cmbIdade.Text = animais.Idade;
+                    txtDescricao.Text = animais.Descricao;
+
+
+                }
+                else
+                {
+                    txtDescricao.Text = "Animal não cadastrado! o(╥﹏╥)o";
+                }
+
+            }
+            else
+            {
+                txtNome.Clear();
+                txtRaca.Clear();
+                txtEspecie.Clear();
+                cmbIdade.Enabled.ToString();
+                cmbIdade.Enabled = false;
+                cbAtivo.Enabled = false;
+                txtEnfermidades.Clear();
+                txtMedicamentos.Clear();
+                txtVacinas.Clear();
+                txtComportamento.Enabled = false;
+                cmbIdade.Enabled = false;
+                txtDescricao.Enabled = false;
+            }
+        }
     }
 }

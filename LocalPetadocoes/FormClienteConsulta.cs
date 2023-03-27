@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,19 +19,26 @@ namespace LocalPetadocoes
         {
             InitializeComponent();
         }
-
-        private void btnAdiconar_Click(object sender, EventArgs e)
-        {
-            Clientes clientes = new Clientes(txtNome.Text, txtCpf.Text,DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
-            clientes.Inserir();
-            txtId.Text = clientes.Id.ToString();
-        }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Clientes clientes = new Clientes(int.Parse(txtId.Text), txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
-            clientes.Editar();
-            MessageBox.Show("Cliente atualizado com sucesso!");
+            if (btnEditar.Text == "Editar")
+            {
+                txtId.ReadOnly = false;
+                txtId.Focus();
+                btnEditar.Text = "Gravar";
+               
+            }
+            else
+            {
+                Clientes clientes = new Clientes(txtNome.Text, txtCpf.Text, DateTime.Parse(dtNascCliente.Text), txtEmail.Text);
+                clientes.Editar(clientes);
+                txtId.ReadOnly = true;
+                txtNome.Focus();
+                btnEditar.Text = "Editar";
+                MessageBox.Show("Cliente atualizado com sucesso!");
+
+            }
+           
         }
 
         private void dtgListClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -47,6 +55,28 @@ namespace LocalPetadocoes
                 dtgListClientes.Rows[linha].Cells[4].Value = item.Email;
                 linha++;
             }
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (txtId.Text != string.Empty)
+            {
+                Clientes clientes = Clientes.ObterPorId(int.Parse(txtId.Text));
+                if (clientes.Excluir(clientes.Id))
+                {
+                    MessageBox.Show("Cliente " + clientes.Nome + " excluido com sucesso!");
+                }
+            }
+        }
+
+        private void btnArquivar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

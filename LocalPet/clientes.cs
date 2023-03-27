@@ -14,14 +14,16 @@ namespace LocalPet
         public string Cpf { get; set; }
         public DateTime Data_nasc { get; set; }
         public string Email { get; set; }
+        public Usuarios User { get; }
 
-        public Clientes(int id, string nome, string cpf, DateTime data_nasc, string email)
+        public Clientes(int id, string nome, string cpf, DateTime data_nasc, string email, Usuarios user)
         {
             Id = id;
             Nome = nome;
             Cpf = cpf;
             Data_nasc = data_nasc;
             Email = email;
+            User = user;
         }
         public Clientes(string nome, string cpf, DateTime data_nasc, string email)
         {
@@ -60,7 +62,8 @@ namespace LocalPet
                  dr.GetString(1),
                  dr.GetString(2),
                  dr.GetDateTime(3),
-                 dr.GetString(4)));
+                 dr.GetString(4),
+                 Usuarios.ObterPorId(dr.GetInt32(0))));
             }
             return lista;
         }
@@ -77,15 +80,14 @@ namespace LocalPet
                 clientes.Cpf = dr.GetString(2);
                 clientes.Data_nasc = dr.GetDateTime(3);
                 clientes.Email = dr.GetString(4);
+                Usuarios.ObterPorId(dr.GetInt32(0));
             }
             return clientes;
         }
-        public void Editar()
+        public void Editar(Clientes clientes)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update clientes set nome = '" + Nome + "'," +
-                "cpf = '" + Cpf + "', data_nasc = '" + Data_nasc + "', email = " + Email + "" +
-                "where id = " + Id;
+            cmd.CommandText = "update clientes set nome = '" + clientes.Nome + "'," + "cpf = '" + clientes.Cpf + "'," + "data_nasc = '" + clientes.Data_nasc + "'," + "email = '" + clientes.Email + "' where id = " + clientes.Id;
             cmd.ExecuteNonQuery();
         }
         public static bool Arquivar(int id)
@@ -100,12 +102,6 @@ namespace LocalPet
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "update clientes set descontinuado = 0 where id =" + id;
             return cmd.ExecuteNonQuery() == 1 ? true : false;
-        }
-        public static void Atualizar(Clientes clientes)
-        {
-            var cmd = Banco.Abrir();
-            cmd.CommandText = "update clientes set " + "nome = '" + clientes.Nome + "'," + "cpf = '" + clientes.Cpf + "'," + "data_nasc = '" + clientes.Data_nasc + "'," + "email = '" + clientes.Email + "'," + "";
-            cmd.ExecuteNonQuery();
         }
         public bool Excluir(int _id)
         {
@@ -125,7 +121,7 @@ namespace LocalPet
             while (dr.Read())
             {
                 lista.Add(new Clientes(
-                    dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetDateTime(3), dr.GetString(4)
+                    dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetDateTime(3), dr.GetString(4), Usuarios.ObterPorId(dr.GetInt32(0))
                     ));
             }
             return lista;
