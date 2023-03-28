@@ -127,7 +127,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(1304, 247);
+            this.groupBox1.Size = new System.Drawing.Size(1263, 247);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ANIMAIS";
@@ -188,7 +188,7 @@
             // 
             // txtImagem
             // 
-            this.txtImagem.Location = new System.Drawing.Point(1120, 61);
+            this.txtImagem.Location = new System.Drawing.Point(1101, 40);
             this.txtImagem.Name = "txtImagem";
             this.txtImagem.Size = new System.Drawing.Size(121, 103);
             this.txtImagem.TabIndex = 48;
@@ -208,7 +208,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1153, 42);
+            this.label7.Location = new System.Drawing.Point(1134, 24);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
@@ -318,7 +318,7 @@
             this.btnArquivar.BackColor = System.Drawing.Color.SandyBrown;
             this.btnArquivar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnArquivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnArquivar.Location = new System.Drawing.Point(1132, 192);
+            this.btnArquivar.Location = new System.Drawing.Point(1111, 182);
             this.btnArquivar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnArquivar.Name = "btnArquivar";
             this.btnArquivar.Size = new System.Drawing.Size(102, 37);
@@ -357,7 +357,6 @@
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // txtEmail
             // 
@@ -483,7 +482,8 @@
             this.dtgListAnimais.Location = new System.Drawing.Point(13, 344);
             this.dtgListAnimais.Name = "dtgListAnimais";
             this.dtgListAnimais.ReadOnly = true;
-            this.dtgListAnimais.Size = new System.Drawing.Size(1304, 355);
+            this.dtgListAnimais.RowHeadersVisible = false;
+            this.dtgListAnimais.Size = new System.Drawing.Size(1263, 355);
             this.dtgListAnimais.TabIndex = 25;
             this.dtgListAnimais.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListAnimais_CellContentClick);
             // 

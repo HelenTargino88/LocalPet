@@ -34,18 +34,12 @@ namespace LocalPetadocoes
         }
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            //Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCnpj.Text, txtCpf.Text, txtDescricao.Text, ptbImagem.Text);
-            //ongs.Editar();            
+            Ongs ongs = new Ongs(int.Parse(txtId.Text), txtNome.Text, txtCnpj.Text, txtCpf.Text, txtDescricao.Text);
+            ongs.Editar();            
 
-            //EnderecoOng enderecoOng = new EnderecoOng(txtCep.Text, txtLogradouro.Text,
-            //    txtNumeroEnd.Text, txtComplemento.Text, txtBairro.Text,
-            //    txtCidade.Text, cmbUf.Text, cmbEstado.Text, cbTipoEndereco.Text);
-            //enderecoOng.Editar();
+           
 
-            //TelefoneOng telefoneOng = new TelefoneOng(txtTelefone.Text, cmbTipoTelefone.Text);
-            //telefoneOng.Editar();
-
-            //MessageBox.Show("Ong atualizada com sucesso!");
+            MessageBox.Show("Ong atualizada com sucesso!");
         }
         private void dtgListOng_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

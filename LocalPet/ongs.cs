@@ -1,4 +1,5 @@
 ﻿using MySqlX.XDevAPI;
+using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -97,16 +98,16 @@ namespace LocalPet
             }
             return ongs;
         }
-        public void Editar()
+        public void Editar(Ongs ongs)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update ongs set nome = '" + Nome + "', cnpj = '" + Cnpj + "', cpfResponsavel = '" + CpfResponsavel + "',' descricao ='" + Descricao + "','imagem_ong = '" + Imagem_ong + ",' 'where id =" + Id;
+            cmd.CommandText = "update ongs set nome = '" + ongs.Nome + "', cnpj = '" + ongs.Cnpj + "', cpfResponsavel = '" + ongs.CpfResponsavel + "',' descricao ='" + ongs.Descricao +",' where id ='" + ongs.Id;
             cmd.ExecuteReader();
         }
         public static void Atualizar(Ongs ongs)
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update ongs set " + "nome = '" + ongs.Nome + "', cnpj = '" + ongs.Cnpj + "', cpfResponsavel = '" + ongs.CpfResponsavel + "',' descricao ='" + ongs.Descricao + "','imagem_ong = '" + ongs.Imagem_ong + ",' 'where id =" + ongs.Id;
+            cmd.CommandText = "update ongs set nome = '" + ongs.Nome + "', cnpj = '" + ongs.Cnpj + "', cpfResponsavel = '" + ongs.CpfResponsavel + "',' descricao ='" + ongs.Descricao + "','imagem_ong = '" + ongs.Imagem_ong + ",' 'where id =" + ongs.Id;
             cmd.ExecuteReader();
         }
         public bool Excluir(int _id)
@@ -127,7 +128,7 @@ namespace LocalPet
             while (dr.Read())
             {
                 lista.Add(new Ongs(
-                    dr.GetInt32(0),
+                dr.GetInt32(0),
                     dr.GetString(1),
                     dr.GetString(2),
                     dr.GetString(3),

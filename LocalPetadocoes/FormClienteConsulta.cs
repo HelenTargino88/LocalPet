@@ -22,7 +22,6 @@ namespace LocalPetadocoes
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-
             if (btnEditar.Text == "Editar")
             {
                 txtId.ReadOnly = false;

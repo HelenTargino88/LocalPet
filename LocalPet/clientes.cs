@@ -84,7 +84,7 @@ namespace LocalPet
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update clientes set nome = '" + Nome + "'," + "cpf = '" + Cpf + "'," + "data_nasc = '" + Data_nasc + "'," + "email = '" + Email;
+            cmd.CommandText = "update clientes set nome = '" + clientes.Nome + "'," + "cpf = '" + clientes.Cpf + "'," + "data_nasc = '" + clientes.Data_nasc + "'," + "email = '" + clientes.Email + "' where id = " + clientes.Id;
             cmd.ExecuteNonQuery();
         }
         public bool Excluir(int _id)
